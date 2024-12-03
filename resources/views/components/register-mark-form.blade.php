@@ -1,10 +1,9 @@
-<div class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="w-full max-w-3xl p-6 bg-white shadow-md rounded-lg">
+<div class="flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-3xl p-6">
         <img loading="lazy" class="my-3" src="{{ asset('images/register-mark/register-mark-form.png') }}" />
 
         <form action="{{ route('register-mark') }}" method="POST">
             @csrf
-
             <div class="mb-4 flex items-center">
                 <label for="name" class="block text-lg font-bold text-orange-500 mr-4 w-1/3">الاسم</label>
                 <input type="text" id="name" name="name"
