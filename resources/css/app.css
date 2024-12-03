@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import "~@fortawesome/fontawesome-free/css/all.css"; */
+/* @import "@fontawesome/fontawesome-free/css/all.css"; */
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-Black.ttf") format("truetype");
+    font-weight: 900; /* Black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-Bold.ttf") format("truetype");
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-ExtraBold.ttf") format("truetype");
+    font-weight: 800; /* ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-ExtraLight.ttf") format("truetype");
+    font-weight: 200; /* ExtraLight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-Light.ttf") format("truetype");
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-Medium.ttf") format("truetype");
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-Regular.ttf") format("truetype");
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cairo";
+    src: url("/fonts/Cairo-SemiBold.ttf") format("truetype");
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+body {
+    font-family: "Cairo", sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Cairo", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Cairo", sans-serif;
+}
