@@ -6,4 +6,5 @@
 <x-register-mark-landing />
 <x-register-mark-slides />
 <x-register-mark-help />
+<x-register-mark-form />
 @endsection
