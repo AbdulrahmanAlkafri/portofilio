@@ -12,7 +12,7 @@
 
     <!-- Button Section -->
     <div class="w-full flex justify-center">
-        <a href="#" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full flex items-center">
+        <a href="/contact" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full flex items-center">
             <span>تواصل معنا</span>
             <i class="fas fa-chevron-left mr-2"></i>
         </a>

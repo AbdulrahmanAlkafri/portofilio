@@ -1,15 +1,15 @@
-<nav class="bg-orange-50 shadow-md">
-    <div class="max-w-full mx-auto px-2 py-4 flex items-center justify-between">
+<nav>
+    <div class="max-w-full mx-auto px-4 py-4 flex items-center justify-evenly">
 
         <!-- Logo -->
         <div class="flex-shrink-0">
-            <img loading="lazy" src="{{ asset("images/logo.png") }}" alt="Logo" class="h-8">
+            <img loading="lazy" src="{{ asset('images/logo.png') }}" alt="Logo" class="h-8">
         </div>
 
         <!-- Nav Links -->
-        <div class="flex-grow flex justify-center gap-x-1 space-x-4">
+        <div class="flex-grow flex justify-center gap-x-10">
             <a href="{{ route('home') }}"
-                class="px-2 nav-item {{ request()->is('/') ? 'text-orange-500 font-bold' : 'text-gray-800' }}">الرئيسية</a>
+                class="nav-item {{ request()->is('/') ? 'text-orange-500 font-bold' : 'text-gray-800' }}">الرئيسية</a>
             <a href="{{ route('register-mark') }}"
                 class="nav-item {{ request()->is('register-mark') ? 'text-orange-500 font-bold' : 'text-gray-800' }}">سجل
                 علامتك التجارية</a>
@@ -21,48 +21,35 @@
         </div>
 
         <!-- Contact Us Link and Language Switcher -->
-        <div class="flex items-center space-x-4">
-            <a href="{{ route('contact') }}"
-                class="mx-3 bg-orange-500 text-orange-50 hover:bg-orange-600 font-bold p-2 rounded-full">تواصل
-                معنا</a>
-            <label for="toggleTwo" class="flex items-center cursor-pointer select-none text-dark dark:text-orange-50">
+        <div class="flex items-center gap-x-4">
+            <label for="language-toggle" class="flex items-center cursor-pointer select-none">
                 <div class="relative">
-                    <input type="checkbox" id="toggleTwo" class="peer sr-only" />
-
-                    <!-- Background for the switch -->
+                    <input type="checkbox" id="language-toggle" class="sr-only peer" />
                     <div
-                        class="block h-8 rounded-full bg-gray-300 w-14 peer-checked:bg-orange-500 transition-all duration-300">
+                        class="block w-16 h-8 rounded-full bg-gray-200 peer-checked:bg-orange-500 transition-all duration-300">
                     </div>
-
-                    <!-- Dot for the switch -->
                     <div
-                        class="absolute w-6 h-6 transition bg-orange-50 rounded-full dot dark:bg-dark-4 left-1 top-1 peer-checked:translate-x-full peer-checked:bg-orange-50">
+                        class="absolute w-7 h-7 bg-white rounded-full left-1 top-0.5 transition-transform peer-checked:translate-x-8">
                     </div>
-
-                    <!-- Text when off, positioned left -->
                     <span
-                        class="text-center font-extrabold mx-auto text-sm absolute right-1 top-1 text-orange-500 transition-opacity duration-300 peer-checked:opacity-0">En</span>
-                    <!-- Text when on, positioned right -->
+                        class="text-sm font-bold text-gray-800 absolute right-2 top-1 transition-opacity duration-300 peer-checked:opacity-0">EN</span>
                     <span
-                        class="text-center font-extrabold text-sm absolute left-1 top-1 text-orange-50 transition-opacity duration-300 peer-checked:opacity-100">ع</span>
+                        class="text-sm font-bold text-orange-500 absolute left-2 top-1 transition-opacity duration-300 peer-checked:opacity-100">ع</span>
                 </div>
             </label>
+            <a href="{{ route('contact') }}"
+                class="bg-orange-500 text-white hover:bg-orange-600 font-bold py-1 px-8 rounded-full">تواصل
+                معنا</a>
         </div>
     </div>
 </nav>
 
-<style>
-#language-toggle:checked~.toggle-circle {
-    transform: translateX(100%);
-}
-
-#language-toggle:checked~.toggle-path {
-    background-color: #ff9800;
-}
-</style>
-
 <script>
 document.getElementById('language-toggle').addEventListener('change', function() {
-    alert('Language switched! (Implement actual logic here)');
+    if (this.checked) {
+        // Switch to Arabic logic (you may want to implement your actual logic here)  
+    } else {
+        // Switch to English logic  
+    }
 });
 </script>

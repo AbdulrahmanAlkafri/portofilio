@@ -1,4 +1,4 @@
-<footer class="bg-orange-50 border-t border-orange-300 py-10 mt-auto">
+<footer class="py-10 mt-auto">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-start px-4">
         <!-- Left Section -->
         <div class="md:w-1/3 mt-4 md:mt-0 text-center">
@@ -11,7 +11,7 @@
                     style="width: calc(100% - 14px);" />
                 <button type="submit"
                     class="absolute left-1.5 top-0 h-full bg-orange-600 text-orange-50 rounded-full flex items-center justify-center px-3 transition duration-150 ease-in-out hover:bg-orange-700">
-                    <span class="text-5xl font-extrabold mx-auto mb-4">&#8592;</span> <!-- Left Arrow -->
+                    <span class="text-4xl font-bold mx-auto mb-4">&#8592;</span> <!-- Left Arrow -->
                 </button>
             </form>
         </div>
