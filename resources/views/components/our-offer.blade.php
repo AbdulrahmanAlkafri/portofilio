@@ -1,7 +1,7 @@
 <div class="py-10 w-full flex flex-col lg:flex-row items-center justify-evenly mr-20">
     <div class="lg:w-1/2 lg:pl-8">
-        <h2 class="text-xl font-bold m-7 text-gray-600">ماذا نقدم؟</h2>
-        <p class=" m-7 text-2xl">
+        <h2 class="text-4xl font-bold m-7 text-gray-600">ماذا نقدم؟</h2>
+        <p class=" m-7 text-3xl tracking-wide leading-relaxed">
             مع <span class="text-orange-600 font-bold">كيتش بلش</span>، يمكنك تحقيق حلمك بسرعة وسهولة! نوفر لك جميع
             الدعم من
             الخبرة
@@ -10,7 +10,7 @@
             منتجاتك لأماكن أكثر، نقدم لك توسع بعلامتك التجارية في أي منطقة بأفضل المزایا وجودة عالية.
         </p>
         <button
-            class="bg-orange-500 rounded-full m-7 text-white font-bold py-2 px-4 hover:bg-orange-600 transition duration-200">
+            class="bg-orange-500 text-xl rounded-xl m-7 text-white font-bold py-3 px-16 hover:bg-orange-600 transition duration-200">
             قراءة المزيد
         </button>
     </div>

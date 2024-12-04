@@ -4,9 +4,9 @@
 
         <!-- Right Section for Stats and Description -->
         <div class="space-y-6 text-right">
-            <h2 class="text-2xl font-bold mb-6 text-gray-600">استثمارك اليوم ثورة لمطاعم الغد</h2>
+            <h2 class="text-4xl font-bold mb-6 text-gray-600">استثمارك اليوم ثورة لمطاعم الغد</h2>
             <!-- Description Paragraph -->
-            <p class="text-2xl tracking-wide leading-loose">
+            <p class="text-3xl tracking-wide leading-loose">
                 نقدّم لك فرصة للاستثمار تجمع بين الاستثمار المالي والإبداعي والاستراتيجي لتحقيق ثورتنا في عالم المطاعم.
                 من تطوير بنية تحتية جديدة، نقدم لك إلى تمكين الابتكار عبر أنظمة ذكية. انضم لنا لنحقق معًا النجاح!
             </p>

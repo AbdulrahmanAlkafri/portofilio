@@ -1,5 +1,5 @@
 <section class="py-20 text-center">
-    <div class="container mx-auto leading-relaxed">
+    <div class="container mx-auto leading-loose">
         <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
             <span class="text-gray-800">حقّق رؤيتك نحو مطعم</span>
             <span class="text-orange-600">مثالي</span>

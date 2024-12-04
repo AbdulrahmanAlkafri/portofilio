@@ -1,5 +1,5 @@
 <div class="py-10 bg-gray-50">
-    <h2 class="text-2xl font-bold text-center mb-6">خطط التحديات وعبَر إلى النجاح معنا</h2>
+    <h2 class="text-4xl text-gray-600 font-bold text-center mb-6">تخطى التحديات واعبر إلى النجاح معنا</h2>
 
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -58,7 +58,7 @@
 
     <div class="flex justify-center mt-6">
         <a href="/register-mark"
-            class="bg-orange-500 text-orange-50 font-bold py-2 px-16 rounded-full hover:bg-orange-400 transition">
+            class="bg-orange-500 text-orange-50 font-bold py-3 px-32 rounded-2xl hover:bg-orange-400 transition">
             سجّل الآن
         </a>
     </div>
