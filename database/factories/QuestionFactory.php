@@ -17,8 +17,8 @@ class QuestionFactory extends Factory
     public function definition(): array
     {
         return [
-            "question" => fake()->text(),
-            "answer" => fake()->realText(),
+            "question" => fake()->text(35),
+            "answer" => fake()->realText(120),
         ];
     }
 }

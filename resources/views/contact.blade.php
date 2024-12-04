@@ -3,6 +3,8 @@
 @section('title', 'Contact Us')
 
 @section('content')
-<h1>Contact Us</h1>
-<p>Information on how to contact us.</p>
+<x-contact-landing />
+<x-contact-form />
+<x-contact-info />
+<x-accordion :questions="$questions" />
 @endsection

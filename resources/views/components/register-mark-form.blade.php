@@ -1,3 +1,40 @@
+@if(session('success'))
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+    toastMessage.textContent = "{{ session('success') }}"; // Set the success message  
+    toast.classList.remove('hidden'); // Show the toast  
+    toast.classList.add('opacity-100'); // Make it visible  
+
+    // Hide the toast after 3 seconds  
+    setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('hidden');
+    }, 2000);
+});
+</script>
+@endif
+@if ($errors->any())
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+
+    let errorMessage = "تعذر تسجيل الإستمارة";
+
+    toastMessage.innerHTML = errorMessage; // Set the error message  
+    toast.classList.remove('hidden'); // Show the toast  
+    toast.classList.add('opacity-100'); // Make it visible  
+
+    // Hide the toast after 3 seconds  
+    setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('hidden');
+    }, 1500);
+});
+</script>
+@endif
 <div class="flex items-center justify-center min-h-screen">
     <div class="w-full max-w-3xl p-6">
         <img loading="lazy" class="my-3" src="{{ asset('images/register-mark/register-mark-form.png') }}" />
@@ -82,4 +119,4 @@
             </div>
         </form>
     </div>
-</div>
+</div>y

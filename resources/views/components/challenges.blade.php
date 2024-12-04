@@ -56,7 +56,6 @@
         </div>
     </div>
 
-    <!-- Button centered below the cards -->
     <div class="flex justify-center mt-6">
         <a href="/register-mark"
             class="bg-orange-500 text-orange-50 font-bold py-2 px-16 rounded-full hover:bg-orange-400 transition">

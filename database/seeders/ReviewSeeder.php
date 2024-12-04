@@ -14,6 +14,6 @@ class ReviewSeeder extends Seeder
      */  
     public function run()  
     {  
-        // Create 50 fake reviews  
+        Review::factory()->count(10)->create();  
     }  
 }
