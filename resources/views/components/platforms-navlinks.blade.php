@@ -162,12 +162,12 @@
 
             @foreach ($tabs as $tabName => $tabSvg)
             <button @click.prevent="activeTab = '{{ $tabName }}'"
-                :class="activeTab === '{{ $tabName }}' ? 'bg-orange-100 text-orange-400' : 'bg-gray-200'"
-                class="my-10 flex items-center px-4 py-2 rounded-full transition-colors duration-75 shadow hover:bg-gray-300">
+                :class="activeTab === '{{ $tabName }}' ? 'bg-orange-100 text-orange-500' : 'bg-gray-200'"
+                class="my-10 flex items-center px-4 py-2 rounded-full shadow">
                 <span :class="activeTab === '{{ $tabName }}' ? 'text-orange-500' : ''">
                     {!! $tabSvg !!}
                 </span>
-                <!-- <span x-show="activeTab === '{{ $tabName }}'" class="ml-2 text-xl">{{ $tabName }}</span> -->
+                <span x-show="activeTab === '{{ $tabName }}'" class="ml-2 mx-1 text-xl">{{ $tabName }}</span>
             </button>
             @endforeach
         </div>

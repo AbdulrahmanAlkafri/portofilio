@@ -51,3 +51,6 @@ $bullets2 =[
         </ul>
     </div>
 </div>
+<div class="w-full h-40 bg-white">
+
+</div>
