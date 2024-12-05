@@ -14,7 +14,7 @@ $bullets2 =[
 ];
 @endphp
 
-<div class="grid grid-cols-1 md:grid-cols-2 p-6 w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 p-6 w-4/5 mx-auto">
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-2/3 space-y-4 m-auto">
         <p class="text-4xl font-bold text-gray-600">ميزات التصميم</p>
@@ -35,11 +35,11 @@ $bullets2 =[
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 p-6 w-full">
     <!-- Left Side: Image -->
-    <div class="w-full md:ml-6">
+    <div class="md:ml-6 w-2/3 mx-auto">
         <img src="{{ asset("images/platforms/platform-pros.png") }}" alt="Chart Orders" class="w-full md:w-3/4 h-auto">
     </div>
     <!-- Right Side: Bullet Points -->
-    <div class="w-full md:w-2/3 space-y-4 m-auto">
+    <div class="w-full md:w-1/3 space-y-4 m-auto">
         <p class="text-4xl font-bold text-gray-600">ميزات المنصة</p>
         <ul class="list-disc pl-5 space-y-2">
             @foreach ($bullets2 as $bullet)
