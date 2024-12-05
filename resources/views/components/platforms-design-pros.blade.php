@@ -18,10 +18,10 @@ $bullets2 =[
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-2/3 space-y-4 m-auto">
         <p class="text-4xl font-bold text-gray-600">ميزات التصميم</p>
-        <ul class="list-disc pl-5 space-y-2">
+        <ul class="list-disc pl-5 space-y-2 text-3xl">
             @foreach ($bullets1 as $bullet)
             <li class="flex items-center text-2xl my-3">
-                <div class="w-2.5 h-2.5 m-2 bg-orange-500 rounded-full mr-2"></div>
+                <div class="w-2.5 h-2.5 m-2 bg-orange-500 rounded-full mr-2 p-2"></div>
                 {{ $bullet }}
             </li>
             @endforeach
@@ -41,10 +41,10 @@ $bullets2 =[
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-1/3 space-y-4 m-auto">
         <p class="text-4xl font-bold text-gray-600">ميزات المنصة</p>
-        <ul class="list-disc pl-5 space-y-2">
+        <ul class="list-disc pl-5 space-y-2 text-3xl">
             @foreach ($bullets2 as $bullet)
             <li class="flex items-center text-2xl my-3">
-                <div class="w-2.5 h-2.5 m-2 bg-orange-500 rounded-full mr-2"></div>
+                <div class="w-2.5 h-2.5 m-2 bg-orange-500 rounded-full mr-2 p-2"></div>
                 {{ $bullet }}
             </li>
             @endforeach
