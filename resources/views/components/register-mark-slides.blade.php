@@ -1,5 +1,5 @@
 <div class="flex items-center justify-center min-h-screen p-4">
-    <div class="relative w-full max-w-4xl lg:max-w-5xl p-4 bg-white rounded-lg shadow-lg">
+    <div class="relative w-full max-w-4xl lg:max-w-5xl p-4 bg-white">
 
         <!-- Navigation Arrows -->
         <button id="prev"
