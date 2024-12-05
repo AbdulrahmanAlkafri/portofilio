@@ -28,20 +28,23 @@
             <!-- Right Section -->
             <div class="md:w-1/3">
                 <h2 class="text-orange-600 text-3xl font-semibold mb-4">تواصل معنا</h2>
-                <p class="mb-2">01122336699 <span class="inline-block">📞</span></p>
-                <p class="mb-2">info@andls.sa <span class="inline-block">📧</span></p>
+                <p class="mb-2">+97433884773<span class="inline-block">📞</span></p>
+                <p class="mb-2">info@andls.sa<span class="inline-block">📧</span></p>
                 <p class="mb-2">شارع الملك عبد الله الثاني، عمان، الأردن <span class="inline-block">📍</span></p>
                 <div class="flex mt-4 justify-start items-center">
-                    <a href="#" class="text-orange-600 hover:text-orange-700 m-4">
+                    <a href="https://www.facebook.com/profile.php?id=61557016907788&mibextid=ZbWKwL" target="_blank"
+                        class="text-orange-600 hover:text-orange-700 m-4">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="text-orange-600 hover:text-orange-700 m-4">
+                    <a href="https://www.instagram.com/kitchplus/" target="_blank"
+                        class="text-orange-600 hover:text-orange-700 m-4">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-orange-600 hover:text-orange-700 m-4">
+                    <a href="#" class="text-orange-600 hover:text-orange-700 m-4" target="_blank">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#" class="text-orange-600 hover:text-orange-700 m-4">
+                    <a href="https://www.linkedin.com/company/kitchplus/" target="_blank"
+                        class="text-orange-600 hover:text-orange-700 m-4">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>

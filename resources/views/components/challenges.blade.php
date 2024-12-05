@@ -35,7 +35,7 @@
             <div>
                 <div class="flex items-center mb-4">
                     <i class="fas fa-thumbs-up text-white text-3xl bg-orange-500 rounded-full p-2 mr-2"></i>
-                    <h3 class="text-xl font-semibold mx-2">مع كيتش بلش</h3>
+                    <h3 class="text-xl font-semibold mx-2">مع كيتش بلس</h3>
                 </div>
                 <p class="text-gray-600 mb-4">المزايا التي ستحصل عليها بالاشتراك معنا:</p>
                 <ul class="list-none text-gray-700 space-y-2">

@@ -14,11 +14,11 @@ $bullets2 =[
 ];
 @endphp
 
-<div class="grid grid-cols-1 md:grid-cols-2 p-6 w-4/5 mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 p-3 w-full">
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-2/3 space-y-4 m-auto">
         <p class="text-4xl font-bold text-gray-600">ميزات التصميم</p>
-        <ul class="list-disc pl-5 space-y-2 text-3xl">
+        <ul class="list-disc pl-5 space-y-2 text-nowrap">
             @foreach ($bullets1 as $bullet)
             <li class="flex items-center text-2xl my-3">
                 <div class="w-2.5 h-2.5 m-2 bg-orange-500 rounded-full mr-2 p-2"></div>

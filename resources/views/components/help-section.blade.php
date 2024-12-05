@@ -5,7 +5,7 @@
     </div>
 
     <!-- Text Section -->
-    <p class="text-gray-600 text-center mb-4 tracking-wide leading-loose">
+    <p class="text-gray-600 text-center mb-4 tracking-wide leading-loose w-3/4 text-2xl">
         نحن هنا لنكون شريكك الأمثل في رحلة النجاح فريقنا ملتزم بالاستماع الى احتياجاتك وتقديم الدعم الذي تحتاجه بكل حب
         واحترافية اذا كان لديك اي استفسار او تحتاج الى مساعدة في اي جانب من جوانب ادارة مطعمك فلا تتردد في التواصل معنا
     </p>
