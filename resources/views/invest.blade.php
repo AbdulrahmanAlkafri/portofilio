@@ -3,6 +3,9 @@
 @section('title', 'Invest with Us')
 
 @section('content')
-<h1>Invest with Us</h1>
-<p>Information about investing goes here.</p>
+<x-invest-landing />
+<x-invest-success />
+<x-invest-welcome />
+<x-invest-why />
+<x-invest-form />
 @endsection

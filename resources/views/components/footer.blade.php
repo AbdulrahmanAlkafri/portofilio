@@ -8,10 +8,10 @@
                 <input type="email" placeholder="اكتب بريدك الإلكتروني"
                     class="border outline-none ring-1 focus:ring-orange-600 border-gray-300 rounded-full pl-4 pr-14 py-2"
                     style="width: calc(100% - 14px);" />
-                <button type="submit"
-                    class="absolute left-1.5 top-0 h-full bg-orange-600 text-orange-50 rounded-full flex items-center justify-center px-3 transition duration-150 ease-in-out hover:bg-orange-700">
+                <a type="submit" href="mailto:info@kitchplus.co"
+                    class="cursor-pointer absolute left-1.5 top-0 h-full bg-orange-600 text-orange-50 rounded-full flex items-center justify-center px-3 transition duration-150 ease-in-out hover:bg-orange-700">
                     <span class="text-3xl font-bold m-auto mb-4">&#8592;</span> <!-- Left Arrow -->
-                </button>
+                </a>
             </form>
         </div>
         <div class="flex justify-center items-center">
@@ -36,11 +36,12 @@
                         class="text-orange-600 hover:text-orange-700 m-4">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/kitchplus/" target="_blank"
+                    <a href="https://www.instagram.com/kitchplus" target="_blank"
                         class="text-orange-600 hover:text-orange-700 m-4">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-orange-600 hover:text-orange-700 m-4" target="_blank">
+                    <a href="https://www.twitter.com/kitchplus" class="text-orange-600 hover:text-orange-700 m-4"
+                        target="_blank">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/kitchplus/" target="_blank"

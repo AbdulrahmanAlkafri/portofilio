@@ -2,7 +2,7 @@
     <!-- Email Card -->
     <div class="p-5 text-center flex flex-col items-center w-full sm:w-1/3">
         <img src="{{ asset('images/contact/contact-mail.png') }}" alt="Email Icon" class="mb-2">
-        <a href="mailto:kitchplus04@gmail.com"
+        <a href="mailto:info@kitchplus.co"
             class="flex items-center justify-center w-2/3 px-5 py-2 text-white bg-orange-500 rounded-lg gap-2">
             تواصل <i class="fas fa-arrow-left arrow-left"></i>
         </a>
