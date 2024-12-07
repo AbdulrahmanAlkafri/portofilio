@@ -43,13 +43,26 @@
         </div>
     </div>
 </nav>
-
 <script>
 document.getElementById('language-toggle').addEventListener('change', function() {
     if (this.checked) {
-        // Switch to Arabic logic (you may want to implement your actual logic here)  
+        // Switch to Arabic (RTL)
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.body.setAttribute('dir', 'rtl');
+        localStorage.setItem('dir', 'rtl'); // Store the direction
     } else {
-        // Switch to English logic  
+        // Switch to English (LTR)
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.setAttribute('dir', 'ltr');
+        localStorage.setItem('dir', 'ltr'); // Store the direction
     }
+});
+
+// On page load, set the direction based on localStorage
+window.addEventListener('load', function() {
+    const dir = localStorage.getItem('dir') || 'ltr'; // Default to LTR
+    document.documentElement.setAttribute('dir', dir);
+    document.body.setAttribute('dir', dir);
+    document.getElementById('language-toggle').checked = dir === 'rtl';
 });
 </script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl" class="bg-gray-50">
+<html lang="en" dir="{{ session('dir', 'ltr') }}" class="bg-gray-50">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="h-screen bg-gray-50 w-full">
+<body class="h-screen bg-gray-50 w-full" dir="{{ session('dir', 'ltr') }}">
     <div id="toast"
         class="fixed top-5 right-5 bg-green-500 text-white p-3 rounded hidden transition-opacity duration-300">
         <span id="toast-message"></span>

@@ -14,7 +14,7 @@ document.addEventListener("scroll", function () {
 
             // Check if the number has already animated
             if (displayedNumber < target) {
-                const increment = Math.ceil(target / 100); // Change this for faster or slower animation
+                const increment = Math.ceil(target / 400); // Change this for faster or slower animation
                 number.textContent = Math.min(
                     displayedNumber + increment,
                     target
