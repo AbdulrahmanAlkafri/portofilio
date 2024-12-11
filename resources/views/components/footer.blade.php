@@ -103,6 +103,8 @@ function switchLanguage(lang) {
         document.getElementById('arrow').innerHTML = '&#8592;'; // Left Arrow  
     }
 }
+
+// Example usage: Switch to English (you might want to call this on a button click or language toggle)  
 switchLanguage('en'); // or switchLanguage('ar') for Arabic  
 switchLanguage('ar'); // or switchLanguage('ar') for Arabic  
 </script>
