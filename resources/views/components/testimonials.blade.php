@@ -2,7 +2,8 @@
 
 <div class="py-10 bg-gray-50">
     <div class="w-4/5 mx-auto text-center">
-        <h2 class="text-2xl font-bold mb-6 text-gray-800">ما يقوله عملاؤنا</h2>
+        <h2 class="text-2xl font-bold mb-6 text-gray-800" data-ar="ما يقوله عملاؤنا" data-en="What our customer say's">
+        </h2>
         <div class="relative mx-auto">
             <div class="flex space-x-4 overflow-x-hidden snap-x snap-mandatory testimonials-container">
                 @foreach($reviews as $review)
@@ -32,13 +33,13 @@
 
             <!-- Navigation Arrows -->
             <button
-                class="left-arrow absolute top-1/2 left-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
+                class="right-arrow absolute top-1/2 right-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
                 &#10095;
                 <!-- Left Arrow -->
+
             </button>
             <button
-                class="right-arrow absolute top-1/2 right-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
-
+                class="left-arrow absolute top-1/2 left-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
                 &#10094;
                 <!-- Right Arrow -->
             </button>

@@ -7,7 +7,6 @@
     <title>@yield('title', 'Default Title')</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @vite('resources/css/app.css')
-
 </head>
 
 <body class="h-screen bg-gray-50 w-full" dir="{{ session('dir', 'ltr') }}">

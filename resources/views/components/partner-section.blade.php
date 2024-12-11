@@ -1,6 +1,7 @@
 <div class="py-10 bg-white">
     <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold text-gray-600 mb-4">شركاء النجاح</h2>
+        <h2 class="text-4xl font-bold text-gray-600 mb-4" data-en="Success Partners" data-ar="شركاء النجاح">شركاء النجاح
+        </h2>
         <div class="overflow-hidden relative">
             <div class="flex animate-scroll">
                 <div class="flex-shrink-0 mx-4">
@@ -44,6 +45,7 @@
         </div>
     </div>
 </div>
+
 <style>
 @keyframes scroll {
     0% {

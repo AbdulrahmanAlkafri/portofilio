@@ -1,17 +1,30 @@
 <div class="py-10 w-full flex flex-col lg:flex-row items-center justify-evenly mr-20">
     <div class="lg:w-1/2 lg:pl-8">
-        <h2 class="text-4xl font-bold m-7 text-gray-600">ماذا نقدم؟</h2>
+        <h2 class="text-4xl font-bold m-7 text-gray-600" data-en="What We Offer ?">ماذا نقدم؟</h2>
         <p class=" m-7 text-3xl tracking-wide leading-relaxed">
-            مع <span class="text-orange-600 font-bold">كيتش بلش</span>، يمكنك تحقيق حلمك بسرعة وسهولة! نوفر لك جميع
-            الدعم من
-            الخبرة
-            إلى التوسع في
-            الإيرادات. نوصل
-            منتجاتك لأماكن أكثر، نقدم لك توسع بعلامتك التجارية في أي منطقة بأفضل المزایا وجودة عالية.
+            <span data-en="With" data-ar="مع"></span> <span class="text-orange-600 font-bold" data-en="Kitch Plus"
+                data-ar="كيتش بلش"></span>
+            <span
+                data-en="quickly
+                Go! We provide you with all
+                Support from
+                Experience
+                To expand on
+                earn. We deliver
+                Your programs for more places, we offer you to develop your brand in any interesting area there is a rise."
+                data-ar="يمكنك تحقيق حلمك
+                بسرعة
+                وسهولة! نوفر لك جميع
+                الدعم من
+                الخبرة
+                إلى التوسع في
+                الإيرادات. نوصل
+                منتجاتك لأماكن أكثر، نقدم لك توسع بعلامتك التجارية في أي منطقة بأفضل المزایا وجودة عالية.">،
+            </span>
         </p>
-        <button
+        <button data-ar="قراءة المزيد" data-en="Read More"
             class="bg-orange-500 text-xl rounded-xl m-7 text-white font-bold py-3 px-16 hover:bg-orange-600 transition duration-200">
-            قراءة المزيد
+
         </button>
     </div>
     <div class="lg:w-1/2 relative mb-8 lg:mb-0">

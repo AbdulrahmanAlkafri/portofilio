@@ -3,21 +3,24 @@
 
         <!-- Logo -->
         <div class="flex-shrink-0">
-            <img loading="lazy" src="{{ asset('images/logo.png') }}" alt="Logo" class="h-8">
+            <img id="logo" loading="lazy" src="{{asset("images/logo.png")}}" data-ar="{{asset("images/logo.png")}}"
+                data-en="{{asset("images/en-logo.png")}}" alt="Logo" class="h-8">
         </div>
 
         <!-- Nav Links -->
         <div class="flex-grow flex justify-center gap-x-10">
             <a href="{{ route('home') }}"
-                class="nav-item {{ request()->is('/') ? 'text-orange-500 font-bold' : 'text-gray-800' }}">الرئيسية</a>
+                class="nav-item {{ request()->is('/') ? 'text-orange-500 font-bold' : 'text-gray-800' }}"
+                data-ar="الرئيسية" data-en="Home"></a>
             <a href="{{ route('register-mark') }}"
-                class="nav-item {{ request()->is('register-mark') ? 'text-orange-500 font-bold' : 'text-gray-800' }}">سجل
-                علامتك التجارية</a>
+                class="nav-item {{ request()->is('register-mark') ? 'text-orange-500 font-bold' : 'text-gray-800' }}"
+                data-ar="سجل علامتك التجارية" data-en="Register Your Trademark"></a>
             <a href="{{ route('invest') }}"
-                class="nav-item {{ request()->is('invest') ? 'text-orange-500 font-bold' : 'text-gray-800' }}">استثمر
-                معنا</a>
+                class="nav-item {{ request()->is('invest') ? 'text-orange-500 font-bold' : 'text-gray-800' }}"
+                data-ar="استثمر معنا" data-en="Invest with Us"></a>
             <a href="{{ route('platforms') }}"
-                class="nav-item {{ request()->is('platforms') ? 'text-orange-500 font-bold' : 'text-gray-800' }}">منصاتنا</a>
+                class="nav-item {{ request()->is('platforms') ? 'text-orange-500 font-bold' : 'text-gray-800' }}"
+                data-ar="منصاتنا" data-en="Our Platforms"></a>
         </div>
 
         <!-- Contact Us Link and Language Switcher -->
@@ -37,32 +40,9 @@
                         class="text-sm font-bold text-orange-500 absolute left-2 top-1 transition-opacity duration-300 peer-checked:opacity-100">ع</span>
                 </div>
             </label>
-            <a href="{{ route('contact') }}"
+            <a href="{{ route('contact') }}" data-ar="تواصل معنا" data-en="Contact Us"
                 class="bg-orange-500 text-white hover:bg-orange-600 font-bold py-1 px-8 rounded-full">تواصل
                 معنا</a>
         </div>
     </div>
 </nav>
-<script>
-document.getElementById('language-toggle').addEventListener('change', function() {
-    if (this.checked) {
-        // Switch to Arabic (RTL)
-        document.documentElement.setAttribute('dir', 'rtl');
-        document.body.setAttribute('dir', 'rtl');
-        localStorage.setItem('dir', 'rtl'); // Store the direction
-    } else {
-        // Switch to English (LTR)
-        document.documentElement.setAttribute('dir', 'ltr');
-        document.body.setAttribute('dir', 'ltr');
-        localStorage.setItem('dir', 'ltr'); // Store the direction
-    }
-});
-
-// On page load, set the direction based on localStorage
-window.addEventListener('load', function() {
-    const dir = localStorage.getItem('dir') || 'ltr'; // Default to LTR
-    document.documentElement.setAttribute('dir', dir);
-    document.body.setAttribute('dir', dir);
-    document.getElementById('language-toggle').checked = dir === 'rtl';
-});
-</script>

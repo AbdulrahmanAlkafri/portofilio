@@ -113,9 +113,9 @@
             switch (this.activeTab) {  
                 case 'الرئيسية':  
                     return [  
-                        '{{ $images['الرئيسية'][0] }}', // Main platform  
+                        '{{ $images['الرئيسية'][0] }}', // Main platform 
                         '{{ $images['الرئيسية'][1] }}', // Branch 1  
-                        '{{ $images['الرئيسية'][2] }}'  // Branch 2  
+                        '{{ $images['الرئيسية'][2] }}'  // Branch 2
                     ];  
                 case 'الإعلانات':  
                     return [  

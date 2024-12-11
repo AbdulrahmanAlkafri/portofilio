@@ -1,9 +1,14 @@
 <div class="w-full h-8 bg-white"></div>
 <div class="py-10 text-center flex justify-center items-center">
     <div class="w-1/4 mx-auto">
-        <h2 class="text-4xl text-gray-600 font-bold mb-6">النتائج التي حققناها معًا</h2>
-        <p class="mb-8 font-semibold text-2xl tracking-wide leading-loose">قلل تكاليف تشغيل مطعمك وحقق أقصى استفادة من
-            ميزانيتك</p>
+        <h2 class="text-4xl text-gray-600 font-bold mb-6" data-en="Results We Made Togather"
+            data-ar="النتائج التي حققناها معًا">
+        </h2>
+        <p class="mb-8 font-semibold text-2xl tracking-wide leading-loose" data-en="Reduce your restaurant operating costs and get the most out of...
+            Your budget" data-ar="قلل تكاليف تشغيل مطعمك وحقق أقصى
+            استفادة من
+            ميزانيتك">
+        </p>
     </div>
     <div class="mx-auto">
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 m-4">
@@ -19,7 +24,8 @@
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="text-gray-600">زيادة في الأرباح بمتوسط العملاء</p>
+                <p class="text-gray-600" data-en="Increased profits for average customers"
+                    data-ar="زيادة في الأرباح بمتوسط العملاء"></p>
             </div>
 
             <!-- Achievement Item 2 -->
@@ -38,7 +44,8 @@
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="text-gray-600">مطاعم شريكه حققت نجاحات</p>
+                <p class="text-gray-600" data-en="Partner restaurants have achieved success"
+                    data-ar="مطاعم شريكة حققت نجاحات"></p>
             </div>
 
             <!-- Achievement Item 3 -->
@@ -57,7 +64,8 @@
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="text-gray-600">طلبات يتم معالجتها يوميًا عبر النظام</p>
+                <p class="text-gray-600" data-en="Orders being processed by the system"
+                    data-ar="طلبات يتم معالجتها يوميًا عبر النظام"></p>
             </div>
             <!-- Achievement Item 4 -->
             <div class="flex flex-col justify-center gap-y-2 items-center border-t p-4 border-black">
@@ -76,7 +84,7 @@
                     </svg>
 
                 </div>
-                <p class="text-gray-600">رضا العملاء</p>
+                <p class="text-gray-600" data-en="Customer satisfaction" data-ar="رضا العملاء"></p>
             </div>
         </div>
     </div>
