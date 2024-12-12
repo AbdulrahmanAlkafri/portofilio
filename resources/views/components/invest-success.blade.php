@@ -1,10 +1,11 @@
 <div class="bg-white p-6">
     <div class="text-center mb-6 tracking-wide leading-loose">
-        <h2 class="text-4xl text-gray-600 font-bold my-5">
-            استثمارات مضمنة النجاح
+        <h2 class="text-4xl text-gray-600 font-bold my-5" data-en="Successful investments"
+            data-ar="استثمارات مضمونة النجاح">
         </h2>
-        <p class="text-3xl font-semibold">
-            اكتشف كيف يمكننا مساعدتك في تحقيق أهدافك الاستثمارية بنجاح من خلال خياراتنا الفعالة.
+        <p class="text-3xl font-semibold"
+            data-en="Find out how we can help you successfully achieve your investment goals with our effective options."
+            data-ar="اكتشف كيف يمكننا مساعدتك في تحقيق أهدافك الاستثمارية بنجاح من خلال خياراتنا الفعالة.">
         </p>
     </div>
 

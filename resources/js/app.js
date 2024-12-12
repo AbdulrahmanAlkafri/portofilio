@@ -43,17 +43,17 @@ document
             // Switch to Arabic (RTL)
             document.documentElement.setAttribute("dir", "rtl");
             document.body.setAttribute("dir", "rtl");
-            localStorage.setItem("dir", "rtl"); // Store the direction
+            localStorage.setItem("dir", "rtl");
 
-            // Update text and image to Arabic
+            // Update text to Arabic
             updateText("ar");
         } else {
             // Switch to English (LTR)
             document.documentElement.setAttribute("dir", "ltr");
             document.body.setAttribute("dir", "ltr");
-            localStorage.setItem("dir", "ltr"); // Store the direction
+            localStorage.setItem("dir", "ltr");
 
-            // Update text and image to English
+            // Update text to English
             updateText("en");
         }
         location.reload();
@@ -64,9 +64,13 @@ function updateText(lang) {
     const elements = document.querySelectorAll("[data-en], [data-ar]");
     elements.forEach((el) => {
         if (el.tagName.toLowerCase() === "img") {
-            el.src = el.dataset[lang]; // Update image src
+            el.src = el.dataset[lang]; // Update image src if applicable
         } else {
-            el.textContent = el.dataset[lang]; // Update text
+            el.textContent = el.dataset[lang]; // Update text for headings, button text, etc.
+            // Ensure we update the placeholder too
+            if (el.placeholder) {
+                el.placeholder = el.dataset[lang];
+            }
         }
     });
 }
@@ -78,6 +82,6 @@ window.addEventListener("load", function () {
     document.body.setAttribute("dir", dir);
     document.getElementById("language-toggle").checked = dir === "rtl";
 
-    // Set the initial text and logo image based on direction
+    // Set the initial text based on direction
     updateText(dir === "rtl" ? "ar" : "en");
 });
