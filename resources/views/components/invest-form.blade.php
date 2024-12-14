@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 @endif
 
-<div class="flex items-center justify-center min-h-screen w-full mx-auto bg-white">
+<div class="flex items-center justify-center min-h-screen w-full mx-auto bg-white my-16">
     <div class="p-6 w-3/5 mx-auto">
         <h2 class="text-4xl font-bold text-gray-600 mb-4 text-center" data-ar="استثمر الآن" data-en="Invest Now">
             استثمر الآن

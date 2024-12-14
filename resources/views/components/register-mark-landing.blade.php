@@ -1,10 +1,10 @@
-<div class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="flex overflow-hidden max-w-4xl">
+<div class="flex items-center justify-center min-h-screen">
+    <div class="flex justify-between overflow-hidden max-w-4xl">
 
         <!-- Right Side: Normal Text -->
-        <div class="w-1/2 p-6 flex flex-col justify-center">
-            <h2 class="text-4xl font-bold text-gray-600" data-en="Register your trade mark now !">سجل علامتك التجارية
-                الآن</h2>
+        <div class="w-1/2 p-6 flex flex-col justify-center tracking-wide leading-loose">
+            <h2 class="text-4xl font-bold text-gray-600" data-en="Register your trade mark now !"
+                data-ar="سجل علامتك التجارية الآن"></h2>
             <p class="mt-2 text-3xl">
                 <span data-en="Start your success with" data-ar="ابدأ نجاحك مع"></span>
                 <span class="text-orange-500 font-bold" data-ar="كيتش بلس" data-en="Kitch Plus"></span>

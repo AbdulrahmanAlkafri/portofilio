@@ -1,12 +1,12 @@
-<div class="w-4/5 mx-auto mt-10">
+<div class="w-4/5 mx-auto my-10">
     <h2 class="text-center text-4xl font-bold mb-8 text-gray-600" data-en="How can we help ?" data-ar="كيف نساعدك؟">
     </h2>
-    <p class="text-3xl tracking-wide leading-loose text-center font-semibold" data-ar="اكتشف كيف يمكننا مساعدتك
+    <p class="text-3xl tracking-wide leading-loose text-center font-semibold mb-10" data-ar="اكتشف كيف يمكننا مساعدتك
         بخطوات سهلة لتسجيل علامتك التجارية والانطلاق نحو النجاح معنا" data-en="
 Find out how we can help you
         With easy steps to register your trademark and move towards success with us"></p>
     <div class=" grid grid-cols-1 md:grid-cols-3 gap-6 tracking-wide">
-        <div class="shadow-lg rounded-lg p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
+        <div class="shadow-2xl rounded-lg p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
             <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="94" height="94" rx="47" fill="#F28A49" fill-opacity="0.3" />
                 <circle cx="47" cy="47" r="37" fill="#F28A49" />
@@ -20,7 +20,7 @@ Find out how we can help you
             </p>
         </div>
 
-        <div class="shadow-lg rounded-lg p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
+        <div class="shadow-2xl rounded-lg p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
             <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="94" height="94" rx="47" fill="#F28A49" fill-opacity="0.3" />
                 <circle cx="47" cy="47" r="37" fill="#F28A49" />
@@ -38,7 +38,7 @@ Find out how we can help you
             </p>
         </div>
 
-        <div class="shadow-lg rounded-lg p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
+        <div class="shadow-2xl rounded-lg p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
             <svg width="95" height="94" viewBox="0 0 95 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" width="94" height="94" rx="47" fill="#F28A49" fill-opacity="0.3" />
                 <circle cx="47.5" cy="47" r="37" fill="#F28A49" />

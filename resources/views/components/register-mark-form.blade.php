@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 @endif
-<div class="flex items-center justify-center min-h-screen mt-10">
+<div class="flex items-center justify-center min-h-screen mt-10 bg-white">
     <div class="w-full p-6">
         <div class="w-4/5 mx-auto">
             <h2 class="text-center text-4xl font-bold mb-8 text-gray-600" data-en="Fill out this register form"
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="flex justify-center">
                 <button type="submit"
-                    class="w-fit py-3 px-24 rounded-full bg-orange-500 text-orange-50 text-xl hover:bg-orange-600 transition"
+                    class="w-fit py-2 px-44 rounded-2xl bg-orange-500 text-orange-50 text-xl hover:bg-orange-600 transition"
                     data-en="Register" data-ar="تسجيل">
                     تسجيل
                 </button>

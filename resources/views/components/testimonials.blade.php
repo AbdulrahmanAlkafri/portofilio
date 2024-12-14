@@ -1,8 +1,6 @@
-{{-- resources/views/components/testimonials.blade.php --}}
-
 <div class="py-10 bg-gray-50">
-    <div class="w-4/5 mx-auto text-center">
-        <h2 class="text-2xl font-bold mb-6 text-gray-800" data-ar="ما يقوله عملاؤنا" data-en="What our customers say">
+    <div class="w-full mx-auto text-center">
+        <h2 class="text-5xl font-bold mb-6 text-gray-800" data-ar="ما يقوله عملاؤنا" data-en="What our customers say">
             ما يقوله عملاؤنا
         </h2>
         <div class="relative mx-auto">
@@ -34,12 +32,12 @@
 
             <!-- Navigation Arrows -->
             <button
-                class="right-arrow absolute top-1/2 right-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
-                &#10095;
-            </button>
-            <button
                 class="left-arrow absolute top-1/2 left-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
                 &#10094;
+            </button>
+            <button
+                class="right-arrow absolute top-1/2 right-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
+                &#10095;
             </button>
         </div>
     </div>
@@ -51,22 +49,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const rightArrow = document.querySelector('.right-arrow');
     const testimonialsContainer = document.querySelector('.testimonials-container');
 
-    let scrollAmount = 0;
+    // Use a more reliable way to determine card width  
+    const cardWidth = testimonialsContainer.querySelector('.snap-center').offsetWidth + 24; // include margin  
 
     rightArrow.addEventListener('click', () => {
-        scrollAmount += 300; // Adjust this value based on your card width  
-        testimonialsContainer.scrollTo({
-            left: scrollAmount,
+        testimonialsContainer.scrollBy({
+            left: cardWidth,
             behavior: 'smooth'
         });
     });
 
     leftArrow.addEventListener('click', () => {
-        scrollAmount -= 300; // Adjust this value based on your card width  
-        testimonialsContainer.scrollTo({
-            left: scrollAmount,
+        testimonialsContainer.scrollBy({
+            left: -cardWidth,
             behavior: 'smooth'
         });
     });
 });
 </script>
+
+<style>
+.testimonials-container {
+    scroll-behavior: smooth;
+    /* Smooth scrolling effect */
+}
+
+.left-arrow,
+.right-arrow {
+    transition: opacity 0.3s ease;
+    /* Smooth transition for opacity */
+}
+</style>

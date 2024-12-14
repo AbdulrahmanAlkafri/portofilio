@@ -28,16 +28,21 @@
             <label for="language-toggle" class="flex items-center cursor-pointer select-none">
                 <div class="relative">
                     <input type="checkbox" id="language-toggle" class="sr-only peer" />
-                    <div
-                        class="block w-16 h-8 rounded-full bg-gray-200 peer-checked:bg-orange-500 transition-all duration-300">
+                    <div class="w-20 h-10 rounded-full bg-orange-500 transition-colors duration-300 flex items-center">
+                        <!-- Language Indicators -->
+                        <span
+                            class="flex items-center justify-center w-1/2 h-full text-sm font-bold transition-opacity duration-300 peer-checked:opacity-0">
+                            EN
+                        </span>
+                        <span
+                            class="flex items-center justify-center w-1/2 h-full text-sm font-bold transition-opacity duration-300 peer-checked:opacity-100">
+                            ع
+                        </span>
+                        <div
+                            class="absolute w-8 h-8 bg-white rounded-full left-1 top-1 transition-transform duration-300 peer-checked:translate-x-14 flex items-center justify-center">
+                            <span id="lang_circle" class="text-orange-500"></span>
+                        </div>
                     </div>
-                    <div
-                        class="absolute w-7 h-7 bg-white rounded-full left-1 top-0.5 transition-transform peer-checked:translate-x-8">
-                    </div>
-                    <span
-                        class="text-sm font-bold text-gray-800 absolute right-2 top-1 transition-opacity duration-300 peer-checked:opacity-0">EN</span>
-                    <span
-                        class="text-sm font-bold text-orange-500 absolute left-2 top-1 transition-opacity duration-300 peer-checked:opacity-100">ع</span>
                 </div>
             </label>
             <a href="{{ route('contact') }}" data-ar="تواصل معنا" data-en="Contact Us"
@@ -46,3 +51,11 @@
         </div>
     </div>
 </nav>
+<script>
+if (localStorage.getItem("dir") == "rtl") {
+    document.getElementById("language-toggle").checked = true; // Set the toggle to checked  
+    document.getElementById("lang_circle").textContent = "ع"; // Set to Arabic  
+} else {
+    document.getElementById("lang_circle").textContent = "EN"; // Set to English  
+}
+</script>

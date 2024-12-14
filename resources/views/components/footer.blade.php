@@ -1,4 +1,5 @@
-<footer class="py-10 mt-auto">
+
+<footer class="py-10 mt-16">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-start px-4">
         <!-- Left Section -->
         <div class="md:w-1/3 mt-4 md:mt-0 text-center">

@@ -30,3 +30,7 @@
     </div>
     @endforeach
 </div>
+<div class="w-full h-44 bg-white">
+    &nbsp;
+    <!-- Optional: Add a background color to the footer -->
+</div>
