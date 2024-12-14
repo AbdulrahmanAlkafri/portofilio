@@ -92,10 +92,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 </label>
                 <select id="trademark_type" name="trademark_type"
                     class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('trademark_type') border-red-500 @enderror">
-                    <option value="">{{ old('trademark_type') ?: 'اختر...' }}</option>
-                    <option value="نوع 1" {{ old('trademark_type') == 'نوع 1' ? 'selected' : '' }}>نوع 1</option>
-                    <option value="نوع 2" {{ old('trademark_type') == 'نوع 2' ? 'selected' : '' }}>نوع 2</option>
-                    <option value="نوع 3" {{ old('trademark_type') == 'نوع 3' ? 'selected' : '' }}>نوع 3</option>
+                    <option value="" data-en="choose..." data-ar="اختر...">{{ old('trademark_type') ?: 'اختر...' }}
+                    </option>
+                    <option value="نوع 1" data-ar="نوع 1" data-en="Type 1"
+                        {{ old('trademark_type') == 'نوع 1' ? 'selected' : '' }}>نوع
+                        1</option>
+                    <option value="نوع 2" data-ar="نوع 2" data-en="Type 2"
+                        {{ old('trademark_type') == 'نوع 2' ? 'selected' : '' }}>نوع
+                        2</option>
+                    <option value="نوع 3" data-ar="نوع 3" data-en=" Type 3"
+                        {{ old('trademark_type') == 'نوع 3' ? 'selected' : '' }}>نوع
+                        3</option>
                 </select>
                 @error('trademark_type')
                 <span class="text-red-500 text-sm mr-4">{{ $message }}</span>
@@ -108,10 +115,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 </label>
                 <select id="country" name="country"
                     class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('country') border-red-500 @enderror">
-                    <option value="">{{ old('country') ?: 'اختر...' }}</option>
-                    <option value="دولة 1" {{ old('country') == 'دولة 1' ? 'selected' : '' }}>دولة 1</option>
-                    <option value="دولة 2" {{ old('country') == 'دولة 2' ? 'selected' : '' }}>دولة 2</option>
-                    <option value="دولة 3" {{ old('country') == 'دولة 3' ? 'selected' : '' }}>دولة 3</option>
+                    <option value="" data-en="choose..." data-ar="اختر...">{{ old('country') ?: 'اختر...' }}</option>
+                    <option value="دولة 1" data-ar="نوع 3" data-en=" Type 3"
+                        {{ old('country') == 'دولة 1' ? 'selected' : '' }}>دولة 1</option>
+                    <option value=" دولة 2" data-ar="نوع 3" data-en=" Type 3"
+                        {{ old('country') == 'دولة 2' ? 'selected' : '' }}>دولة 2</option>
+                    <option value="دولة 3" data-ar="نوع 3" data-en=" Type 3"
+                        {{ old('country') == 'دولة 3' ? 'selected' : '' }}>دولة 3</option>
                 </select>
                 @error('country')
                 <span class="text-red-500 text-sm mr-4">{{ $message }}</span>
