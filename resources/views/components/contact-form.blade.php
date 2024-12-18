@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 @endif
 
 <div class="bg-white p-6">
-    <h2 class="text-4xl font-bold text-gray-600 mb-4 text-center" data-ar="كن على تواصل معنا"
+    <h2 class="text-4xl tracking-wide font-bold text-gray-600 mb-4 text-center" data-ar="كن على تواصل معنا"
         data-en="Get in Touch with Us">
         كن على تواصل معنا
     </h2>

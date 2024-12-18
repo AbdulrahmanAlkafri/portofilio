@@ -5,10 +5,12 @@
         <div class="overflow-hidden relative">
             <div class="flex animate-scroll">
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner1.png') }}" alt="Partner 1" class="h-24 object-contain" />
+                    <img src="{{ asset("images/success-partner/success-partner1.jpg") }}" alt="Partner 1"
+                        class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner2.png') }}" alt="Partner 2" class="h-24 object-contain" />
+                    <img src="{{ asset("images/success-partner/success-partner2.jpg") }}" alt="Partner 2"
+                        class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
                     <img src="{{ asset('images/partner3.png') }}" alt="Partner 3" class="h-24 object-contain" />
@@ -24,10 +26,12 @@
                 </div>
                 <!-- Repeat for continuous effect -->
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner1.png') }}" alt="Partner 1" class="h-24 object-contain" />
+                    <img src="{{ asset("images/success-partner/success-partner1.jpg") }}" alt="Partner 1"
+                        class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner2.png') }}" alt="Partner 2" class="h-24 object-contain" />
+                    <img src="{{ asset("images/success-partner/success-partner2.jpg") }}" alt="Partner 2"
+                        class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
                     <img src="{{ asset('images/partner3.png') }}" alt="Partner 3" class="h-24 object-contain" />

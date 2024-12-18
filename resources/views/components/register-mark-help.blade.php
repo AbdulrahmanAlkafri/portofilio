@@ -1,7 +1,7 @@
 <div class="w-4/5 mx-auto my-10">
-    <h2 class="text-center text-4xl font-bold mb-8 text-gray-600" data-en="How can we help ?" data-ar="كيف نساعدك؟">
+    <h2 class="text-center text-5xl font-bold mb-8 text-gray-600" data-en="How can we help ?" data-ar="كيف نساعدك؟">
     </h2>
-    <p class="text-3xl tracking-wide leading-loose text-center font-semibold mb-10" data-ar="اكتشف كيف يمكننا مساعدتك
+    <p class="text-4xl tracking-wide leading-loose text-center font-semibold mb-10" data-ar="اكتشف كيف يمكننا مساعدتك
         بخطوات سهلة لتسجيل علامتك التجارية والانطلاق نحو النجاح معنا" data-en="
 Find out how we can help you
         With easy steps to register your trademark and move towards success with us"></p>
@@ -14,8 +14,9 @@ Find out how we can help you
                     d="M40.7497 55.7501L31.9997 47.0001L29.083 49.9167L40.7497 61.5834L65.7497 36.5834L62.833 33.6667L40.7497 55.7501Z"
                     fill="white" />
             </svg>
-            <h3 class="text-lg font-semibold" data-ar="استمتع بالدعم" data-en="enjoy the support"></h3>
-            <p class="mt-2" data-ar="ستستفيد من دعمنا المستمر وخبرتنا في إدارة المطاعم لتحقيق نجاح مشروعك."
+            <h3 class="text-xl font-semibold" data-ar="استمتع بالدعم" data-en="enjoy the support"></h3>
+            <p class="mt-2 text-lg tracking-wide leading-loose text-wrap"
+                data-ar="ستستفيد من دعمنا المستمر وخبرتنا في إدارة المطاعم لتحقيق نجاح مشروعك."
                 data-en="You will benefit from our ongoing support and experience in restaurant management to achieve the success of your project.">
             </p>
         </div>
@@ -31,8 +32,9 @@ Find out how we can help you
                     d="M47.0001 37.5459C41.7876 37.5459 37.5459 41.7876 37.5459 47.0001C37.5459 52.2126 41.7876 56.4542 47.0001 56.4542C52.2126 56.4542 56.4542 52.2126 56.4542 47.0001C56.4542 41.7876 52.2126 37.5459 47.0001 37.5459ZM47.0001 52.2876C44.0855 52.2876 41.7126 49.9146 41.7126 47.0001C41.7126 44.0855 44.0855 41.7126 47.0001 41.7126C49.9146 41.7126 52.2876 44.0855 52.2876 47.0001C52.2876 49.9146 49.9146 52.2876 47.0001 52.2876Z"
                     fill="white" />
             </svg>
-            <h3 class="text-lg font-semibold" data-ar="تحديد احتياجاتك" data-en="Determine your needs"></h3>
-            <p class="mt-2" data-ar="نعمل معك لتحديد احتياجات مشروعك ونقدم الحلول المثلى."
+            <h3 class="text-xl font-semibold" data-ar="تحديد احتياجاتك" data-en="Determine your needs"></h3>
+            <p class="mt-2 text-lg tracking-wide leading-loose text-wrap"
+                data-ar="نعمل معك لتحديد احتياجات مشروعك ونقدم الحلول المثلى."
                 data-en="We work with you to determine your project needs and provide optimal solutions.">
 
             </p>
@@ -53,8 +55,9 @@ Find out how we can help you
                     </clipPath>
                 </defs>
             </svg>
-            <h3 class="text-lg font-semibold" data-ar="سجل الآن" data-en="Register now"></h3>
-            <p class="mt-2" data-ar="ابدأ رحلتك بتسجيل علامتك التجارية. املأ النموذج وسنواصل معك قريبًا."
+            <h3 class="text-xl font-semibold" data-ar="سجل الآن" data-en="Register now"></h3>
+            <p class="mt-2 text-lg tracking-wide leading-loose text-wrap"
+                data-ar="ابدأ رحلتك بتسجيل علامتك التجارية. املأ النموذج وسنواصل معك قريبًا."
                 data-en="Start your journey by registering your trademark. Fill out the form and we will contact you shortly.">
             </p>
         </div>

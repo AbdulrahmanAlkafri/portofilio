@@ -35,19 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 @endif
-<div class="flex items-center justify-center min-h-screen mt-10 bg-white">
+<div class="flex items-center justify-center min-h-screen bg-white py-12">
     <div class="w-full p-6">
         <div class="w-4/5 mx-auto">
-            <h2 class="text-center text-4xl font-bold mb-8 text-gray-600" data-en="Fill out this register form"
+            <h2 class="text-center text-5xl font-bold mb-8 text-gray-600" data-en="Fill out this register form"
                 data-ar="املأ استمارة التسجيل">
             </h2>
-            <p class="text-2xl tracking-wide text-center font-semibold mb-10"
+            <p class="text-3xl tracking-wide leading-loose text-center font-semibold mb-10"
                 data-ar="نحن هنا لمساعدتك في بدء رحلتك نحو النجاح. املأ الاستمارة أدناه، وسنتواصل معك قريبًا لمناقشة تفاصيل مشروعك"
                 data-en="We are here to help you start your journey to success. Fill out the form below, and we will contact you shortly to discuss the details of your project">
             </p>
         </div>
 
-        <form action="{{ route('register-mark') }}" method="POST" class="w-3/5 mx-auto">
+        <form action="{{ route('register-mark') }}" method="POST" class="w-2/3 mx-auto shadow-xl p-20">
             @csrf
 
             <div class="mb-4 flex items-center">
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <div class="flex justify-center">
                 <button type="submit"
-                    class="w-fit py-2 px-44 rounded-2xl bg-orange-500 text-orange-50 text-xl hover:bg-orange-600 transition"
+                    class="w-fit py-2 font-semibold px-44 rounded-2xl bg-orange-500 text-orange-50 text-xl hover:bg-orange-600 transition"
                     data-en="Register" data-ar="تسجيل">
                     تسجيل
                 </button>
