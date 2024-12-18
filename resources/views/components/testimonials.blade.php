@@ -1,21 +1,19 @@
-<div class="py-10 bg-gray-50">
+<div class="py-24 bg-gray-50">
     <div class="w-4/5 mx-auto text-center">
         <div class="flex justify-between items-center">
 
-            <h2 class="text-2xl font-bold mb-6 text-gray-800" data-ar="ما يقوله عملاؤنا"
+            <h2 class="text-5xl font-bold mb-6 text-gray-600 relative -top-10" data-ar="ما يقوله عملاؤنا"
                 data-en="What our customers say">
                 ما يقوله عملاؤنا
             </h2>
 
             <!-- Navigation Arrows -->
             <div class="flex justify-center items-center gap-x-3 mb-4">
-                <button
-                    class="right-arrow bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-400 transition">
-                    <i class="fas fa-arrow-right"></i>
+                <button class="left-arrow bg-orange-500 text-white p-3 rounded-full hover:bg-orange-400 transition">
+                    <i class="fas fa-arrow-left text-3xl"></i>
                 </button>
-                <button
-                    class="left-arrow bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-400 transition">
-                    <i class="fas fa-arrow-left"></i>
+                <button class="right-arrow bg-orange-500 text-white p-3 rounded-full hover:bg-orange-400 transition">
+                    <i class="fas fa-arrow-right text-3xl"></i>
                 </button>
             </div>
         </div>
@@ -35,7 +33,7 @@
                                 @endfor
                         </div>
 
-                        <p class="text-gray-600 mb-4">{{ $review->desc_en }}</p>
+                        <p class="text-gray-600 mb-4 text-center">{{ $review->desc_en }}</p>
                         <div class="flex justify-start items-center text-right">
                             <img loading="lazy"
                                 src="{{ $review->customer_image ? asset($review->customer_image) : asset('images/default-avatar.png') }}"
@@ -82,28 +80,18 @@ document.addEventListener('DOMContentLoaded', () => {
 <style>
 .testimonials-container {
     scroll-behavior: smooth;
-    /* Smooth scrolling effect */
 }
 
 .left-arrow,
 .right-arrow {
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 50px;
-    /* Adjust width as needed */
     height: 50px;
-    /* Adjust height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.left-arrow:hover,
-.right-arrow:hover {
-    transform: scale(1.1);
-    /* Slight scale on hover */
-}
-
-/* Adjust the appearance of the arrows */
 .left-arrow:disabled,
 .right-arrow:disabled {
     opacity: 0.5;
@@ -113,6 +101,5 @@ document.addEventListener('DOMContentLoaded', () => {
 .left-arrow:disabled:hover,
 .right-arrow:disabled:hover {
     transform: none;
-    /* Prevent scaling on hover when disabled */
 }
 </style>
