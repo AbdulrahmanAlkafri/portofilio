@@ -1,8 +1,8 @@
 <div class="flex p-6 justify-center items-center gap-x-8">
     <div class="flex flex-col justify-center w-1/2">
-        <h2 class="text-gray-700 text-4xl font-bold mb-4" data-ar="مستقبل المطاعم بين يديك"
+        <h2 class="text-gray-700 text-6xl leading-loose font-bold mb-4" data-ar="مستقبل المطاعم بين يديك"
             data-en="The future of restaurants is in your hands"></h2>
-        <p class="text-3xl tracking-wide leading-loose">
+        <p class="text-4xl font-semibold tracking-wide leading-loose">
             <span data-ar="في" data-en="in"></span>
             <span class="text-orange-500 font-semibold" data-ar="كيتش بلس" data-en="Kitch Plus"></span>
             <span data-ar="، نقدم لك حلولًا استثمارية مخصصة ودعمًا

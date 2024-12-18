@@ -149,7 +149,7 @@
                     return [];  
             }  
         }   
-    }" class="my-20 bg-white">
+    }" class="bg-white">
 
         <div class="flex justify-evenly items-center space-x-4 overflow-auto">
             @foreach ($tabs as $tabName => $tabData)

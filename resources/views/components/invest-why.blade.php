@@ -1,10 +1,10 @@
 <div class="p-8 bg-white mb-16">
-    <div class="max-w-4xl mx-auto text-center">
+    <div class="w-4/5 mx-auto text-center">
         <!-- Header -->
-        <h2 class="text-4xl text-gray-600 font-bold mb-4" data-en="Why invest with us ?" data-ar=" لماذا تستثمر معنا؟">
+        <h2 class="text-5xl text-gray-600 font-bold mb-10" data-en="Why invest with us ?" data-ar=" لماذا تستثمر معنا؟">
         </h2>
         <!-- Paragraph -->
-        <p class="text-3xl w-full text-gray-500 mb-8 tracking-wide font-semibold" data-ar="تقدم لك هذه العوامل الثلاثة دعمًا متكاملاً لضمان نجاح مشروعك ونموه، مما يمكنّك من مواجهة التحديات بثقة
+        <p class="text-3xl leading-loose text-gray-500 mb-8 font-semibold" data-ar="تقدم لك هذه العوامل الثلاثة دعمًا متكاملاً لضمان نجاح مشروعك ونموه، مما يمكنّك من مواجهة التحديات بثقة
             وتحقيق أهدافك الاستثمارية" data-en="These three factors provide you with integrated support to ensure the success and growth of your project, enabling you to face challenges with confidence
             And achieve your investment goals">
         </p>
@@ -12,8 +12,69 @@
 
     <!-- Grid of Cards -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mx-auto">
+        <!-- Card 3 -->
+        <div
+            class="p-4 tracking-wider leading-relaxed text-wrap shadow-xl bg-gray-50 rounded-3xl text-center group transition-transform transform">
+            <div class="flex justify-center mb-4">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_15_9113" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="3"
+                        width="56" height="58">
+                        <path
+                            d="M32 5.33325L39.004 10.4426L47.6747 10.4266L50.3373 18.6773L57.3613 23.7599L54.6667 31.9999L57.3613 40.2399L50.3373 45.3226L47.6747 53.5733L39.004 53.5573L32 58.6666L24.996 53.5573L16.3253 53.5733L13.6627 45.3226L6.63867 40.2399L9.33334 31.9999L6.63867 23.7599L13.6627 18.6773L16.3253 10.4266L24.996 10.4426L32 5.33325Z"
+                            fill="white" stroke="white" stroke-width="4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M22.6665 31.9999L29.3332 38.6666L42.6665 25.3333" stroke="black" stroke-width="4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </mask>
+                    <g mask="url(#mask0_15_9113)">
+                        <path d="M0 0H64V64H0V0Z" fill="#FF914C" />
+                    </g>
+                </svg>
+            </div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-ar="قيادة الابتكار" data-en="Driving innovation">
+            </h3>
+            <p class="text-gray-600 text-xl"
+                data-en="We are working to change the rules of the sector through smart solutions that transform the traditional restaurant sector into a modern sector with an integrated system."
+                data-ar="نعمل على تغيير قواعد القطاع عبر حلول ذكية تحول قطاع المطاعم التقليدي إلى قطاع حديث بنظام متكامل.">
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-4 shadow-xl bg-gray-50 rounded-3xl text-center group transition-transform transform">
+            <div class="flex justify-center mb-4">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_15_9100)">
+                        <mask id="mask0_15_9100" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="3"
+                            width="56" height="58">
+                            <path
+                                d="M32 5.33325L39.004 10.4426L47.6747 10.4266L50.3373 18.6773L57.3613 23.7599L54.6667 31.9999L57.3613 40.2399L50.3373 45.3226L47.6747 53.5733L39.004 53.5573L32 58.6666L24.996 53.5573L16.3253 53.5733L13.6627 45.3226L6.63867 40.2399L9.33334 31.9999L6.63867 23.7599L13.6627 18.6773L16.3253 10.4266L24.996 10.4426L32 5.33325Z"
+                                fill="white" stroke="white" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22.6665 31.9999L29.3332 38.6666L42.6665 25.3333" stroke="black" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </mask>
+                        <g mask="url(#mask0_15_9100)">
+                        </g>
+                        <path
+                            d="M12 11.9998C12 9.87802 12.8429 7.84319 14.3431 6.3429C15.8434 4.84261 17.8783 3.99976 20 3.99976C22.1217 3.99976 24.1566 4.84261 25.6569 6.3429C27.1571 7.84319 28 9.87802 28 11.9998C28 14.1215 27.1571 16.1563 25.6569 17.6566C24.1566 19.1569 22.1217 19.9998 20 19.9998C17.8783 19.9998 15.8434 19.1569 14.3431 17.6566C12.8429 16.1563 12 14.1215 12 11.9998ZM39.116 18.3358L39.284 18.4638C40.9812 19.7218 43.1071 20.2574 45.1977 19.9538C47.2884 19.6502 49.174 18.5319 50.4432 16.8431C51.7124 15.1543 52.2621 13.032 51.9723 10.9394C51.6825 8.84675 50.5767 6.95372 48.8963 5.6734C47.2159 4.39309 45.0972 3.82942 43.0028 4.10542C40.9083 4.38143 39.008 5.47469 37.7166 7.14662C36.4252 8.81855 35.8476 10.9334 36.1098 13.0297C36.3719 15.1259 37.4526 17.0334 39.116 18.3358ZM25.072 23.9998C25.5744 23.0484 26.2635 22.2082 27.0982 21.5293C27.9328 20.8505 28.8958 20.3469 29.9296 20.0488C30.9633 19.7507 32.0465 19.6642 33.1145 19.7944C34.1824 19.9247 35.2131 20.269 36.1449 20.8067C37.0768 21.3445 37.8905 22.0647 38.5376 22.9242C39.1846 23.7838 39.6516 24.765 39.9107 25.8092C40.1698 26.8534 40.2156 27.9391 40.0454 29.0014C39.8751 30.0637 39.4924 31.0808 38.92 31.9918C37.8189 33.7443 36.0814 35.0018 34.0726 35.5002C32.0637 35.9986 29.9399 35.6991 28.1473 34.6645C26.3547 33.6299 25.0328 31.9409 24.4593 29.9522C23.8859 27.9635 24.1055 25.8299 25.072 23.9998ZM10 23.9998H20.68C19.9678 26.0298 19.8126 28.2136 20.2304 30.324C20.6483 32.4344 21.624 34.3943 23.056 35.9998H22C19.9376 35.9989 17.9254 36.6357 16.239 37.823C14.5527 39.0102 13.2746 40.6899 12.58 42.6318C11.2365 42.0941 9.97913 41.3623 8.848 40.4598C5.84 38.0398 4 34.4638 4 29.9998C4 28.4085 4.63214 26.8823 5.75736 25.7571C6.88258 24.6319 8.4087 23.9998 10 23.9998ZM42 35.9998C46.34 35.9998 50.036 38.7638 51.42 42.6318C52.78 42.0758 54.036 41.3518 55.152 40.4598C58.16 38.0398 60 34.4638 60 29.9998C60 28.4085 59.3679 26.8823 58.2426 25.7571C57.1174 24.6319 55.5913 23.9998 54 23.9998H43.32C43.76 25.2518 44 26.5998 44 27.9998C43.9999 30.9515 42.9119 33.7997 40.944 35.9998H42ZM47.548 43.7118C47.84 44.4158 48 45.1918 48 45.9998C48 50.4638 46.164 54.0398 43.152 56.4598C40.188 58.8398 36.212 59.9998 32 59.9998C27.788 59.9998 23.812 58.8398 20.848 56.4598C17.84 54.0398 16 50.4638 16 45.9998C15.9979 45.2112 16.1516 44.4301 16.4524 43.7012C16.7532 42.9723 17.1951 42.31 17.7527 41.7524C18.3102 41.1948 18.9725 40.753 19.7014 40.4522C20.4303 40.1514 21.2115 39.9976 22 39.9998H42C43.1884 39.9995 44.3501 40.3521 45.3379 41.013C46.3256 41.6739 47.0948 42.6131 47.548 43.7118Z"
+                            fill="#FF914C" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_15_9100">
+                            <rect width="64" height="64" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-en="Sustainable impact"
+                data-ar="التأثير المستدام"></h3>
+            <p class="text-gray-600 text-xl" data-ar="نموذجنا الاستثماري المستدام يتيح تقليل الفائدة وتقديم الخدمات بكفاءة وبأقل تكلفة
+                تشغيلية."
+                data-en="Our sustainable investment model allows for reducing interest and providing services efficiently and at the lowest cost Operational.">
+            </p>
+        </div>
         <!-- Card 1 -->
-        <div class="p-4 shadow-2xl bg-gray-50 rounded-3xl text-center group transition-transform transform">
+        <div class="p-4 shadow-xl bg-gray-50 rounded-3xl text-center group transition-transform transform">
             <div class="flex justify-center mb-4">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_15_9084)">
@@ -54,65 +115,5 @@
             </p>
         </div>
 
-        <!-- Card 2 -->
-        <div class="p-4 shadow-2xl bg-gray-50 rounded-3xl text-center group transition-transform transform">
-            <div class="flex justify-center mb-4">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_15_9100)">
-                        <mask id="mask0_15_9100" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="3"
-                            width="56" height="58">
-                            <path
-                                d="M32 5.33325L39.004 10.4426L47.6747 10.4266L50.3373 18.6773L57.3613 23.7599L54.6667 31.9999L57.3613 40.2399L50.3373 45.3226L47.6747 53.5733L39.004 53.5573L32 58.6666L24.996 53.5573L16.3253 53.5733L13.6627 45.3226L6.63867 40.2399L9.33334 31.9999L6.63867 23.7599L13.6627 18.6773L16.3253 10.4266L24.996 10.4426L32 5.33325Z"
-                                fill="white" stroke="white" stroke-width="4" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M22.6665 31.9999L29.3332 38.6666L42.6665 25.3333" stroke="black" stroke-width="4"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </mask>
-                        <g mask="url(#mask0_15_9100)">
-                        </g>
-                        <path
-                            d="M12 11.9998C12 9.87802 12.8429 7.84319 14.3431 6.3429C15.8434 4.84261 17.8783 3.99976 20 3.99976C22.1217 3.99976 24.1566 4.84261 25.6569 6.3429C27.1571 7.84319 28 9.87802 28 11.9998C28 14.1215 27.1571 16.1563 25.6569 17.6566C24.1566 19.1569 22.1217 19.9998 20 19.9998C17.8783 19.9998 15.8434 19.1569 14.3431 17.6566C12.8429 16.1563 12 14.1215 12 11.9998ZM39.116 18.3358L39.284 18.4638C40.9812 19.7218 43.1071 20.2574 45.1977 19.9538C47.2884 19.6502 49.174 18.5319 50.4432 16.8431C51.7124 15.1543 52.2621 13.032 51.9723 10.9394C51.6825 8.84675 50.5767 6.95372 48.8963 5.6734C47.2159 4.39309 45.0972 3.82942 43.0028 4.10542C40.9083 4.38143 39.008 5.47469 37.7166 7.14662C36.4252 8.81855 35.8476 10.9334 36.1098 13.0297C36.3719 15.1259 37.4526 17.0334 39.116 18.3358ZM25.072 23.9998C25.5744 23.0484 26.2635 22.2082 27.0982 21.5293C27.9328 20.8505 28.8958 20.3469 29.9296 20.0488C30.9633 19.7507 32.0465 19.6642 33.1145 19.7944C34.1824 19.9247 35.2131 20.269 36.1449 20.8067C37.0768 21.3445 37.8905 22.0647 38.5376 22.9242C39.1846 23.7838 39.6516 24.765 39.9107 25.8092C40.1698 26.8534 40.2156 27.9391 40.0454 29.0014C39.8751 30.0637 39.4924 31.0808 38.92 31.9918C37.8189 33.7443 36.0814 35.0018 34.0726 35.5002C32.0637 35.9986 29.9399 35.6991 28.1473 34.6645C26.3547 33.6299 25.0328 31.9409 24.4593 29.9522C23.8859 27.9635 24.1055 25.8299 25.072 23.9998ZM10 23.9998H20.68C19.9678 26.0298 19.8126 28.2136 20.2304 30.324C20.6483 32.4344 21.624 34.3943 23.056 35.9998H22C19.9376 35.9989 17.9254 36.6357 16.239 37.823C14.5527 39.0102 13.2746 40.6899 12.58 42.6318C11.2365 42.0941 9.97913 41.3623 8.848 40.4598C5.84 38.0398 4 34.4638 4 29.9998C4 28.4085 4.63214 26.8823 5.75736 25.7571C6.88258 24.6319 8.4087 23.9998 10 23.9998ZM42 35.9998C46.34 35.9998 50.036 38.7638 51.42 42.6318C52.78 42.0758 54.036 41.3518 55.152 40.4598C58.16 38.0398 60 34.4638 60 29.9998C60 28.4085 59.3679 26.8823 58.2426 25.7571C57.1174 24.6319 55.5913 23.9998 54 23.9998H43.32C43.76 25.2518 44 26.5998 44 27.9998C43.9999 30.9515 42.9119 33.7997 40.944 35.9998H42ZM47.548 43.7118C47.84 44.4158 48 45.1918 48 45.9998C48 50.4638 46.164 54.0398 43.152 56.4598C40.188 58.8398 36.212 59.9998 32 59.9998C27.788 59.9998 23.812 58.8398 20.848 56.4598C17.84 54.0398 16 50.4638 16 45.9998C15.9979 45.2112 16.1516 44.4301 16.4524 43.7012C16.7532 42.9723 17.1951 42.31 17.7527 41.7524C18.3102 41.1948 18.9725 40.753 19.7014 40.4522C20.4303 40.1514 21.2115 39.9976 22 39.9998H42C43.1884 39.9995 44.3501 40.3521 45.3379 41.013C46.3256 41.6739 47.0948 42.6131 47.548 43.7118Z"
-                            fill="#FF914C" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_15_9100">
-                            <rect width="64" height="64" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
-            <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-en="Sustainable impact"
-                data-ar="التأثير المستدام"></h3>
-            <p class="text-gray-600 text-xl" data-ar="نموذجنا الاستثماري المستدام يتيح تقليل الفائدة وتقديم الخدمات بكفاءة وبأقل تكلفة
-                تشغيلية."
-                data-en="Our sustainable investment model allows for reducing interest and providing services efficiently and at the lowest cost Operational.">
-            </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="p-4 shadow-2xl bg-gray-50 rounded-3xl text-center group transition-transform transform">
-            <div class="flex justify-center mb-4">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="mask0_15_9113" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="3"
-                        width="56" height="58">
-                        <path
-                            d="M32 5.33325L39.004 10.4426L47.6747 10.4266L50.3373 18.6773L57.3613 23.7599L54.6667 31.9999L57.3613 40.2399L50.3373 45.3226L47.6747 53.5733L39.004 53.5573L32 58.6666L24.996 53.5573L16.3253 53.5733L13.6627 45.3226L6.63867 40.2399L9.33334 31.9999L6.63867 23.7599L13.6627 18.6773L16.3253 10.4266L24.996 10.4426L32 5.33325Z"
-                            fill="white" stroke="white" stroke-width="4" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M22.6665 31.9999L29.3332 38.6666L42.6665 25.3333" stroke="black" stroke-width="4"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </mask>
-                    <g mask="url(#mask0_15_9113)">
-                        <path d="M0 0H64V64H0V0Z" fill="#FF914C" />
-                    </g>
-                </svg>
-            </div>
-            <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-ar="قيادة الابتكار" data-en="Driving innovation">
-            </h3>
-            <p class="text-gray-600 text-xl"
-                data-en="We are working to change the rules of the sector through smart solutions that transform the traditional restaurant sector into a modern sector with an integrated system."
-                data-ar="نعمل على تغيير قواعد القطاع عبر حلول ذكية تحول قطاع المطاعم التقليدي إلى قطاع حديث بنظام متكامل.">
-            </p>
-        </div>
     </div>
 </div>

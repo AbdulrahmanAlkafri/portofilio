@@ -17,13 +17,16 @@ $bullets2 = [
 <div class="grid grid-cols-1 md:grid-cols-2 p-3 w-full">
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-2/3 space-y-4 m-auto">
-        <p class="text-4xl font-bold text-gray-600" data-en="Design Features" data-ar="ميزات التصميم">ميزات التصميم</p>
+        <p class="text-5xl py-9 font-bold text-gray-600" data-en="Design Features" data-ar="ميزات التصميم">ميزات
+            التصميم
+        </p>
         <ul class="list-disc pl-5 space-y-2 text-nowrap">
             @foreach ($bullets1 as $bullet)
-            <li class="flex items-center text-xl my-2">
+            <li class="flex items-center text-xl my-2 py-2">
                 <!-- Changed to text-xl for smaller text -->
                 <div class="w-2 h-2 m-2 bg-orange-500 rounded-full mr-2 p-2"></div> <!-- Reduced bullet size -->
-                <span data-en="{{ $bullet['en'] }}" data-ar="{{ $bullet['text'] }}" class="whitespace-nowrap">
+                <span data-en="{{ $bullet['en'] }}" data-ar="{{ $bullet['text'] }}"
+                    class="whitespace-nowrap text-2xl font-semibold tracking-wide">
                     {{ $bullet['text'] }} ({{ $bullet['en'] }})
                 </span> <!-- Added whitespace-nowrap to prevent line breaks -->
             </li>
@@ -44,13 +47,15 @@ $bullets2 = [
     </div>
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-1/3 space-y-4 m-auto">
-        <p class="text-4xl font-bold text-gray-600" data-en="Platform Features" data-ar="ميزات المنصة">ميزات المنصة</p>
+        <p class="text-5xl py-9 font-bold text-gray-600" data-en="Platform Features" data-ar="ميزات المنصة">ميزات المنصة
+        </p>
         <ul class="list-disc pl-5 space-y-2 text-3xl">
             @foreach ($bullets2 as $bullet)
-            <li class="flex items-center text-xl my-2">
+            <li class="flex items-center text-xl my-2 py-1.5">
                 <!-- Changed to text-xl for smaller text -->
                 <div class="w-2 h-2 m-2 bg-orange-500 rounded-full mr-2 p-2"></div> <!-- Reduced bullet size -->
-                <span data-en="{{ $bullet['en'] }}" data-ar="{{ $bullet['text'] }}" class="whitespace-nowrap">
+                <span data-en="{{ $bullet['en'] }}" data-ar="{{ $bullet['text'] }}"
+                    class="whitespace-nowrap text-2xl font-semibold tracking-wide">
                     {{ $bullet['text'] }} ({{ $bullet['en'] }})
                 </span> <!-- Added whitespace-nowrap to prevent line breaks -->
             </li>

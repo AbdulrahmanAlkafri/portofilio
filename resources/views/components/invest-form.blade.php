@@ -36,14 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 @endif
-
-<div class="flex items-center justify-center min-h-screen w-full mx-auto bg-white my-16">
-    <div class="p-6 w-3/5 mx-auto">
-        <h2 class="text-4xl font-bold text-gray-600 mb-4 text-center" data-ar="استثمر الآن" data-en="Invest Now">
+<div class="flex items-center justify-center min-h-screen w-full mx-auto bg-white my-16 py-12">
+    <div class="p-6 w-4/5 mx-auto">
+        <h2 class="text-5xl font-bold text-gray-600 mb-4 text-center" data-ar="استثمر الآن" data-en="Invest Now">
             استثمر الآن
         </h2>
         <p class="text-3xl font-semibold text-gray-500 tracking-wide leading-loose text-center mb-4"
-            data-ar="نحن هنا نحتاج دعمك نحو النجاح. يرجى ملئ الإستمارة أدناه و سنتواصل معك قريبا لاستكشاف الفرص الإستثمارية و الشراكات الممكنة"
+            data-ar="نحن هنا نحتاج دعمك نحو النجاح. يرجى ملئ الإستمارة أدناه و سنتواصل معك قريبا لاستكشاف الفرص الإستثمارية و الشراكات الممكنة."
             data-en="We are here to seek your support towards success. Please fill out the form below, and we will contact you soon to explore investment opportunities and potential partnerships.">
             نحن هنا نحتاج دعمك نحو النجاح. يرجى ملئ الإستمارة أدناه و سنتواصل معك قريبا لاستكشاف الفرص الإستثمارية و
             الشراكات الممكنة
