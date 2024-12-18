@@ -3,14 +3,16 @@
         data-en="Overcome challenges and achieve success with us" data-ar="تخطى التحديات واعبر إلى النجاح معنا">تخطى
         التحديات واعبر إلى النجاح معنا</h2>
 
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
 
         <!-- Ordinary Restaurant Card -->
         <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
             <div>
                 <div class="flex items-center mb-4">
                     <i class="fas fa-thumbs-down text-white text-3xl bg-gray-500 rounded-full p-2 mr-2"></i>
-                    <h3 class="text-xl font-semibold mx-2" data-en="Ordinary Restaurant" data-ar="مطعم عادي">مطعم عادي
+                    <h3 class="text-xl font-semibold mx-2 text-gray-600" data-en="Ordinary Restaurant"
+                        data-ar="مطعم عادي">مطعم عادي
                     </h3>
                 </div>
                 <p class="text-gray-600 mb-4" data-en="Problems you will face:" data-ar="المشاكل التي سوف تواجهك:">
@@ -31,13 +33,13 @@
                 </ul>
             </div>
         </div>
-
         <!-- With Kitch Blash Card -->
         <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full">
-            <div>
+            <div class="w-fit">
                 <div class="flex items-center mb-4">
                     <i class="fas fa-thumbs-up text-white text-3xl bg-orange-500 rounded-full p-2 mr-2"></i>
-                    <h3 class="text-xl font-semibold mx-2" data-en="With Kitch Push" data-ar="مع كيتش بلس">مع كيتش بلس
+                    <h3 class="text-xl font-semibold mx-2 text-orange-500" data-en="With Kitch Push"
+                        data-ar="مع كيتش بلس">مع كيتش بلس
                     </h3>
                 </div>
                 <p class="text-gray-600 mb-4" data-en="Benefits you will receive by subscribing with us:"
@@ -58,6 +60,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
 
     <div class="flex justify-center mt-6">

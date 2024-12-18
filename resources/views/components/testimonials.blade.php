@@ -1,44 +1,54 @@
 <div class="py-10 bg-gray-50">
-    <div class="w-full mx-auto text-center">
-        <h2 class="text-5xl font-bold mb-6 text-gray-800" data-ar="ما يقوله عملاؤنا" data-en="What our customers say">
-            ما يقوله عملاؤنا
-        </h2>
+    <div class="w-4/5 mx-auto text-center">
+        <div class="flex justify-between items-center">
+
+            <h2 class="text-2xl font-bold mb-6 text-gray-800" data-ar="ما يقوله عملاؤنا"
+                data-en="What our customers say">
+                ما يقوله عملاؤنا
+            </h2>
+
+            <!-- Navigation Arrows -->
+            <div class="flex justify-center items-center gap-x-3 mb-4">
+                <button
+                    class="right-arrow bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-400 transition">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button
+                    class="left-arrow bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-400 transition">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+
         <div class="relative mx-auto">
             <div class="flex space-x-4 overflow-x-hidden snap-x snap-mandatory testimonials-container">
                 @foreach($reviews as $review)
                 <div class="bg-white rounded-lg shadow-md p-6 flex-shrink-0 w-80 mx-3 snap-center">
-                    <div class="flex items-center mb-4">
-                        <img loading="lazy"
-                            src="{{ $review->customer_image ? asset($review->customer_image) : asset('images/default-avatar.png') }}"
-                            alt="{{ $review->customer_name_en }}" class="p-1 w-12 h-12 rounded-full mr-3">
-                        <div>
-                            <h3 class="font-semibold text-lg">{{ $review->customer_name_en }}</h3>
-                            <div class="flex">
-                                @for ($i = 1; $i <= 5; $i++) <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5 {{ $i <= $review->rate ? 'text-yellow-500' : 'text-gray-300' }}"
-                                    fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M10 15.27L16.18 20 14.54 13.97 20 9.24l-8.63-.74L10 .5 8.63 8.5 0 9.24l5.46 4.73L3.82 20z" />
-                                    </svg>
-                                    @endfor
+                    <div class="flex flex-col justify-center items-center mb-4 gap-y-3">
+                        <div class="flex text-right">
+                            @for ($i = 1; $i <= 5; $i++) <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 {{ $i <= $review->rate ? 'text-yellow-500' : 'text-gray-300' }}"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 15.27L16.18 20 14.54 13.97 20 9.24l-8.63-.74L10 .5 8.63 8.5 0 9.24l5.46 4.73L3.82 20z" />
+                                </svg>
+                                @endfor
+                        </div>
+
+                        <p class="text-gray-600 mb-4">{{ $review->desc_en }}</p>
+                        <div class="flex justify-start items-center text-right">
+                            <img loading="lazy"
+                                src="{{ $review->customer_image ? asset($review->customer_image) : asset('images/default-avatar.png') }}"
+                                alt="{{ $review->customer_name_en }}" class="p-1 w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="font-semibold text-lg">{{ $review->customer_name_en }}</h3>
+                                <h4 class="font-semibold text-gray-800">{{ $review->title_en }}</h4>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 mb-4">{{ $review->desc_en }}</p>
-                    <h4 class="font-semibold text-gray-800">{{ $review->title_en }}</h4>
                 </div>
                 @endforeach
             </div>
-
-            <!-- Navigation Arrows -->
-            <button
-                class="left-arrow absolute top-1/2 left-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
-                &#10094;
-            </button>
-            <button
-                class="right-arrow absolute top-1/2 right-0 transform -translate-y-1/2 bg-orange-500 text-white py-2 px-4 rounded-3xl hover:bg-orange-400 transition">
-                &#10095;
-            </button>
         </div>
     </div>
 </div>
@@ -49,19 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const rightArrow = document.querySelector('.right-arrow');
     const testimonialsContainer = document.querySelector('.testimonials-container');
 
-    // Use a more reliable way to determine card width  
-    const cardWidth = testimonialsContainer.querySelector('.snap-center').offsetWidth + 24; // include margin  
+    let scrollAmount = 0;
 
     rightArrow.addEventListener('click', () => {
-        testimonialsContainer.scrollBy({
-            left: cardWidth,
+        scrollAmount += 300; // Adjust this value based on your card width  
+        testimonialsContainer.scrollTo({
+            left: scrollAmount,
             behavior: 'smooth'
         });
     });
 
     leftArrow.addEventListener('click', () => {
-        testimonialsContainer.scrollBy({
-            left: -cardWidth,
+        scrollAmount -= 300; // Adjust this value based on your card width  
+        testimonialsContainer.scrollTo({
+            left: scrollAmount,
             behavior: 'smooth'
         });
     });
@@ -76,7 +87,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 .left-arrow,
 .right-arrow {
-    transition: opacity 0.3s ease;
-    /* Smooth transition for opacity */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 50px;
+    /* Adjust width as needed */
+    height: 50px;
+    /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    transform: scale(1.1);
+    /* Slight scale on hover */
+}
+
+/* Adjust the appearance of the arrows */
+.left-arrow:disabled,
+.right-arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.left-arrow:disabled:hover,
+.right-arrow:disabled:hover {
+    transform: none;
+    /* Prevent scaling on hover when disabled */
 }
 </style>

@@ -1,10 +1,10 @@
 <div class="w-full h-8 bg-white"></div>
 <div class="py-10 text-center flex justify-center items-center">
-    <div class="w-1/4 mx-auto">
-        <h2 class="text-4xl text-gray-600 font-bold mb-6" data-en="Results We Made Togather"
+    <div class="w-1/4 mx-auto text-right">
+        <h2 class="text-5xl text-gray-600 font-bold mb-6 leading-relaxed" data-en="Results We Made Togather"
             data-ar="النتائج التي حققناها معًا">
         </h2>
-        <p class="mb-8 font-semibold text-2xl tracking-wide leading-loose" data-en="Reduce your restaurant operating costs and get the most out of...
+        <p class="mb-8 font-semibold text-3xl tracking-wide leading-loose" data-en="Reduce your restaurant operating costs and get the most out of...
             Your budget" data-ar="قلل تكاليف تشغيل مطعمك وحقق أقصى
             استفادة من
             ميزانيتك">
@@ -13,25 +13,11 @@
     <div class="mx-auto">
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 m-4">
             <!-- Achievement Item 1 -->
-            <div class="flex flex-col justify-center gap-y-2 items-center border-t p-4 border-black">
-                <div class="flex justify-evenly items-center">
-                    <span class="text-5xl font-bold text-orange-600 number" data-target="50">0
-                    </span>
-                    <span class="text-5xl font-bold ml-1 text-orange-600 number">%</span>
-                    <svg width="51" height="56" viewBox="0 0 51 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M26.985 4.19853C26.3551 3.48938 25.2473 3.48938 24.6175 4.19853L4.24152 27.1384C3.33444 28.1596 4.0594 29.7732 5.42531 29.7732H13.135C14.0094 29.7732 14.7183 30.4821 14.7183 31.3566V51.1484C14.7183 52.0229 15.4272 52.7318 16.3017 52.7318H35.3017C36.1761 52.7318 36.885 52.0229 36.885 51.1484V31.3566C36.885 30.4821 37.5939 29.7732 38.4683 29.7732H46.1772C47.5431 29.7732 48.268 28.1596 47.361 27.1384L26.985 4.19853L28.1688 3.14705L26.985 4.19853ZM22.2499 2.09558C24.1395 -0.0318599 27.4629 -0.0318582 29.3526 2.09558L49.7285 25.0355C52.4498 28.0991 50.2749 32.9399 46.1772 32.9399H40.0517V51.1484C40.0517 53.7718 37.925 55.8984 35.3017 55.8984H16.3017C13.6783 55.8984 11.5517 53.7718 11.5517 51.1484V32.9399H5.42531C1.3276 32.9399 -0.847297 28.0991 1.87395 25.0355L22.2499 2.09558Z"
-                            fill="#676767" />
-                    </svg>
-                </div>
-                <p class="text-gray-600" data-en="Increased profits for average customers"
-                    data-ar="زيادة في الأرباح بمتوسط العملاء"></p>
-            </div>
 
-            <!-- Achievement Item 2 -->
-            <div class="flex flex-col justify-center gap-y-2 items-center border-t p-4 border-black">
-                <div class="flex justify-evenly items-center">
-                    <span class="text-5xl font-bold mx-1 text-orange-600 number" data-target="250">0</span>
+            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+                <div class="flex justify-between items-center gap-x-10">
+                    <span class="text-6xl border-t-2 border-black font-bold mx-1 text-orange-600 number"
+                        data-target="250">0</span>
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M47.4397 60.6399H16.5597C9.25301 60.6399 3.33301 54.6932 3.33301 47.3866V27.6266C3.33301 23.9999 5.57301 19.4399 8.45301 17.1999L22.8263 5.9999C27.1463 2.6399 34.053 2.4799 38.533 5.62657L55.013 17.1732C58.1863 19.3866 60.6663 24.1332 60.6663 27.9999V47.4132C60.6663 54.6932 54.7463 60.6399 47.4397 60.6399ZM25.2797 9.14657L10.9063 20.3466C9.01301 21.8399 7.33301 25.2266 7.33301 27.6266V47.3866C7.33301 52.4799 11.4663 56.6399 16.5597 56.6399H47.4397C52.533 56.6399 56.6663 52.5066 56.6663 47.4132V27.9999C56.6663 25.4399 54.8263 21.8932 52.7197 20.4532L36.2397 8.90657C33.1997 6.77324 28.1863 6.8799 25.2797 9.14657Z"
@@ -44,33 +30,32 @@
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="text-gray-600" data-en="Partner restaurants have achieved success"
+                <p class="text-black-600 font-semibold" data-en="Partner restaurants have achieved success"
                     data-ar="مطاعم شريكة حققت نجاحات"></p>
             </div>
-
-            <!-- Achievement Item 3 -->
-            <div class="flex flex-col justify-center gap-y-2 items-center border-t p-4 border-black">
-                <div class="flex justify-evenly items-center">
-                    <span class="text-5xl font-bold mx-1 text-orange-600 number" data-target="250">0</span>
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M28.8263 45.2C28.3197 45.2 27.813 45.0134 27.413 44.6134L23.413 40.6134C22.6397 39.84 22.6397 38.56 23.413 37.7867C24.1863 37.0134 25.4663 37.0134 26.2397 37.7867L28.8263 40.3734L38.0797 31.12C38.853 30.3467 40.133 30.3467 40.9063 31.12C41.6797 31.8934 41.6797 33.1734 40.9063 33.9467L30.2397 44.6134C29.8663 45.0134 29.333 45.2 28.8263 45.2Z"
-                            fill="#676767" />
-                        <path
-                            d="M37.333 17.9999H26.6663C24.1063 17.9999 19.333 17.9999 19.333 10.6666C19.333 3.33325 24.1063 3.33325 26.6663 3.33325H37.333C39.893 3.33325 44.6663 3.33325 44.6663 10.6666C44.6663 13.2266 44.6663 17.9999 37.333 17.9999ZM26.6663 7.33325C24.0263 7.33325 23.333 7.33325 23.333 10.6666C23.333 13.9999 24.0263 13.9999 26.6663 13.9999H37.333C40.6663 13.9999 40.6663 13.3066 40.6663 10.6666C40.6663 7.33325 39.973 7.33325 37.333 7.33325H26.6663Z"
-                            fill="#676767" />
-                        <path
-                            d="M40 60.6666H24C9.01333 60.6666 6 53.7866 6 42.6666V26.6666C6 14.5066 10.4 9.30657 21.2267 8.74657C22.32 8.69323 23.28 9.5199 23.3333 10.6399C23.3867 11.7599 22.5333 12.6666 21.44 12.7199C13.8667 13.1466 10 15.4132 10 26.6666V42.6666C10 52.5332 11.9467 56.6666 24 56.6666H40C52.0533 56.6666 54 52.5332 54 42.6666V26.6666C54 15.4132 50.1333 13.1466 42.56 12.7199C41.4667 12.6666 40.6133 11.7066 40.6667 10.6132C40.72 9.5199 41.6533 8.66657 42.7733 8.7199C53.6 9.30657 58 14.5066 58 26.6399V42.6399C58 53.7866 54.9867 60.6666 40 60.6666Z"
+            <!-- Achievement Item 2 -->
+            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+                <div class="flex justify-between items-center gap-x-10">
+                    <span class="border-t-2 border-black">
+                        <span class="text-6xl  font-bold mx-1 text-orange-600 number" data-target="50">0
+                        </span>
+                        <span class="text-5xl font-bold ml-1 text-orange-600 number">%</span>
+                    </span>
+                    <svg width="51" height="56" viewBox="0 0 51 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M26.985 4.19853C26.3551 3.48938 25.2473 3.48938 24.6175 4.19853L4.24152 27.1384C3.33444 28.1596 4.0594 29.7732 5.42531 29.7732H13.135C14.0094 29.7732 14.7183 30.4821 14.7183 31.3566V51.1484C14.7183 52.0229 15.4272 52.7318 16.3017 52.7318H35.3017C36.1761 52.7318 36.885 52.0229 36.885 51.1484V31.3566C36.885 30.4821 37.5939 29.7732 38.4683 29.7732H46.1772C47.5431 29.7732 48.268 28.1596 47.361 27.1384L26.985 4.19853L28.1688 3.14705L26.985 4.19853ZM22.2499 2.09558C24.1395 -0.0318599 27.4629 -0.0318582 29.3526 2.09558L49.7285 25.0355C52.4498 28.0991 50.2749 32.9399 46.1772 32.9399H40.0517V51.1484C40.0517 53.7718 37.925 55.8984 35.3017 55.8984H16.3017C13.6783 55.8984 11.5517 53.7718 11.5517 51.1484V32.9399H5.42531C1.3276 32.9399 -0.847297 28.0991 1.87395 25.0355L22.2499 2.09558Z"
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="text-gray-600" data-en="Orders being processed by the system"
-                    data-ar="طلبات يتم معالجتها يوميًا عبر النظام"></p>
+                <p class="text-black-600 font-semibold" data-en="Increased profits for average customers"
+                    data-ar="زيادة في الأرباح بمتوسط العملاء"></p>
             </div>
-            <!-- Achievement Item 4 -->
-            <div class="flex flex-col justify-center gap-y-2 items-center border-t p-4 border-black">
-                <div class="flex justify-evenly items-center">
-                    <span class="text-5xl font-bold mx-1 text-orange-600 number " data-target="250">0</span>
+
+            <!-- Achievement Item 3 -->
+            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+                <div class="flex justify-between items-center gap-x-10">
+                    <span class="text-6xl border-t-2 border-black font-bold mx-1 text-orange-600 number "
+                        data-target="250">0</span>
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M31.9997 44.6666C30.933 44.6666 29.8663 44.5866 28.853 44.3999C23.1997 43.5732 18.053 40.3199 14.7997 35.4932C12.533 32.0799 11.333 28.1066 11.333 23.9999C11.333 12.6133 20.613 3.33325 31.9997 3.33325C43.3863 3.33325 52.6663 12.6133 52.6663 23.9999C52.6663 28.1066 51.4663 32.0799 49.1997 35.4932C45.9197 40.3466 40.773 43.5733 35.0663 44.4266C34.133 44.5866 33.0663 44.6666 31.9997 44.6666ZM31.9997 7.33325C22.7997 7.33325 15.333 14.7999 15.333 23.9999C15.333 27.3333 16.293 30.5333 18.1063 33.2533C20.7463 37.1466 24.8797 39.7599 29.4663 40.4266C31.173 40.7199 32.853 40.7199 34.4263 40.4266C39.093 39.7599 43.2263 37.1199 45.8663 33.2266C47.6797 30.5066 48.6397 27.3066 48.6397 23.9732C48.6663 14.7999 41.1997 7.33325 31.9997 7.33325Z"
@@ -84,7 +69,28 @@
                     </svg>
 
                 </div>
-                <p class="text-gray-600" data-en="Customer satisfaction" data-ar="رضا العملاء"></p>
+                <p class="text-black-600 font-semibold text-right" data-en="Customer satisfaction"
+                    data-ar="رضا العملاء"></p>
+            </div>
+            <!-- Achievement Item 4 -->
+            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+                <div class="flex justify-between items-center gap-x-10">
+                    <span class="text-6xl border-t-2 border-black font-bold mx-1 text-orange-600 number"
+                        data-target="250">0</span>
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M28.8263 45.2C28.3197 45.2 27.813 45.0134 27.413 44.6134L23.413 40.6134C22.6397 39.84 22.6397 38.56 23.413 37.7867C24.1863 37.0134 25.4663 37.0134 26.2397 37.7867L28.8263 40.3734L38.0797 31.12C38.853 30.3467 40.133 30.3467 40.9063 31.12C41.6797 31.8934 41.6797 33.1734 40.9063 33.9467L30.2397 44.6134C29.8663 45.0134 29.333 45.2 28.8263 45.2Z"
+                            fill="#676767" />
+                        <path
+                            d="M37.333 17.9999H26.6663C24.1063 17.9999 19.333 17.9999 19.333 10.6666C19.333 3.33325 24.1063 3.33325 26.6663 3.33325H37.333C39.893 3.33325 44.6663 3.33325 44.6663 10.6666C44.6663 13.2266 44.6663 17.9999 37.333 17.9999ZM26.6663 7.33325C24.0263 7.33325 23.333 7.33325 23.333 10.6666C23.333 13.9999 24.0263 13.9999 26.6663 13.9999H37.333C40.6663 13.9999 40.6663 13.3066 40.6663 10.6666C40.6663 7.33325 39.973 7.33325 37.333 7.33325H26.6663Z"
+                            fill="#676767" />
+                        <path
+                            d="M40 60.6666H24C9.01333 60.6666 6 53.7866 6 42.6666V26.6666C6 14.5066 10.4 9.30657 21.2267 8.74657C22.32 8.69323 23.28 9.5199 23.3333 10.6399C23.3867 11.7599 22.5333 12.6666 21.44 12.7199C13.8667 13.1466 10 15.4132 10 26.6666V42.6666C10 52.5332 11.9467 56.6666 24 56.6666H40C52.0533 56.6666 54 52.5332 54 42.6666V26.6666C54 15.4132 50.1333 13.1466 42.56 12.7199C41.4667 12.6666 40.6133 11.7066 40.6667 10.6132C40.72 9.5199 41.6533 8.66657 42.7733 8.7199C53.6 9.30657 58 14.5066 58 26.6399V42.6399C58 53.7866 54.9867 60.6666 40 60.6666Z"
+                            fill="#676767" />
+                    </svg>
+                </div>
+                <p class="text-black-600 font-semibold" data-en="Orders being processed by the system"
+                    data-ar="طلبات يتم معالجتها يوميًا عبر النظام"></p>
             </div>
         </div>
     </div>

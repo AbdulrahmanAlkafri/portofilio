@@ -1,7 +1,7 @@
 <div class="py-10 w-full flex flex-col lg:flex-row items-center justify-evenly mr-20">
     <div class="lg:w-1/2 lg:pl-8">
-        <h2 class="text-4xl font-bold m-7 text-gray-600" data-en="What We Offer ?">ماذا نقدم؟</h2>
-        <p class=" m-7 text-3xl tracking-wide leading-relaxed">
+        <h2 class="text-5xl font-bold m-7 text-gray-600" data-en="What We Offer ?" data-ar="ماذا نقدم؟"></h2>
+        <p class=" m-7 text-4xl tracking-wide leading-loose">
             <span data-en="With" data-ar="مع"></span> <span class="text-orange-600 font-bold" data-en="Kitch Plus"
                 data-ar="كيتش بلش"></span>
             <span
