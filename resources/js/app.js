@@ -54,7 +54,7 @@ document
             // Update text to English
             updateText("en");
         }
-        location.reload();
+        // location.reload();
     });
 
 // Function to update text and images based on language

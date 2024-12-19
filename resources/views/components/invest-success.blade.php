@@ -1,4 +1,4 @@
-<div class="p-6">
+<div class="py-16 bg-white">
     <div class="text-center mb-6 tracking-wide leading-loose">
         <h2 class="text-5xl text-gray-600 font-bold my-5" data-en="Guaranteed Successful Investments"
             data-ar="استثمارات مضمونة النجاح">

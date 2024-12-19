@@ -9,7 +9,7 @@
     ', // Your SVG content here
     'en' => 'Home',
     ],
-    'الإعلانات' => [
+    'المورد' => [
 
     'svg' => '<svg width="36" height="35" viewBox="0 0 36 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -20,7 +20,7 @@
             fill="currentColor" />
     </svg>
     ',
-    'en' => 'Ads',
+    'en' => 'Supplier',
     ],
     'الطلبات' => [
     'svg' => '<svg width=" 40" height="34" viewBox="0 0 40 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -92,78 +92,58 @@
     $images = [
     'الرئيسية' => [
     asset('images/platforms/home-platform.png'),
-    asset('images/platforms/main-branch1.png'),
-    asset('images/platforms/main-branch2.png')
+    ["ar"=>"انتقل الى الاقسام بكل سلاسة" , "en"=>"Move to sections smoothly"],
+    ["ar"=>"شاهد الملخص العام لاداء وكفاءة المطعم" , "en"=>"View the general summary of the restaurant’s performance and
+    efficiency"]
     ],
-    'الإعلانات' => [
+    'المورد' => [
     asset("images/platforms/Inventory.png"),
-    asset('images/platforms/Inventory1.png'),
-    asset('images/platforms/Inventory2.png')
+    ["ar"=>"اشتري مخزون مطعمك بافضل الاسعار" , "en"=>"Buy your restaurant inventory at the best prices"],
+    ["ar"=>"تتبع سير عمليات توصيل المخزون" , "en"=>"Track the progress of inventory deliveries
+    "]
     ],
     'الطلبات' => [
     asset("images/platforms/Delivery Platform.png"),
-    asset("images/platforms/deleviry1.png"),
-    asset('images/platforms/deleviry2.png')
+    ["ar"=>"اشترك مع تطبيقات التوصيل بضغطة زر !" , "en"=>"Subscribe to delivery apps with the click of a button!"],
+    ["ar"=>"راقب الطلبات على جميع التطبيقات في آن واحد" , "en"=>"Monitor orders on all applications at once"]
     ],
     'المخزون' => [
     asset("images/platforms/Supplier.png"),
-    asset("images/platforms/Supplier1.png"),
-    asset("images/platforms/Supplier2.png")
+    ["ar"=>"ادارة المخزون بكفاءه عالية" , "en"=>"Highly efficient inventory management"],
+    ["ar"=>"راقب مخزونك بكل سهولة" , "en"=>"Monitor your inventory with ease"]
     ],
     'الكاشير' => [
     asset("images/platforms/Cashier.png"),
-    asset('images/platforms/Cashier1.png'),
-    asset('images/platforms/Cashier2.png')
+    ["ar"=>"تابع عمل مبيعاتك بشكل فوري ودقيق" , "en"=>"Track your sales promptly and accurately"],
+    ["ar"=>"اضف منتجات الى منافذ البيع بكل سلاسه" , "en"=>"Add products to sales outlets seamlessly"]
     ],
     'التقارير' => [
     asset("images/platforms/Analytics & Reporting.png"),
-    asset('images/platforms/analytic-branch1.png'),
-    asset('images/platforms/analytic-branch2.png')
+    ["ar"=>"راقب اداء مطعمك عن بعد" , "en"=>"Monitor your restaurant's performance remotely"],
+    ["ar"=>"امتلك تحاليل فورية لمطعمك" , "en"=>"Have instant analytics for your restaurant"]
     ],
     'التسويق' => [
     asset("images/platforms/Marketing.png"),
-    asset('images/platforms/Marketing1.png'),
-    asset('images/platforms/Marketing2.png')
+    ["ar"=>"تابع سير و تنفيذ حملتك الترويجية" , "en"=>"Follow the progress and implementation of your promotional
+    campaign
+    "],
+    ["ar"=>"انشئ حملتك الترويجية وابدأ بجذب العملاء", "en"=>"Create your alternative entity and start attracting
+    customers
+    "]
     ],
     ];
     @endphp
-    <div x-data="{   
-        activeTab: 'الرئيسية',   
-        getImages() {  
-            switch (this.activeTab) {  
-                case 'الرئيسية':  
-                    return ['{{ $images["الرئيسية"][0] }}', '{{ $images["الرئيسية"][1] }}', '{{ $images["الرئيسية"][2] }}'];  
-                case 'الإعلانات':  
-                    return ['{{ $images["الإعلانات"][0] }}', '{{ $images["الإعلانات"][1] }}', '{{ $images["الإعلانات"][2] }}'];  
-                case 'الطلبات':  
-                    return ['{{ $images["الطلبات"][0] }}', '{{ $images["الطلبات"][1] }}', '{{ $images["الطلبات"][2] }}'];  
-                case 'المخزون':  
-                    return ['{{ $images["المخزون"][0] }}', '{{ $images["المخزون"][1] }}', '{{ $images["المخزون"][2] }}'];  
-                case 'التقارير':  
-                    return ['{{ $images["التقارير"][0] }}', '{{ $images["التقارير"][1] }}', '{{ $images["التقارير"][2] }}'];  
-                case 'الكاشير':  
-                    return ['{{ $images["الكاشير"][0] }}', '{{ $images["الكاشير"][1] }}', '{{ $images["الكاشير"][2] }}'];   
-                case 'التسويق':  
-                    return ['{{ $images["التسويق"][0] }}', '{{ $images["التسويق"][1] }}', '{{ $images["التسويق"][2] }}'];   
-                default:  
-                    return [];  
-            }  
-        }   
-    }" class="bg-white">
-
+    <div class="bg-white">
         <div class="flex justify-evenly items-center space-x-4 overflow-auto">
             @foreach ($tabs as $tabName => $tabData)
-            <button @click.prevent="activeTab = '{{ $tabName }}'"
-                :class="activeTab === '{{ $tabName }}' ? 'bg-orange-100 text-orange-500' : 'bg-gray-200'"
-                class="my-10 flex items-center px-4 py-2 rounded-full shadow">
-
-                <span>
-                    <span x-bind:class="activeTab === '{{ $tabName }}' ? 'text-orange-500' : 'text-gray-500'">
-                        {!! str_replace('currentColor', 'currentColor', $tabData['svg']) !!}
-                    </span>
+            <button id="tab-{{ $tabName }}"
+                class="tab-button my-10 flex items-center px-4 py-2 rounded-full shadow bg-gray-200"
+                data-tab="{{ $tabName }}">
+                <span class="tab-icon">
+                    {!! str_replace('currentColor', 'currentColor', $tabData['svg']) !!}
                 </span>
-                <span x-show="activeTab === '{{ $tabName }}'" data-en="{{$tabData['en']}}" data-ar="{{$tabName}}"
-                    class="ml-2 mx-1 text-xl">
+                <span class="ml-2 mx-1 text-xl" data-en="{{ $tabData['en'] }}" data-ar="{{ $tabName }}">
+                    {{ $tabName }}
                 </span>
             </button>
             @endforeach
@@ -171,55 +151,145 @@
 
         <!-- Image Display Section -->
         <div class="mt-5 flex flex-wrap justify-center relative">
-            <div class="m-4">
-                <!-- Main Image (always shown) -->
-                <img x-bind:src="getImages()[0]" alt="Main Image" class="w-1/3 mx-auto" />
-
-                <!-- Branch Images (show based on language) -->
-                <div id="branch2"
-                    class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%] hidden">
-                    <img x-bind:src="getImages()[1]" alt="Branch Image 1" class="w-2/3 mx-auto" />
-                </div>
-                <div id="branch1" class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2 hidden">
-                    <img x-bind:src="getImages()[2]" alt="Branch Image 2" class="w-2/3 mx-auto" />
-                </div>
+            <div class="m-4" id="content-display">
+                <img src="" alt="Main Image" class="w-1/3 mx-auto" id="main-image" />
+                <div id="text-branch1" class="text-content m-4"></div>
+                <div id="text-branch2" class="text-content m-4"></div>
             </div>
         </div>
     </div>
 
     <script>
-// Function to set visibility based on language direction  
-function setBranchImageVisibility() {
-    const dir = localStorage.getItem("dir") || "ltr"; // Default to LTR  
-    const branch1 = document.getElementById("branch1");
-    const branch2 = document.getElementById("branch2");
+// Data structure for images and text content  
+const contentData = {
+    'الرئيسية': [
+        '/images/platforms/home-platform.png', // Main image URL  
+        {
+            en: 'Supplier English Text 1',
+            ar: 'رئيس النص 1'
+        }, // Branch 1 text  
+        {
+            en: 'Supplier English Text 2',
+            ar: 'رئيس النص 2'
+        }, // Branch 1 text  
+    ],
+    'المورد': [
+        "images/platforms/Inventory.png", {
+            en: 'Supplier English Text 2',
+            ar: 'المورد النص 2'
+        },
+        {
+            en: 'Supplier English Text 2',
+            ar: 'المورد النص 2'
+        } // Branch 2 text 
+    ],
+    'الطلبات': [
+        'images/platforms/Delivery Platform.png', // Main image URL  
+        {
+            en: 'Orders English Text 1',
+            ar: 'طلبات النص 1'
+        },
+        {
+            en: 'Orders English Text 2',
+            ar: 'طلبات النص 2'
+        }
+    ],
+    'المخزون': [
+        'images/platforms/Supplier.png', // Main image URL  
+        {
+            en: 'Inventory English Text 1',
+            ar: 'المخزون النص 1'
+        },
+        {
+            en: 'Inventory English Text 2',
+            ar: 'المخزون النص 2'
+        }
+    ],
+    'الكاشير': [
+        'images/platforms/Cashier.png', // Main image URL  
+        {
+            en: 'Cashier English Text 1',
+            ar: 'الكاشير النص 1'
+        },
+        {
+            en: 'Cashier English Text 2',
+            ar: 'الكاشير النص 2'
+        }
+    ],
+    'التقارير': [
+        'images/platforms/Analytics & Reporting.png', // Main image URL  
+        {
+            en: 'Reports English Text 1',
+            ar: 'التقارير النص 1'
+        },
+        {
+            en: 'Reports English Text 2',
+            ar: 'التقارير النص 2'
+        }
+    ],
+    'التسويق': [
+        'images/platforms/Marketing.png', // Main image URL  
+        {
+            en: 'Marketing English Text 1',
+            ar: 'التسويق النص 1'
+        },
+        {
+            en: 'Marketing English Text 2',
+            ar: 'التسويق النص 2'
+        }
+    ]
+};
 
-    if (dir === "ltr") {
-        branch1.classList.add("hidden");
-        branch2.classList.add("hidden");
-    } else {
-        branch1.classList.remove("hidden");
-        branch2.classList.remove("hidden");
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const mainImage = document.getElementById('main-image');
+    const textBranch1 = document.getElementById('text-branch1');
+    const textBranch2 = document.getElementById('text-branch2');
+
+    // Function to display content based on the active tab  
+    function displayContent(tabName) {
+        const content = contentData[tabName];
+
+        if (content) {
+            mainImage.src = content[0]; // Update main image  
+            const lang = localStorage.getItem('dir'); // Get the current language from local storage  
+            textBranch1.innerHTML = `  
+                <x-text-frame data-en="${content[1].en}" data-ar="${content[1].ar}" class="w-fit mx-auto p-4 whitespace-nowrap">  
+                    ${lang === 'rtl' ? content[1].ar : content[1].en} <!-- Check for Arabic -->  
+                </x-text-frame>  
+            `;
+            textBranch2.innerHTML = `  
+                <x-text-frame data-en="${content[2].en}" data-ar="${content[2].ar}" class="w-fit mx-auto p-4 whitespace-nowrap">  
+                    ${lang === 'rtl' ? content[2].ar : content[2].en} <!-- Check for Arabic -->  
+                </x-text-frame>  
+            `;
+        }
     }
-}
 
-// Check language direction on page load  
-window.addEventListener("load", setBranchImageVisibility);
+    // Initially display the content for the first tab  
+    const initialTab = tabButtons[0].getAttribute('data-tab');
+    displayContent(initialTab);
 
-// Language toggle event listener  
-document.getElementById("language-toggle").addEventListener("change", function() {
-    if (this.checked) {
-        // Switch to Arabic (RTL)  
-        document.documentElement.setAttribute("dir", "rtl");
-        document.body.setAttribute("dir", "rtl");
-        localStorage.setItem("dir", "rtl");
-        setBranchImageVisibility(); // Update visibility  
-    } else {
-        // Switch to English (LTR)  
-        document.documentElement.setAttribute("dir", "ltr");
-        document.body.setAttribute("dir", "ltr");
-        localStorage.setItem("dir", "ltr");
-        setBranchImageVisibility(); // Update visibility  
-    }
+    // Set up tab click events  
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const activeTab = this.getAttribute('data-tab');
+            displayContent(activeTab); // Update displayed content  
+            // Highlight active tab  
+            tabButtons.forEach(btn => btn.classList.remove('bg-orange-100', 'text-orange-500'));
+            button.classList.add('bg-orange-100', 'text-orange-500');
+        });
+    });
 });
     </script>
+
+    <style>
+.tab-button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #f3f4f6;
+    /* Tailwind's gray-200 */
+}
+    </style>
