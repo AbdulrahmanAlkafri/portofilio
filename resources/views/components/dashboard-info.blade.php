@@ -1,10 +1,13 @@
 {{-- resources/views/components/dashboard-info.blade.php --}}
 
-<div class="py-10 bg-gray-50">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+<div class="py-10 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-14 items-center tracking-wide leading-loose">
         <!-- Right Side: Image -->
-        <div>
+        <div class="relative">
             <img loading="lazy" src="{{ asset('images/dashboard-info.png') }}" alt="Dashboard" class="w-full h-auto" />
+            <x-text-frame class="absolute text-xl font-bold p-3 px-4 -left-[5%] bottom-[5%]" data-ar="منصاتنا"
+                data-en="Our platfroms">
+            </x-text-frame>
         </div>
         <!-- Left Side: Text and Paragraphs -->
         <div class="text-right">

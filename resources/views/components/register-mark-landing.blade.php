@@ -1,4 +1,4 @@
-<div class="flex items-center justify-center min-h-screen bg-gray-100">
+<div class="flex items-center justify-center min-h-screen">
     <div class="max-w-7xl w-full mx-auto flex flex-row">
         <!-- Left Side: Text Section -->
         <div class="w-1/2 flex flex-col justify-center p-6">
@@ -21,20 +21,15 @@
             <!-- Main Image of the Girl -->
             <img src="{{ asset('images/register-mark/register-mark-women.png') }}" alt="Woman Image"
                 class="object-cover w-full h-auto rounded-md">
-
-            <!-- Left Popup Image (near chest) -->
-            <div class="absolute" style="top: 60%; left: 10%;">
-                <img src="{{ asset('images/register-mark/register-mark1.png') }}" alt="Description 1"
-                    class="object-cover rounded-full h-10">
-            </div>
-
-            <!-- Right Popup Images -->
-            <div class="absolute flex flex-col items-center" style="top: 45%; right: 10%;">
-                <img src="{{ asset('images/register-mark/register-mark2.png') }}" alt="Description 2"
-                    class="object-cover rounded-full h-10 mb-2">
-                <img src="{{ asset('images/register-mark/register-mark3.png') }}" alt="Description 3"
-                    class="object-cover rounded-full h-10">
-            </div>
+            <x-text-frame class="absolute text-xl p-3 px-4 left-[55%] top-[5%]" data-ar="وسع نطاق علامتك التجارية الان"
+                data-en="Expand your brand now">
+            </x-text-frame>
+            <x-text-frame class="absolute text-xl p-3 px-4 left-0 bottom-1/4" data-ar="تحتاج تطور علامتك التجارية ؟"
+                data-en="Do you need to develop your brand?">
+            </x-text-frame>
+            <x-text-frame class="absolute whitespace-nowrap p-3 px-4 left-[55%] bottom-[5%]"
+                data-ar="حقق اقصى استفادة من علامتك التجارية" data-en="Make the most of your brand">
+            </x-text-frame>
         </div>
     </div>
 </div>

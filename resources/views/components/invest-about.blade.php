@@ -1,3 +1,6 @@
+<div class="bg-white w-full h-20">
+    &nbsp;
+</div>
 <div class="py-10 bg-gray-50">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 

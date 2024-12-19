@@ -1,3 +1,6 @@
+<div class="bg-white w-full h-20">
+    &nbsp;
+</div>
 <div class="py-10 bg-gray-50">
     <h2 class="text-4xl text-gray-600 font-bold text-center mb-6"
         data-en="Overcome challenges and achieve success with us" data-ar="تخطى التحديات واعبر إلى النجاح معنا">تخطى

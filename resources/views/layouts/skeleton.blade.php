@@ -9,9 +9,9 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="h-screen bg-gray-50 w-full" dir="{{ session('dir', 'ltr') }}">
+<body class="h-screen w-full bg-gray-50" dir="{{ session('dir', 'ltr') }}">
     <div id="toast"
-        class="fixed top-5 right-5 bg-green-500 text-white p-3 rounded hidden transition-opacity duration-300">
+        class="fixed  top-5 right-5 bg-green-500 text-white p-3 rounded hidden transition-opacity duration-300">
         <span id="toast-message"></span>
     </div>
     <header>

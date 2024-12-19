@@ -1,9 +1,9 @@
-<div class="flex items-center justify-center min-h-screen p-4">
-    <div class="relative w-full max-w-4xl lg:max-w-5xl p-4 bg-white">
+<div class="flex items-center justify-center min-h-screen p-4 bg-white">
+    <div class="relative w-full max-w-4xl lg:max-w-5xl p-4 ">
 
         <!-- Navigation Arrows -->
         <button id="prev"
-            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2 z-10">
+            class="absolute -left-10 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2 z-10">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -11,7 +11,7 @@
         </button>
 
         <button id="next"
-            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2 z-10">
+            class="absolute -right-10 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2 z-10">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -19,7 +19,7 @@
         </button>
 
         <!-- Image Container -->
-        <div class="overflow-hidden rounded-lg mx-auto">
+        <div class="overflow-hidden rounded-lg mx-auto shadow-lg">
             <img id="carouselImage" data-en="{{ asset('images/slides/solution1.png') }}"
                 data-ar="{{ asset('images/slides/slide1.png') }}" src="{{ asset('images/slides/slide1.png') }}"
                 alt="Image Carousel" class="w-full h-auto transition-transform duration-300 ease-in-out">
