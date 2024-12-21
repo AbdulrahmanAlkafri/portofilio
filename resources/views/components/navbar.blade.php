@@ -52,7 +52,7 @@
     </div>
 </nav>
 <script>
-if (sessionStorage.getItem("dir") == "rtl") {
+if (localStorage.getItem("dir") == "rtl") {
     document.getElementById("language-toggle").checked = true; // Set the toggle to checked  
     document.getElementById("lang_circle").textContent = "ع"; // Set to Arabic  
 } else {

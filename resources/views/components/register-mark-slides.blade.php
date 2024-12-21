@@ -43,7 +43,7 @@ const images = {
 };
 
 let currentIndex = 0;
-let currentLanguage = sessionStorage.getItem("dir") === "rtl" ? "ar" : "en"; // Default language  
+let currentLanguage = localStorage.getItem("dir") === "rtl" ? "ar" : "en"; // Default language  
 
 const carouselImage = document.getElementById('carouselImage');
 const nextButton = document.getElementById('next');
@@ -81,7 +81,7 @@ if (languageToggle) {
 
         document.documentElement.setAttribute("dir", dir);
         document.body.setAttribute("dir", dir);
-        sessionStorage.setItem("dir", dir); // Store the direction  
+        localStorage.setItem("dir", dir); // Store the direction  
 
         // Update text and image to the selected language  
         updateText(lang);
@@ -101,9 +101,9 @@ function updateText(lang) {
     });
 }
 
-// On page load, set the direction and language based on sessionStorage  
+// On page load, set the direction and language based on localStorage  
 window.addEventListener("load", function() {
-    const dir = sessionStorage.getItem("dir") || "ltr"; // Default to LTR  
+    const dir = localStorage.getItem("dir") || "ltr"; // Default to LTR  
     document.documentElement.setAttribute("dir", dir);
     document.body.setAttribute("dir", dir);
     languageToggle.checked = dir === "rtl";

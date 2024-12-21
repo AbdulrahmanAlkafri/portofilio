@@ -89,65 +89,20 @@
     'en' => 'Marketing',
     ],
     ];
-    $images = [
-    'الرئيسية' => [
-    asset('images/platforms/home-platform.png'),
-    ["ar"=>"انتقل الى الاقسام بكل سلاسة" , "en"=>"Move to sections smoothly"],
-    ["ar"=>"شاهد الملخص العام لاداء وكفاءة المطعم" , "en"=>"View the general summary of the restaurant’s performance and
-    efficiency"]
-    ],
-    'المورد' => [
-    asset("images/platforms/Inventory.png"),
-    ["ar"=>"اشتري مخزون مطعمك بافضل الاسعار" , "en"=>"Buy your restaurant inventory at the best prices"],
-    ["ar"=>"تتبع سير عمليات توصيل المخزون" , "en"=>"Track the progress of inventory deliveries
-    "]
-    ],
-    'الطلبات' => [
-    asset("images/platforms/Delivery Platform.png"),
-    ["ar"=>"اشترك مع تطبيقات التوصيل بضغطة زر !" , "en"=>"Subscribe to delivery apps with the click of a button!"],
-    ["ar"=>"راقب الطلبات على جميع التطبيقات في آن واحد" , "en"=>"Monitor orders on all applications at once"]
-    ],
-    'المخزون' => [
-    asset("images/platforms/Supplier.png"),
-    ["ar"=>"ادارة المخزون بكفاءه عالية" , "en"=>"Highly efficient inventory management"],
-    ["ar"=>"راقب مخزونك بكل سهولة" , "en"=>"Monitor your inventory with ease"]
-    ],
-    'الكاشير' => [
-    asset("images/platforms/Cashier.png"),
-    ["ar"=>"تابع عمل مبيعاتك بشكل فوري ودقيق" , "en"=>"Track your sales promptly and accurately"],
-    ["ar"=>"اضف منتجات الى منافذ البيع بكل سلاسه" , "en"=>"Add products to sales outlets seamlessly"]
-    ],
-    'التقارير' => [
-    asset("images/platforms/Analytics & Reporting.png"),
-    ["ar"=>"راقب اداء مطعمك عن بعد" , "en"=>"Monitor your restaurant's performance remotely"],
-    ["ar"=>"امتلك تحاليل فورية لمطعمك" , "en"=>"Have instant analytics for your restaurant"]
-    ],
-    'التسويق' => [
-    asset("images/platforms/Marketing.png"),
-    ["ar"=>"تابع سير و تنفيذ حملتك الترويجية" , "en"=>"Follow the progress and implementation of your promotional
-    campaign
-    "],
-    ["ar"=>"انشئ حملتك الترويجية وابدأ بجذب العملاء", "en"=>"Create your alternative entity and start attracting
-    customers
-    "]
-    ],
-    ];
     @endphp
-    <div x-data="{ activeTab: 'الرئيسية' }" class="bg-white">
-
-        <div class="flex justify-evenly items-center space-x-4 overflow-auto">
+    <div class="bg-white">
+        <div id="tab-container" class="flex justify-evenly items-center space-x-4 overflow-auto">
             @foreach ($tabs as $tabName => $tabData)
-            <button @click.prevent="activeTab = '{{ $tabName }}'"
-                :class="activeTab === '{{ $tabName }}' ? 'bg-orange-100 text-orange-500' : 'bg-gray-200'"
-                class="my-10 flex items-center px-4 py-2 rounded-full shadow">
-
+            <button class="tab-button my-10 flex items-center px-4 py-2 rounded-full shadow" data-tab="{{ $tabName }}">
                 <span>
-                    <span x-bind:class="activeTab === '{{ $tabName }}' ? 'text-orange-500' : 'text-gray-500'">
+                    <span class="tab-icon text-gray-500">
                         {!! str_replace('currentColor', 'currentColor', $tabData['svg']) !!}
                     </span>
                 </span>
-                <span x-show="activeTab === '{{ $tabName }}'" data-en="{{$tabData['en']}}" data-ar="{{$tabName}}"
-                    class="ml-2 mx-1 text-xl">
+                <span class="tab-label text-orange-500 ml-2 mx-1 text-xl hidden" data-en="{{$tabData["en"]}}"
+                    data-ar="{{$tabName}}">
+                    <!-- {{$tabName}} -->
+                    <!-- Default hidden initially -->
                 </span>
             </button>
             @endforeach
@@ -155,122 +110,170 @@
 
         <!-- Image Display Section -->
         <div class="mt-5 flex flex-wrap justify-center relative">
-            <div class="m-4">
-
-                <!-- Template for "الرئيسية" tab -->
-                <template x-if="activeTab === 'الرئيسية'">
-                    <div>
-                        <img src="{{ $images['الرئيسية'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
-                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
-                            <x-text-frame id="home1" dataEn="{{ $images['الرئيسية'][1]['en'] }}"
-                                dataAr="{{ $images['الرئيسية'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
-                            <x-text-frame id="home2" dataAr="{{ $images['الرئيسية'][2]['ar'] }}"
-                                dataEn="{{ $images['الرئيسية'][2]['en'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                    </div>
-                </template>
-                <template x-if="activeTab === 'المورد'">
-                    <div>
-                        <img src="{{ $images['المورد'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
-                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
-                            <x-text-frame dataEn="{{ $images['المورد'][1]['en'] }}"
-                                dataAr="{{ $images['المورد'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
-                            <x-text-frame dataEn="{{ $images['المورد'][2]['en'] }}"
-                                dataAr="{{ $images['المورد'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                    </div>
-                </template>
-                <template x-if="activeTab === 'الطلبات'">
-                    <div>
-                        <img src="{{ $images['الطلبات'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
-                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
-                            <x-text-frame dataEn="{{ $images['الطلبات'][1]['en'] }}"
-                                dataAr="{{ $images['الطلبات'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
-                            <x-text-frame dataEn="{{ $images['الطلبات'][2]['en'] }}"
-                                dataAr="{{ $images['الطلبات'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                    </div>
-                </template>
-
-                <!-- Template for "المخزون" tab -->
-                <template x-if="activeTab === 'المخزون'">
-                    <div>
-                        <img src="{{ $images['المخزون'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
-                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
-                            <x-text-frame dataEn="{{ $images['المخزون'][1]['en'] }}"
-                                dataAr="{{ $images['المخزون'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
-                            <x-text-frame dataEn="{{ $images['المخزون'][2]['en'] }}"
-                                dataAr="{{ $images['المخزون'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                    </div>
-                </template>
-
-                <!-- Template for "الكاشير" tab -->
-                <template x-if="activeTab === 'الكاشير'">
-                    <div>
-                        <img src="{{ $images['الكاشير'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
-                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
-                            <x-text-frame dataEn="{{ $images['الكاشير'][1]['en'] }}"
-                                dataAr="{{ $images['الكاشير'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
-                            <x-text-frame dataEn="{{ $images['الكاشير'][2]['en'] }}"
-                                dataAr="{{ $images['الكاشير'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                    </div>
-                </template>
-
-                <!-- Template for "التقارير" tab -->
-                <template x-if="activeTab === 'التقارير'">
-                    <div>
-                        <img src="{{ $images['التقارير'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
-                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
-                            <x-text-frame dataEn="{{ $images['التقارير'][1]['en'] }}"
-                                dataAr="{{ $images['التقارير'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
-                            <x-text-frame dataEn="{{ $images['التقارير'][2]['en'] }}"
-                                dataAr="{{ $images['التقارير'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                    </div>
-                </template>
-
-                <!-- Template for "التسويق" tab -->
-                <template x-if="activeTab === 'التسويق'">
-                    <div>
-                        <img src="{{ $images['التسويق'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
-                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
-                            <x-text-frame dataEn="{{ $images['التسويق'][1]['en'] }}"
-                                dataAr="{{ $images['التسويق'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
-                            </x-text-frame>
-                        </div>
-                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2">
-                            <x-text-frame dataEn="{{ $images['التسويق'][2]['en'] }}"
-                                dataAr="{{ $images['التسويق'][2]['ar'] }}"
-                                class="w-fit mx-auto p-4 whitespace-nowrap text-center">
-                            </x-text-frame>
-                        </div>
-                    </div>
-                </template>
-            </div>
+            <div class="m-4" id="image-content"></div> <!-- Container for dynamic content -->
         </div>
+    </div>
+
+    <style>
+/* Add styles for inactive and active tab states */
+.tab-icon {
+    transition: color 0.3s ease;
+}
+
+.active-tab .tab-icon {
+    color: #ff7f0e;
+    /* Active color for the icon */
+}
+
+.tab-button {
+    display: flex;
+    align-items: center;
+    background-color: #f3f4f6;
+    /* Default background for inactive tabs */
+    border: none;
+    /* Remove button border */
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #ffebcc;
+    /* Background for active tab */
+}
+    </style>
+
+    <script>
+const images = {
+    'الرئيسية': [
+        '{{ asset("images/platforms/home-platform.png") }}',
+        {
+            ar: "انتقل الى الاقسام بكل سلاسة",
+            en: "Move to sections smoothly"
+        },
+        {
+            ar: "شاهد الملخص العام لاداء وكفاءة المطعم",
+            en: "View the general summary of the restaurant’s performance and efficiency"
+        }
+    ],
+    'المورد': [
+        '{{ asset("images/platforms/Inventory.png") }}',
+        {
+            ar: "اشتري مخزون مطعمك بافضل الاسعار",
+            en: "Buy your restaurant inventory at the best prices"
+        },
+        {
+            ar: "تتبع سير عمليات توصيل المخزون",
+            en: "Track the progress of inventory deliveries"
+        }
+    ],
+    'الطلبات': [
+        '{{ asset("images/platforms/Delivery Platform.png") }}',
+        {
+            ar: "اشترك مع تطبيقات التوصيل بضغطة زر !",
+            en: "Subscribe to delivery apps with the click of a button!"
+        },
+        {
+            ar: "راقب الطلبات على جميع التطبيقات في آن واحد",
+            en: "Monitor orders on all applications at once"
+        }
+    ],
+    'المخزون': [
+        '{{ asset("images/platforms/Supplier.png") }}',
+        {
+            ar: "ادارة المخزون بكفاءه عالية",
+            en: "Highly efficient inventory management"
+        },
+        {
+            ar: "راقب مخزونك بكل سهولة",
+            en: "Monitor your inventory with ease"
+        }
+    ],
+    'الكاشير': [
+        '{{ asset("images/platforms/Cashier.png") }}',
+        {
+            ar: "تابع عمل مبيعاتك بشكل فوري ودقيق",
+            en: "Track your sales promptly and accurately"
+        },
+        {
+            ar: "اضف منتجات الى منافذ البيع بكل سلاسه",
+            en: "Add products to sales outlets seamlessly"
+        }
+    ],
+    'التقارير': [
+        '{{ asset("images/platforms/Analytics & Reporting.png") }}',
+        {
+            ar: "راقب اداء مطعمك عن بعد",
+            en: "Monitor your restaurant's performance remotely"
+        },
+        {
+            ar: "امتلك تحاليل فورية لمطعمك",
+            en: "Have instant analytics for your restaurant"
+        }
+    ],
+    'التسويق': [
+        '{{ asset("images/platforms/Marketing.png") }}',
+        {
+            ar: "تابع سير و تنفيذ حملتك الترويجية",
+            en: "Follow the progress and implementation of your promotional campaign"
+        },
+        {
+            ar: "انشئ حملتك الترويجية وابدأ بجذب العملاء",
+            en: "Create your promotional campaign and start attracting customers"
+        }
+    ],
+};
+
+const tabButtons = document.querySelectorAll('.tab-button');
+const imageContentDiv = document.getElementById('image-content');
+
+function renderContent(activeTab) {
+    const selectedImages = images[activeTab];
+    const lang = localStorage.getItem('dir') === 'ltr' ? 'en' : 'ar';
+
+    imageContentDiv.innerHTML = `  
+            <div>  
+                <img src="${selectedImages[0]}" alt="${activeTab} Image" class="w-1/3 mx-auto" />  
+                <div class="m-4 absolute top-1/2 left-1/4 transform -translate-x-1/2 translate-y-[-50%]">  
+                    <div class="w-fit mx-auto p-4 whitespace-nowrap text-center bg-white border border-gray-300 rounded-full shadow-md my-2 flex items-center justify-center">  
+                        <p class="text-center text-lg font-semibold text-gray-800">${selectedImages[1][lang]}</p>  
+                    </div>  
+                </div>  
+                <div class="m-4 absolute top-[20%] right-1/4 transform translate-x-1/2">  
+                    <div class="w-fit mx-auto p-4 whitespace-nowrap text-center bg-white border border-gray-300 rounded-full shadow-md my-2 flex items-center justify-center">  
+                        <p class="text-center text-lg font-semibold text-gray-800">${selectedImages[2][lang]}</p>  
+                    </div>  
+                </div>  
+            </div>  
+        `;
+}
+
+function setActiveTab(tabButton) {
+    // Remove active class from all buttons  
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+        button.querySelector('.tab-icon').classList.add('text-gray-500'); // Set to gray for inactive  
+        button.querySelector('.tab-icon').classList.remove('text-orange-500'); // Remove orange for inactive  
+        button.querySelector('.tab-label').classList.add('hidden'); // Hide labels  
+    });
+
+    // Add active class to the clicked button  
+    tabButton.classList.add('active');
+    tabButton.querySelector('.tab-icon').classList.remove('text-gray-500'); // Remove gray for active  
+    tabButton.querySelector('.tab-icon').classList.add('text-orange-500'); // Set to orange for active  
+    tabButton.querySelector('.tab-label').classList.remove('hidden'); // Show label for active tab  
+
+    // Get the active tab name and render the content  
+    const activeTab = tabButton.getAttribute('data-tab');
+    renderContent(activeTab);
+}
+
+// Set initial tab  
+renderContent('الرئيسية');
+tabButtons[0].classList.add('active'); // Activate the first tab  
+tabButtons[0].querySelector('.tab-icon').classList.add('text-orange-500'); // Set its icon to orange  
+tabButtons[0].querySelector('.tab-label').classList.remove('hidden'); // Show label for active tab  
+
+// Add click event listeners to each tab button  
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => setActiveTab(button));
+});
+    </script>

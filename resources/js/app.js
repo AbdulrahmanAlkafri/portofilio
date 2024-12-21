@@ -43,14 +43,14 @@ document
             // Switch to Arabic (RTL)
             document.documentElement.setAttribute("dir", "rtl");
             document.body.setAttribute("dir", "rtl");
-            sessionStorage.setItem("dir", "rtl");
+            localStorage.setItem("dir", "rtl");
             // Update text to Arabic
             updateText("ar");
         } else {
             // Switch to English (LTR)
             document.documentElement.setAttribute("dir", "ltr");
             document.body.setAttribute("dir", "ltr");
-            sessionStorage.setItem("dir", "ltr");
+            localStorage.setItem("dir", "ltr");
             // Update text to English
             updateText("en");
         }
@@ -75,9 +75,9 @@ function updateText(lang) {
     });
 }
 
-// On page load, set the direction and language based on sessionStorage
+// On page load, set the direction and language based on localStorage
 window.addEventListener("load", function () {
-    const dir = sessionStorage.getItem("dir") || "ltr"; // Default to LTR
+    const dir = localStorage.getItem("dir") || "ltr"; // Default to LTR
     document.documentElement.setAttribute("dir", dir);
     document.body.setAttribute("dir", dir);
     document.getElementById("language-toggle").checked = dir === "rtl";
