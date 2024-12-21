@@ -1,4 +1,4 @@
-<div class="relative flex justify-center items-center h-screen bg-white">
+<div class="relative flex justify-center items-center h-screen bg-orange-50">
     {{-- Parent Container for Big and Child Images --}}
     <div class="relative">
         {{-- Big Image --}}

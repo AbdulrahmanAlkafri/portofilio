@@ -3,7 +3,8 @@
 
         <!-- Email Card -->
         <div class="flex flex-col items-center w-[255px] h-[366px] gap-y-8">
-            <div class="p-5 text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
+            <div
+                class="p-5 w-[178px] h-[197px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
                 <div class="text-orange-500 mb-2">
                     <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -24,7 +25,8 @@
         </div>
         <!-- Phone Card -->
         <div class="flex flex-col items-center w-[255px] h-[366px] gap-y-8">
-            <div class="p-5 text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
+            <div
+                class="p-5 w-[178px] h-[197px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
                 <div class="text-orange-500 mb-2">
                     <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -46,7 +48,7 @@
         <!-- Location Card -->
         <div class="flex flex-col items-center w-[255px] h-[366px] gap-y-8">
             <div
-                class="p-5 text-center flex h-[197px] flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
+                class="p-5 w-[178px] h-[197px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
                 <div class="text-orange-500 mb-2">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path

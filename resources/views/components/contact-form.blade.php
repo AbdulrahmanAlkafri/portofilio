@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <form action="{{ route('contacts.store') }}" method="POST" class="space-y-8">
         @csrf
         <div class="mb-4">
-            <input type="text" name="name" id="name" placeholder="الاسم" data-ar="الاسم" data-en="Name"
+            <input type="text" name="name" id="name"placeholder="الاسم" data-ar="الاسم" data-en="Name" 
                 class="mt-1 block w-1/3 bg-gray-100 placeholder:text-black placeholder:text-sm mx-auto border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-orange-300"
                 required>
             @error('name')

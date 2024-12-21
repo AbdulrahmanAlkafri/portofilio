@@ -6,10 +6,9 @@
         بخطوات سهلة لتسجيل علامتك التجارية والانطلاق نحو النجاح معنا" data-en="
 Find out how we can help you
         With easy steps to register your trademark and move towards success with us"></p>
-        <div class=" grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-
+        <div class="flex justify-center items-center gap-x-8">
             <div
-                class="w-[262px] h-[292px] m-auto shadow-xl rounded-3xl p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
+                class="w-[262px] h-[292px] shadow-xl rounded-3xl p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
                 <svg width="95" height="94" viewBox="0 0 95 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" width="94" height="94" rx="47" fill="#F28A49" fill-opacity="0.3" />
                     <circle cx="47.5" cy="47" r="37" fill="#F28A49" />
@@ -31,7 +30,7 @@ Find out how we can help you
                 </p>
             </div>
             <div
-                class="w-[262px] h-[292px] m-auto shadow-xl rounded-3xl p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
+                class="w-[262px] h-[292px] shadow-xl rounded-3xl p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
                 <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="94" height="94" rx="47" fill="#F28A49" fill-opacity="0.3" />
                     <circle cx="47" cy="47" r="37" fill="#F28A49" />
@@ -49,7 +48,7 @@ Find out how we can help you
                 </p>
             </div>
             <div
-                class="w-[262px] h-[292px] m-auto shadow-xl rounded-3xl p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
+                class="w-[262px] h-[292px] shadow-xl rounded-3xl p-6 text-center flex flex-col justify-evenly items-center gap-y-4">
                 <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="94" height="94" rx="47" fill="#F28A49" fill-opacity="0.3" />
                     <circle cx="47" cy="47" r="37" fill="#F28A49" />

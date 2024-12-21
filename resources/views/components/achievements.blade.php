@@ -1,8 +1,8 @@
-<div class="w-full h-8 bg-white"></div>
 <div class="py-10 text-center flex justify-center items-center">
     <div class="w-1/4 mx-auto text-right">
-        <h2 class="text-5xl text-gray-600 font-bold mb-6 leading-relaxed" data-en="Results We Made Togather"
-            data-ar="النتائج التي حققناها معًا">
+        <h2 class="text-4xl flex flex-col relative top-3 justify-start text-gray-600 font-bold mb-6 leading-relaxed">
+            <span data-ar="النتائج التي" data-en="Results We"></span>
+            <span data-ar="حققناها معًا" data-en="Made Togather"></span>
         </h2>
         <p class="mb-8 font-semibold text-3xl tracking-wide leading-loose" data-en="Reduce your restaurant operating costs and get the most out of...
             Your budget" data-ar="قلل تكاليف تشغيل مطعمك وحقق أقصى
@@ -16,7 +16,7 @@
 
             <div class="flex flex-col justify-center gap-y-2 items-center p-4">
                 <div class="flex justify-between items-center gap-x-10">
-                    <span class="text-6xl border-t-2 border-black font-bold mx-1 text-orange-600 number"
+                    <span class="text-6xl border-t-2 p-2 border-black font-bold mx-1 text-orange-600 number"
                         data-target="250">0</span>
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -36,7 +36,7 @@
             <!-- Achievement Item 2 -->
             <div class="flex flex-col justify-center gap-y-2 items-center p-4">
                 <div class="flex justify-between items-center gap-x-10">
-                    <span class="border-t-2 border-black">
+                    <span class="border-t-2 p-2 border-black">
                         <span class="text-6xl  font-bold mx-1 text-orange-600 number" data-target="50">0
                         </span>
                         <span class="text-5xl font-bold ml-1 text-orange-600 number">%</span>
@@ -54,7 +54,7 @@
             <!-- Achievement Item 3 -->
             <div class="flex flex-col justify-center gap-y-2 items-center p-4">
                 <div class="flex justify-between items-center gap-x-10">
-                    <span class="text-6xl border-t-2 border-black font-bold mx-1 text-orange-600 number "
+                    <span class="text-6xl border-t-2 p-2 border-black font-bold mx-1 text-orange-600 number "
                         data-target="250">0</span>
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -75,7 +75,7 @@
             <!-- Achievement Item 4 -->
             <div class="flex flex-col justify-center gap-y-2 items-center p-4">
                 <div class="flex justify-between items-center gap-x-10">
-                    <span class="text-6xl border-t-2 border-black font-bold mx-1 text-orange-600 number"
+                    <span class="text-6xl border-t-2 p-2 border-black font-bold mx-1 text-orange-600 number"
                         data-target="250">0</span>
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path

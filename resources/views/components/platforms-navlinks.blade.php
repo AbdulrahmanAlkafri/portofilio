@@ -133,17 +133,21 @@
     ],
     ];
     @endphp
-    <div class="bg-white">
+    <div x-data="{ activeTab: 'الرئيسية' }" class="bg-white">
+
         <div class="flex justify-evenly items-center space-x-4 overflow-auto">
             @foreach ($tabs as $tabName => $tabData)
-            <button id="tab-{{ $tabName }}"
-                class="tab-button my-10 flex items-center px-4 py-2 rounded-full shadow bg-gray-200"
-                data-tab="{{ $tabName }}">
-                <span class="tab-icon">
-                    {!! str_replace('currentColor', 'currentColor', $tabData['svg']) !!}
+            <button @click.prevent="activeTab = '{{ $tabName }}'"
+                :class="activeTab === '{{ $tabName }}' ? 'bg-orange-100 text-orange-500' : 'bg-gray-200'"
+                class="my-10 flex items-center px-4 py-2 rounded-full shadow">
+
+                <span>
+                    <span x-bind:class="activeTab === '{{ $tabName }}' ? 'text-orange-500' : 'text-gray-500'">
+                        {!! str_replace('currentColor', 'currentColor', $tabData['svg']) !!}
+                    </span>
                 </span>
-                <span class="ml-2 mx-1 text-xl" data-en="{{ $tabData['en'] }}" data-ar="{{ $tabName }}">
-                    {{ $tabName }}
+                <span x-show="activeTab === '{{ $tabName }}'" data-en="{{$tabData['en']}}" data-ar="{{$tabName}}"
+                    class="ml-2 mx-1 text-xl">
                 </span>
             </button>
             @endforeach
@@ -151,145 +155,122 @@
 
         <!-- Image Display Section -->
         <div class="mt-5 flex flex-wrap justify-center relative">
-            <div class="m-4" id="content-display">
-                <img src="" alt="Main Image" class="w-1/3 mx-auto" id="main-image" />
-                <div id="text-branch1" class="text-content m-4"></div>
-                <div id="text-branch2" class="text-content m-4"></div>
+            <div class="m-4">
+
+                <!-- Template for "الرئيسية" tab -->
+                <template x-if="activeTab === 'الرئيسية'">
+                    <div>
+                        <img src="{{ $images['الرئيسية'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
+                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
+                            <x-text-frame id="home1" dataEn="{{ $images['الرئيسية'][1]['en'] }}"
+                                dataAr="{{ $images['الرئيسية'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
+                            <x-text-frame id="home2" dataAr="{{ $images['الرئيسية'][2]['ar'] }}"
+                                dataEn="{{ $images['الرئيسية'][2]['en'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                    </div>
+                </template>
+                <template x-if="activeTab === 'المورد'">
+                    <div>
+                        <img src="{{ $images['المورد'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
+                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
+                            <x-text-frame dataEn="{{ $images['المورد'][1]['en'] }}"
+                                dataAr="{{ $images['المورد'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
+                            <x-text-frame dataEn="{{ $images['المورد'][2]['en'] }}"
+                                dataAr="{{ $images['المورد'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                    </div>
+                </template>
+                <template x-if="activeTab === 'الطلبات'">
+                    <div>
+                        <img src="{{ $images['الطلبات'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
+                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
+                            <x-text-frame dataEn="{{ $images['الطلبات'][1]['en'] }}"
+                                dataAr="{{ $images['الطلبات'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
+                            <x-text-frame dataEn="{{ $images['الطلبات'][2]['en'] }}"
+                                dataAr="{{ $images['الطلبات'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Template for "المخزون" tab -->
+                <template x-if="activeTab === 'المخزون'">
+                    <div>
+                        <img src="{{ $images['المخزون'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
+                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
+                            <x-text-frame dataEn="{{ $images['المخزون'][1]['en'] }}"
+                                dataAr="{{ $images['المخزون'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
+                            <x-text-frame dataEn="{{ $images['المخزون'][2]['en'] }}"
+                                dataAr="{{ $images['المخزون'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Template for "الكاشير" tab -->
+                <template x-if="activeTab === 'الكاشير'">
+                    <div>
+                        <img src="{{ $images['الكاشير'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
+                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
+                            <x-text-frame dataEn="{{ $images['الكاشير'][1]['en'] }}"
+                                dataAr="{{ $images['الكاشير'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
+                            <x-text-frame dataEn="{{ $images['الكاشير'][2]['en'] }}"
+                                dataAr="{{ $images['الكاشير'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Template for "التقارير" tab -->
+                <template x-if="activeTab === 'التقارير'">
+                    <div>
+                        <img src="{{ $images['التقارير'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
+                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
+                            <x-text-frame dataEn="{{ $images['التقارير'][1]['en'] }}"
+                                dataAr="{{ $images['التقارير'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2  h-1/2">
+                            <x-text-frame dataEn="{{ $images['التقارير'][2]['en'] }}"
+                                dataAr="{{ $images['التقارير'][2]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Template for "التسويق" tab -->
+                <template x-if="activeTab === 'التسويق'">
+                    <div>
+                        <img src="{{ $images['التسويق'][0] }}" alt="Main Image" class="w-1/3 mx-auto" />
+                        <div class="m-4 absolute top-1/2 left-1/3 transform -translate-x-1/2 translate-y-[-50%]">
+                            <x-text-frame dataEn="{{ $images['التسويق'][1]['en'] }}"
+                                dataAr="{{ $images['التسويق'][1]['ar'] }}" class="w-fit mx-auto p-4 whitespace-nowrap">
+                            </x-text-frame>
+                        </div>
+                        <div class="m-4 absolute top-1/4 right-1/3 transform translate-x-1/2">
+                            <x-text-frame dataEn="{{ $images['التسويق'][2]['en'] }}"
+                                dataAr="{{ $images['التسويق'][2]['ar'] }}"
+                                class="w-fit mx-auto p-4 whitespace-nowrap text-center">
+                            </x-text-frame>
+                        </div>
+                    </div>
+                </template>
             </div>
         </div>
-    </div>
-
-    <script>
-// Data structure for images and text content  
-const contentData = {
-    'الرئيسية': [
-        '/images/platforms/home-platform.png', // Main image URL  
-        {
-            en: 'Supplier English Text 1',
-            ar: 'رئيس النص 1'
-        }, // Branch 1 text  
-        {
-            en: 'Supplier English Text 2',
-            ar: 'رئيس النص 2'
-        }, // Branch 1 text  
-    ],
-    'المورد': [
-        "images/platforms/Inventory.png", {
-            en: 'Supplier English Text 2',
-            ar: 'المورد النص 2'
-        },
-        {
-            en: 'Supplier English Text 2',
-            ar: 'المورد النص 2'
-        } // Branch 2 text 
-    ],
-    'الطلبات': [
-        'images/platforms/Delivery Platform.png', // Main image URL  
-        {
-            en: 'Orders English Text 1',
-            ar: 'طلبات النص 1'
-        },
-        {
-            en: 'Orders English Text 2',
-            ar: 'طلبات النص 2'
-        }
-    ],
-    'المخزون': [
-        'images/platforms/Supplier.png', // Main image URL  
-        {
-            en: 'Inventory English Text 1',
-            ar: 'المخزون النص 1'
-        },
-        {
-            en: 'Inventory English Text 2',
-            ar: 'المخزون النص 2'
-        }
-    ],
-    'الكاشير': [
-        'images/platforms/Cashier.png', // Main image URL  
-        {
-            en: 'Cashier English Text 1',
-            ar: 'الكاشير النص 1'
-        },
-        {
-            en: 'Cashier English Text 2',
-            ar: 'الكاشير النص 2'
-        }
-    ],
-    'التقارير': [
-        'images/platforms/Analytics & Reporting.png', // Main image URL  
-        {
-            en: 'Reports English Text 1',
-            ar: 'التقارير النص 1'
-        },
-        {
-            en: 'Reports English Text 2',
-            ar: 'التقارير النص 2'
-        }
-    ],
-    'التسويق': [
-        'images/platforms/Marketing.png', // Main image URL  
-        {
-            en: 'Marketing English Text 1',
-            ar: 'التسويق النص 1'
-        },
-        {
-            en: 'Marketing English Text 2',
-            ar: 'التسويق النص 2'
-        }
-    ]
-};
-
-document.addEventListener('DOMContentLoaded', function() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const mainImage = document.getElementById('main-image');
-    const textBranch1 = document.getElementById('text-branch1');
-    const textBranch2 = document.getElementById('text-branch2');
-
-    // Function to display content based on the active tab  
-    function displayContent(tabName) {
-        const content = contentData[tabName];
-
-        if (content) {
-            mainImage.src = content[0]; // Update main image  
-            const lang = localStorage.getItem('dir'); // Get the current language from local storage  
-            textBranch1.innerHTML = `  
-                <x-text-frame data-en="${content[1].en}" data-ar="${content[1].ar}" class="w-fit mx-auto p-4 whitespace-nowrap">  
-                    ${lang === 'rtl' ? content[1].ar : content[1].en} <!-- Check for Arabic -->  
-                </x-text-frame>  
-            `;
-            textBranch2.innerHTML = `  
-                <x-text-frame data-en="${content[2].en}" data-ar="${content[2].ar}" class="w-fit mx-auto p-4 whitespace-nowrap">  
-                    ${lang === 'rtl' ? content[2].ar : content[2].en} <!-- Check for Arabic -->  
-                </x-text-frame>  
-            `;
-        }
-    }
-
-    // Initially display the content for the first tab  
-    const initialTab = tabButtons[0].getAttribute('data-tab');
-    displayContent(initialTab);
-
-    // Set up tab click events  
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const activeTab = this.getAttribute('data-tab');
-            displayContent(activeTab); // Update displayed content  
-            // Highlight active tab  
-            tabButtons.forEach(btn => btn.classList.remove('bg-orange-100', 'text-orange-500'));
-            button.classList.add('bg-orange-100', 'text-orange-500');
-        });
-    });
-});
-    </script>
-
-    <style>
-.tab-button {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.tab-button:hover {
-    background-color: #f3f4f6;
-    /* Tailwind's gray-200 */
-}
-    </style>

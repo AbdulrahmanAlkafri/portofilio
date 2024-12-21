@@ -13,10 +13,10 @@
         </div>
 
         <!-- Grid of Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12 mx-auto bg-gray-50 shadow-xl">
+        <div class="flex items-center justify-center gap-6 bg-cover p-4 w-11/12 mx-auto bg-gray-50 shadow-xl">
             <!-- Card 3 -->
             <div
-                class="w-[411px] h-[300px] m-auto flex flex-col justify-center gap-y-2 tracking-wide leading-relaxed text-wrap text-center group transition-transform transform">
+                class="w-[411px] h-[300px] bg-white rounded-md p-3 flex flex-col justify-center gap-y-2 tracking-wide leading-relaxed text-wrap text-center group transition-transform transform">
                 <div class="flex justify-center mb-4">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_15_9113" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="3"
@@ -44,7 +44,7 @@
 
             <!-- Card 2 -->
             <div
-                class="flex flex-col gap-y-2 m-auto w-[411px] h-[300px] justify-center  text-center group transition-transform transform">
+                class="flex flex-col gap-y-2 w-[411px] h-[300px] bg-white rounded-md p-3 justify-center  text-center group transition-transform transform">
                 <div class="flex justify-center mb-4">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_15_9100)">
@@ -79,7 +79,7 @@
             </div>
             <!-- Card 1 -->
             <div
-                class="w-[411px] h-[300px] m-auto flex flex-col justify-center gap-y-2  text-center group transition-transform transform">
+                class="w-[411px] h-[300px] bg-white rounded-md p-3 flex flex-col justify-center gap-y-2  text-center group transition-transform transform">
                 <div class="flex justify-center mb-4">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_15_9084)">

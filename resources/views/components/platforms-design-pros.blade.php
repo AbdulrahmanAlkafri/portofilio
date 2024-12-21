@@ -35,15 +35,15 @@ $bullets2 = [
     </div>
 
     <!-- Left Side: Image -->
-    <div class="w-full md:ml-6">
-        <img src="{{ asset('images/platforms/design-pros.png') }}" alt="Chart Orders" class="w-full md:w-3/4 h-auto">
+    <div class="w-full">
+        <img src="{{ asset('images/platforms/design-pros.png') }}" alt="Chart Orders" class="w-full">
     </div>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 p-6 w-full">
     <!-- Left Side: Image -->
-    <div class="w-full md:ml-6">
-        <img src="{{ asset("images/platforms/platform-pros.png") }}" alt="Chart Orders" class="w-full md:w-3/4 h-auto">
+    <div class="w-full">
+        <img src="{{ asset("images/platforms/platform-pros.png") }}" alt="Chart Orders" class="w-full">
     </div>
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-1/3 space-y-4 m-auto">

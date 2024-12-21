@@ -48,55 +48,56 @@ document.addEventListener('DOMContentLoaded', function() {
                 نحن هنا نحتاج دعمك نحو النجاح. يرجى ملئ الإستمارة أدناه و سنتواصل معك قريبا لاستكشاف الفرص الإستثمارية و
                 الشراكات الممكنة
             </p>
-            <form action="{{ route('invest') }}" method="POST" class="p-5 bg-white shadow-md rounded-lg w-full">
+            <form action="{{ route('invest') }}" method="POST" class="p-5 bg-white shadow-md rounded-lg w-4/5 mx-auto">
                 @csrf
-                <div class="mb-4 flex items-center">
-                    <label for="name" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-ar="الاسم"
+                <div class="mb-4 flex items-center justify-start">
+                    <label for="name" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-ar="الاسم"
                         data-en="Name">
                         الاسم
                     </label>
                     <input type="text" id="name" name="name"
-                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('name') border-red-500 @enderror"
+                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 bg-gray-50 @error('name') border-red-500 @enderror"
                         value="{{ old('name') }}" required>
                     @error('name')
                     <span class="text-red-500 text-sm mr-4">{{ $message }}</span>
                     @enderror
                 </div>
 
-                <div class="mb-4 flex items-center">
-                    <label for="phone" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-ar="رقم الهاتف"
+                <div class="mb-4 flex items-center justify-center">
+                    <label for="phone" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-ar="رقم الهاتف"
                         data-en="Phone Number">
                         رقم الهاتف
                     </label>
                     <input type="tel" id="phone" name="phone"
-                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('phone') border-red-500 @enderror"
+                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 bg-gray-50 @error('phone') border-red-500 @enderror"
                         value="{{ old('phone') }}" required>
                     @error('phone')
                     <span class="text-red-500 text-sm mr-4">{{ $message }}</span>
                     @enderror
                 </div>
 
-                <div class="mb-4 flex items-center">
-                    <label for="company_name" class="block text-lg font-bold text-orange-500 mr-4 w-1/3"
+                <div class="mb-4 flex items-center justify-center">
+                    <label for="company_name" class="block text-lg font-bold text-orange-400 mr-4 w-1/3"
                         data-ar="اسم الشركة" data-en="Company Name">
                         اسم الشركة
                     </label>
                     <input type="text" id="company_name" name="company_name"
-                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('company_name') border-red-500 @enderror"
+                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 bg-gray-50 @error('company_name') border-red-500 @enderror"
                         value="{{ old('company_name') }}" required>
                     @error('company_name')
                     <span class="text-red-500 text-sm mr-4">{{ $message }}</span>
                     @enderror
                 </div>
 
-                <div class="mb-4 flex items-center">
-                    <label for="company_type" class="block text-lg font-bold text-orange-500 mr-4 w-1/3"
+                <div class="mb-4 flex items-center justify-center">
+                    <label for="company_type" class="block text-lg font-bold text-orange-400 mr-4 w-1/3"
                         data-ar="نوع الشركة" data-en="Company Type">
                         نوع الشركة
                     </label>
                     <select id="company_type" name="company_type"
-                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('company_type') border-red-500 @enderror">
-                        <option value="" data-ar="اختر..." data-en="choose...">{{ old('company_type') ?: 'اختر...' }}
+                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 bg-gray-50 @error('company_type') border-red-500 @enderror">
+                        <option value="" data-ar="نوع الشركة" data-en="company type">
+                            {{ old('company_type') ?: 'نوع الشركة' }}
                         </option>
                         <option value="نوع 1" {{ old('company_type') == 'نوع 1' ? 'selected' : '' }} data-ar="نوع 1"
                             data-en="Type 1">نوع 1</option>
@@ -110,14 +111,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     @enderror
                 </div>
 
-                <div class="mb-4 flex items-center">
-                    <label for="country" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-ar="الدولة"
+                <div class="mb-4 flex items-center justify-center">
+                    <label for="country" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-ar="الدولة"
                         data-en="Country">
                         الدولة
                     </label>
                     <select id="country" name="country"
-                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('country') border-red-500 @enderror">
-                        <option value="" data-ar="اختر..." data-en="choose...">{{ old('country') ?: 'اختر...' }}
+                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 bg-gray-50 @error('country') border-red-500 @enderror">
+                        <option class="text-gray-600" value="" data-ar="الدولة" data-en="country">
+                            {{ old('country') ?: 'الدولة' }}
                         </option>
                         <option value="دولة 1" {{ old('country') == 'دولة 1' ? 'selected' : '' }} data-ar="دولة 1"
                             data-en="Country 1">دولة 1</option>
@@ -131,13 +133,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     @enderror
                 </div>
 
-                <div class="mb-4 flex items-center">
-                    <label for="message" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-ar="رسالة"
+                <div class="mb-4 flex items-center justify-center">
+                    <label for="message" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-ar="رسالة"
                         data-en="Message">
                         رسالة
                     </label>
                     <textarea id="message" name="message"
-                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 @error('message') border-red-500 @enderror"
+                        class="mt-1 p-2 border outline-none rounded-md focus:ring-2 focus:ring-orange-500 flex-1 bg-gray-50 @error('message') border-red-500 @enderror"
                         rows="4">{{ old('message') }}</textarea>
                     @error('message')
                     <span class="text-red-500 text-sm mr-4">{{ $message }}</span>
