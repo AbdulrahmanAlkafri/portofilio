@@ -11,9 +11,9 @@
         </p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="w-4/5 flex justify-center items-center mx-auto gap-6">
         <!-- Card 1 -->
-        <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center justify-between">
+        <div class="bg-white p-3 w-3/5 rounded-xl shadow-lg flex flex-col items-center justify-between">
             <h3 class="text-xl font-bold text-gray-800 mb-2" data-en="Investment Value" data-ar="قيمة الاستثمار">
                 قيمة الاستثمار
             </h3>
@@ -41,7 +41,7 @@
             </p>
         </div>
         <!-- Card 2 -->
-        <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center justify-evenly">
+        <div class="bg-white p-3 w-3/5 mx-auto rounded-xl shadow-lg flex flex-col items-center justify-evenly">
             <h3 class="text-xl font-bold text-gray-800 mb-2" data-en="Number of Investors" data-ar="عدد المستثمرين">
                 عدد المستثمرين
             </h3>
@@ -55,8 +55,7 @@
             </p>
             <p class="text-green-500 font-semibold">
                 <span>75% </span><span data-ar="من المستثمرين بالأصول المادية" data-en="of Investors in Tangible Assets"
-                    class="text-gray-500">من المستثمرين
-                    بالأصول المادية</span>.
+                    class="text-gray-500">من المستثمرين بالأصول المادية</span>.
             </p>
             <img loading="lazy" src="{{ asset('images/invest-home/invest-home1.png') }}" alt="Investment Success 2"
                 class="w-full mt-4 rounded-lg" />
@@ -71,7 +70,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center justify-evenly">
+        <div class="bg-white p-3 w-3/5 mx-auto rounded-xl shadow-lg flex flex-col items-center justify-evenly">
             <h3 class="text-xl font-bold text-gray-800 mb-2 flex justify-start" data-en="Investment Returns"
                 data-ar="عائد الاستثمار">
                 عائد الاستثمار
@@ -90,8 +89,8 @@
             </p>
             <p class="text-green-500 font-semibold">
                 <span>20% </span> <span data-en="Expected Increase in Returns Over the Next Five Years"
-                    data-ar="زيادة في العائد المتوقع خلال السنوات الخمس المقبلة" class="text-gray-500">زيادة في
-                    العائد المتوقع خلال السنوات الخمس المقبلة</span>.
+                    data-ar="زيادة في العائد المتوقع خلال السنوات الخمس المقبلة" class="text-gray-500">زيادة في العائد
+                    المتوقع خلال السنوات الخمس المقبلة</span>.
             </p>
             <img loading="lazy" src="{{ asset('images/invest-home/invest-home3.png') }}" alt="Investment Success 1"
                 class="w-full mt-4 rounded-lg" />
@@ -104,6 +103,5 @@
                 معانا، تحقق أهدافك الاستثمارية بسرعة بفضل استراتيجياتنا الذكية.
             </p>
         </div>
-
     </div>
 </div>

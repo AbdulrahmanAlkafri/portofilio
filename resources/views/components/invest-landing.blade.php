@@ -1,4 +1,4 @@
-<div class="flex p-6 justify-center items-center gap-x-8">
+<div class="flex p-6 justify-center items-center gap-x-8 mt-24">
     <div class="flex flex-col justify-center w-1/2">
         <h2 class="text-gray-700 text-6xl leading-loose font-bold mb-4" data-ar="مستقبل المطاعم بين يديك"
             data-en="The future of restaurants is in your hands"></h2>

@@ -1,4 +1,4 @@
-<div class="bg-white py-16">
+<div class="bg-white py-14">
     <div class="mb-16">
         <div class="w-4/5 mx-auto text-center">
             <!-- Header -->
@@ -13,10 +13,10 @@
         </div>
 
         <!-- Grid of Cards -->
-        <div class="flex items-center justify-center gap-6 bg-cover p-4 w-11/12 mx-auto bg-gray-50 shadow-xl">
+        <div class="flex items-center h-[300px] justify-center gap-6 bg-cover w-fit mx-auto shadow-2xl bg-gray-100">
             <!-- Card 3 -->
             <div
-                class="w-[411px] h-[300px] bg-white rounded-md p-3 flex flex-col justify-center gap-y-2 tracking-wide leading-relaxed text-wrap text-center group transition-transform transform">
+                class="w-[411px] h-[300px] bg-gray-50 border-none rounded-md p-3 flex flex-col justify-center gap-y-2 text-wrap text-center group transition-transform transform">
                 <div class="flex justify-center mb-4">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_15_9113" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="3"
@@ -33,10 +33,9 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-ar="قيادة الابتكار"
-                    data-en="Driving innovation">
+                <h3 class="text-3xl font-semibold mb-2" data-ar="قيادة الابتكار" data-en="Driving innovation">
                 </h3>
-                <p class="text-gray-600 text-xl"
+                <p class="text-gray-600 text-2xl"
                     data-en="We are working to change the rules of the sector through smart solutions that transform the traditional restaurant sector into a modern sector with an integrated system."
                     data-ar="نعمل على تغيير قواعد القطاع عبر حلول ذكية تحول قطاع المطاعم التقليدي إلى قطاع حديث بنظام متكامل.">
                 </p>
@@ -44,7 +43,7 @@
 
             <!-- Card 2 -->
             <div
-                class="flex flex-col gap-y-2 w-[411px] h-[300px] bg-white rounded-md p-3 justify-center  text-center group transition-transform transform">
+                class="flex flex-col gap-y-2 w-[411px] h-[300px] bg-gray-50 rounded-md p-3 justify-center  text-center group transition-transform transform">
                 <div class="flex justify-center mb-4">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_15_9100)">
@@ -70,16 +69,15 @@
                         </defs>
                     </svg>
                 </div>
-                <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-en="Sustainable impact"
-                    data-ar="التأثير المستدام"></h3>
-                <p class="text-gray-600 text-xl" data-ar="نموذجنا الاستثماري المستدام يتيح تقليل الفائدة وتقديم الخدمات بكفاءة وبأقل تكلفة
+                <h3 class="text-3xl font-semibold mb-2" data-en="Sustainable impact" data-ar="التأثير المستدام"></h3>
+                <p class="text-gray-600 text-2xl" data-ar="نموذجنا الاستثماري المستدام يتيح تقليل الفائدة وتقديم الخدمات بكفاءة وبأقل تكلفة
                 تشغيلية."
                     data-en="Our sustainable investment model allows for reducing interest and providing services efficiently and at the lowest cost Operational.">
                 </p>
             </div>
             <!-- Card 1 -->
             <div
-                class="w-[411px] h-[300px] bg-white rounded-md p-3 flex flex-col justify-center gap-y-2  text-center group transition-transform transform">
+                class="w-[411px] h-[300px] bg-gray-50 rounded-md p-3 flex flex-col justify-center gap-y-2  text-center group transition-transform transform">
                 <div class="flex justify-center mb-4">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_15_9084)">
@@ -114,7 +112,7 @@
                 <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-ar="توسعات ذكية وفعالة"
                     data-en="Smart and efficient expansions">
                 </h3>
-                <p class="text-gray-600 text-xl" data-ar="قدّم نموًّا استثماريًا عالي العائد مع ضمان مرونة تشغيلية تلبي احتياجات السوق
+                <p class="text-gray-600 text-2xl" data-ar="قدّم نموًّا استثماريًا عالي العائد مع ضمان مرونة تشغيلية تلبي احتياجات السوق
                 المتغير."
                     data-en="Deliver high-return investment growth while ensuring operational flexibility that meets market needs">
                 </p>

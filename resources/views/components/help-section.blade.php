@@ -1,7 +1,7 @@
 <div class="bg-white w-full space-y-10 pt-10">
     <div class="flex justify-center items-center w-[90%] mx-auto">
         <div
-            class="flex flex-col justify-center items-center bg-gradient-to-r from-gray-100 via-gray-100 to-[#d27e4966] p-6 rounded-3xl shadow-lg mb-32">
+            class="flex flex-col justify-center items-center bg-gradient-to-r from-gray-50 to-orange-50 p-6 rounded-3xl shadow-lg mb-32">
             <!-- Image Section -->
             <div class="flex space-x-2 mb-4 flex-col items-center gap-y-10">
                 <img src="{{ asset('images/help-section.png') }}" alt="Support Image"
@@ -25,9 +25,9 @@
             <!-- Button Section -->
             <div class="w-full flex justify-center">
                 <a href="/contact"
-                    class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full flex justify-evenly items-center gap-x-3">
+                    class="bg-orange-500 text-white font-bold py-2 px-12 rounded-xl flex justify-center items-center gap-x-1">
                     <span data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</span>
-                    <svg class="m-auto" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                    <svg class="relative top-0.5" width="25" height="25" viewBox="0 0 25 25" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M10.0704 19.3201C9.88043 19.3201 9.69043 19.2501 9.54043 19.1001L3.47043 13.0301C3.18043 12.7401 3.18043 12.2601 3.47043 11.9701L9.54043 5.90012C9.83043 5.61012 10.3104 5.61012 10.6004 5.90012C10.8904 6.19012 10.8904 6.67012 10.6004 6.96012L5.06043 12.5001L10.6004 18.0401C10.8904 18.3301 10.8904 18.8101 10.6004 19.1001C10.4604 19.2501 10.2604 19.3201 10.0704 19.3201Z"

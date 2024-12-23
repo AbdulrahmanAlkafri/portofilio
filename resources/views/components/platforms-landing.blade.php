@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center my-20">
+<div class="flex flex-col items-center my-44">
     <h2 class="text-5xl font-bold text-gray-600 mb-10 text-center">
         <span data-en="Your partner in success at" data-ar="شريكك في النجاح في منصة"></span>
         <span class="text-orange-500" data-ar=" كتشن بلس" data-en="Kitch Plus"></span>

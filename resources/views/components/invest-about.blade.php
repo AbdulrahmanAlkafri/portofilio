@@ -10,7 +10,7 @@
                 data-en="Your investment today is the revolution for tomorrow's restaurants"
                 data-ar="استثمارك اليوم ثورة لمطاعم الغد">استثمارك اليوم ثورة لمطاعم الغد</h2>
             <!-- Description Paragraph -->
-            <p class="text-3xl tracking-wide leading-loose"
+            <p class="text-3xl leading-relaxed"
                 data-en="We offer you an investment opportunity that combines financial, creative, and strategic investment to achieve our revolution in the restaurant world. From developing new infrastructure, we empower innovation through smart systems. Join us to achieve success together!"
                 data-ar="نقدّم لك فرصة للاستثمار تجمع بين الاستثمار المالي والإبداعي والاستراتيجي لتحقيق ثورتنا في عالم المطاعم. من تطوير بنية تحتية جديدة، نقدم لك إلى تمكين الابتكار عبر أنظمة ذكية. انضم لنا لنحقق معًا النجاح!">
                 نقدّم لك فرصة للاستثمار تجمع بين الاستثمار المالي والإبداعي والاستراتيجي لتحقيق ثورتنا في عالم المطاعم.
@@ -19,7 +19,7 @@
 
             <div class="flex justify-start">
                 <a href="#"
-                    class="bg-orange-500 text-white font-bold py-2 px-16 rounded-full hover:bg-orange-400 transition"
+                    class="bg-orange-500 text-white font-bold py-2.5 px-16 rounded-xl hover:bg-orange-400 transition"
                     data-en="Read More" data-ar="قراءة المزيد">قراءة المزيد</a>
             </div>
         </div>
@@ -31,20 +31,22 @@
                 <!-- Card 2: Investment Value -->
                 <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-800" data-en="Investment Value"
-                            data-ar="قيمة الاستثمار">قيمة الاستثمار</h3>
+                        <h3 class="text-xl font-bold text-gray-800" data-en="Investment Value" data-ar="قيمة الاستثمار">
+                            قيمة الاستثمار</h3>
                         <p class="text-gray-500" data-en="Last 7 Days" data-ar="آخر 7 أيام">آخر 7 أيام</p>
                     </div>
-                    <div class="flex flex-col text-right items-baseline">
-                        <span class="text-3xl font-bold text-orange-500">\$12K</span>
-                        <span class="text-green-500 ml-2 text-2xl">2% ↑</span>
+                    <div class="block">
+                        <span class="text-3xl font-bold text-orange-500 block">\$12K</span>
+                        <span class="text-green-500 ml-2 text-2xl font-bold">2% ↑
+                            <span class="text-xs text-black font-normal" data-ar="مقارنة بالأيام السبعة الماضية"></span>
+                        </span>
                     </div>
                     <img src="{{asset("images/invest-home/invest-home2.png")}}" loading="lazy" />
                 </div>
                 <!-- Card 1: Number of Investors -->
                 <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-800" data-en="Number of Investors"
+                        <h3 class="text-xl font-bold text-gray-800" data-en="Number of Investors"
                             data-ar="عدد المستثمرين">عدد المستثمرين</h3>
                         <p class="text-gray-500" data-en="Last 7 Days" data-ar="آخر 7 أيام">آخر 7 أيام</p>
                     </div>
@@ -60,7 +62,7 @@
 
             <!-- Card 3: Investment Return -->
             <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between gap-y-4">
-                <h3 class="text-xl font-semibold text-gray-800" data-en="Investment Return" data-ar="عائد الاستثمار">
+                <h3 class="text-xl font-bold text-gray-800" data-en="Investment Return" data-ar="عائد الاستثمار">
                     عائد الاستثمار</h3>
                 <div class="flex justify-between items-center">
                     <div class="flex flex-col items-baseline">

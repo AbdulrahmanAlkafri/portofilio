@@ -99,8 +99,8 @@
                         {!! str_replace('currentColor', 'currentColor', $tabData['svg']) !!}
                     </span>
                 </span>
-                <span class="tab-label text-orange-500 ml-2 mx-1 text-xl hidden" data-en="{{$tabData["en"]}}"
-                    data-ar="{{$tabName}}">
+                <span class="tab-label text-orange-500 ml-2 mx-1 text-xl hidden py-1.5 px-3"
+                    data-en="{{$tabData["en"]}}" data-ar="{{$tabName}}">
                     <!-- {{$tabName}} -->
                     <!-- Default hidden initially -->
                 </span>

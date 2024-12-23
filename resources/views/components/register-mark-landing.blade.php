@@ -1,5 +1,5 @@
 <div class="flex items-center justify-center min-h-screen">
-    <div class="max-w-7xl w-full mx-auto flex flex-row">
+    <div class="max-w-7xl  w-full mx-auto flex flex-row">
         <!-- Left Side: Text Section -->
         <div class="w-1/2 flex flex-col justify-center p-6">
             <!-- Title -->

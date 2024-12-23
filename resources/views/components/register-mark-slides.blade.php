@@ -19,7 +19,7 @@
         </button>
 
         <!-- Image Container -->
-        <div class="overflow-hidden rounded-lg mx-auto shadow-lg">
+        <div class="overflow-hidden rounded-lg mx-auto">
             <img id="carouselImage" data-en="{{ asset('images/slides/solution1.png') }}"
                 data-ar="{{ asset('images/slides/slide1.png') }}" src="{{ asset('images/slides/slide1.png') }}"
                 alt="Image Carousel" class="w-full h-auto transition-transform duration-300 ease-in-out">
