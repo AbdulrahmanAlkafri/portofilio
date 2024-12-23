@@ -90,6 +90,9 @@
     ],
     ];
     @endphp
+    <div class="w-full h-20 bg-white">
+        &nbsp;
+    </div>
     <div class="bg-white">
         <div id="tab-container" class="flex justify-evenly items-center space-x-4 overflow-auto">
             @foreach ($tabs as $tabName => $tabData)

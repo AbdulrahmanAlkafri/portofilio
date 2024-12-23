@@ -4,7 +4,7 @@
         <h1 class="text-4xl font-bold text-gray-600 text-center mb-8" data-ar="الأسئلة الشائعة"
             data-en="Frequently Asked Questions">الأسئلة الشائعة</h1>
         @foreach($questions as $index => $question)
-        <div class="bg-gray-100 rounded-lg border border-gray-200 mb-10">
+        <div class="bg-gray-100 rounded-lg border border-gray-200 mb-10 w-[1,220px]">
             <div @click="openIndex === {{ $index }} ? openIndex = null : openIndex = {{ $index }}"
                 class="flex justify-between items-center p-4 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-100 rounded-t-lg">
                 <h2 class="text-2xl font-medium">

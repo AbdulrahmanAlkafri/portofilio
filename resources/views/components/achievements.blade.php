@@ -14,7 +14,7 @@
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 m-4">
             <!-- Achievement Item 1 -->
 
-            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+            <div class="text-right block">
                 <div class="flex justify-between items-center gap-x-10">
                     <span class="text-8xl border-t-2 p-2 border-black font-bold mx-1 text-orange-600 number"
                         data-target="250">0</span>
@@ -30,11 +30,11 @@
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="font-semibold text-lg text-center" data-en="Partner restaurants have achieved success"
+                <p class="font-semibold text-2xl block" data-en="Partner restaurants have achieved success"
                     data-ar="مطاعم شريكة حققت نجاحات"></p>
             </div>
             <!-- Achievement Item 2 -->
-            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+            <div class="text-right block">
                 <div class="flex justify-between items-center gap-x-10">
                     <span class="border-t-2 p-2 border-black">
                         <span class="text-8xl font-bold ml-1 text-orange-600 number">%</span>
@@ -47,12 +47,12 @@
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="font-semibold text-lg text-center" data-en="Increased profits for average customers"
+                <p class="font-semibold text-2xl block" data-en="Increased profits for average customers"
                     data-ar="زيادة في الأرباح بمتوسط العملاء"></p>
             </div>
 
             <!-- Achievement Item 3 -->
-            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+            <div class="text-right block">
                 <div class="flex justify-between items-center gap-x-10">
                     <span class="text-8xl border-t-2 p-2 border-black font-bold mx-1 text-orange-600 number "
                         data-target="250">0</span>
@@ -69,10 +69,10 @@
                     </svg>
 
                 </div>
-                <p class="font-semibold text-lg text-center" data-en="Customer satisfaction" data-ar="رضا العملاء"></p>
+                <p class="font-semibold text-2xl block" data-en="Customer satisfaction" data-ar="رضا العملاء"></p>
             </div>
             <!-- Achievement Item 4 -->
-            <div class="flex flex-col justify-center gap-y-2 items-center p-4">
+            <div class=" block">
                 <div class="flex justify-between items-center gap-x-10">
                     <span class="text-8xl border-t-2 p-2 border-black font-bold mx-1 text-orange-600 number"
                         data-target="250">0</span>
@@ -88,7 +88,7 @@
                             fill="#676767" />
                     </svg>
                 </div>
-                <p class="font-semibold text-lg text-center" data-en="Orders being processed by the system"
+                <p class="font-semibold text-2xl" data-en="Orders being processed by the system"
                     data-ar="طلبات يتم معالجتها يوميًا عبر النظام"></p>
             </div>
         </div>

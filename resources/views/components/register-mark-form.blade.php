@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             @csrf
 
             <div class="mb-4 flex items-center">
-                <label for="name" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-en="Name"
+                <label for="name" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-en="Name"
                     data-ar="الاسم">
                 </label>
                 <input type="text" id="name" name="name"
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="mb-4 flex items-center">
-                <label for="phone" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-en="Phone Number"
+                <label for="phone" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-en="Phone Number"
                     data-ar="رقم الهاتف">
                 </label>
                 <input type='tel' id="phone" name="phone"
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="mb-4 flex items-center">
-                <label for="trademark_name" class="block text-lg font-bold text-orange-400 mr-4 w-1/3"
+                <label for="trademark_name" class="block text-lg font-bold text-orange-500 mr-4 w-1/3"
                     data-en="Trademark Name" data-ar="اسم العلامة التجارية">
                 </label>
                 <input type="text" id="trademark_name" name="trademark_name"
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="mb-4 flex items-center">
-                <label for="trademark_type" class="block text-lg font-bold text-orange-400 mr-4 w-1/3"
+                <label for="trademark_type" class="block text-lg font-bold text-orange-500 mr-4 w-1/3"
                     data-en="Trademark Type" data-ar="نوع العلامة التجارية">
                 </label>
                 <select id="trademark_type" name="trademark_type"
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="mb-4 flex items-center">
-                <label for="country" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-en="Country"
+                <label for="country" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-en="Country"
                     data-ar="الدولة">
                 </label>
                 <select id="country" name="country"
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="mb-4 flex items-center">
-                <label for="notes" class="block text-lg font-bold text-orange-400 mr-4 w-1/3" data-en="Notes"
+                <label for="notes" class="block text-lg font-bold text-orange-500 mr-4 w-1/3" data-en="Notes"
                     data-ar="ملاحظات">
                 </label>
                 <textarea id="notes" name="notes"

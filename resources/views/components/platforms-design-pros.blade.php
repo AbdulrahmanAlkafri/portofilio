@@ -17,8 +17,7 @@ $bullets2 = [
 <div class="grid grid-cols-1 md:grid-cols-2 p-3 w-full">
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-2/3 space-y-4 m-auto">
-        <p class="text-5xl py-9 font-bold text-gray-600" data-en="Design Features" data-ar="ميزات التصميم">ميزات
-            التصميم
+        <p class="text-5xl py-9 font-bold text-gray-600" data-en="Design Features" data-ar="مميزات التصميم">
         </p>
         <ul class="list-disc pl-5 space-y-2 text-nowrap">
             @foreach ($bullets1 as $bullet)
@@ -47,7 +46,7 @@ $bullets2 = [
     </div>
     <!-- Right Side: Bullet Points -->
     <div class="w-full md:w-1/3 space-y-4 m-auto">
-        <p class="text-5xl py-9 font-bold text-gray-600" data-en="Platform Features" data-ar="ميزات المنصة">ميزات المنصة
+        <p class="text-5xl py-9 font-bold text-gray-600" data-en="Platform Features" data-ar="مميزات المنصة">
         </p>
         <ul class="list-disc pl-5 space-y-2 text-3xl">
             @foreach ($bullets2 as $bullet)

@@ -10,7 +10,7 @@
                 data-en="Your investment today is the revolution for tomorrow's restaurants"
                 data-ar="استثمارك اليوم ثورة لمطاعم الغد">استثمارك اليوم ثورة لمطاعم الغد</h2>
             <!-- Description Paragraph -->
-            <p class="text-3xl leading-relaxed"
+            <p class="text-[25px] tracking-[2%] leading-[42.5px] text-right"
                 data-en="We offer you an investment opportunity that combines financial, creative, and strategic investment to achieve our revolution in the restaurant world. From developing new infrastructure, we empower innovation through smart systems. Join us to achieve success together!"
                 data-ar="نقدّم لك فرصة للاستثمار تجمع بين الاستثمار المالي والإبداعي والاستراتيجي لتحقيق ثورتنا في عالم المطاعم. من تطوير بنية تحتية جديدة، نقدم لك إلى تمكين الابتكار عبر أنظمة ذكية. انضم لنا لنحقق معًا النجاح!">
                 نقدّم لك فرصة للاستثمار تجمع بين الاستثمار المالي والإبداعي والاستراتيجي لتحقيق ثورتنا في عالم المطاعم.

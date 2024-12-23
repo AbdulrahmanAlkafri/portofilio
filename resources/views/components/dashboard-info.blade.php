@@ -6,7 +6,7 @@
         <div class="relative">
             <img loading="lazy" src="{{ asset('images/dashboard-info.png') }}" alt="Dashboard" class="w-full h-auto" />
             <x-text-frame
-                class="absolute shadow-2xl text-xl py-2 px-12 font-extrabold text-gray-700 -left-[5%] bottom-[5%]"
+                class="absolute shadow-2xl text-xl py-2 px-12 font-extrabold text-gray-700 -left-[5%] bottom-[14%]"
                 data-ar="منصتنا" data-en="Our platfrom">
             </x-text-frame>
         </div>
