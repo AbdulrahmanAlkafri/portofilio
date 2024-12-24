@@ -72,8 +72,9 @@ function updateText(lang) {
                 el.placeholder = el.dataset[lang];
             }
 
-            // Adjust alignment classes based on language
+            // Check if the element has `text-center` class
             if (!el.classList.contains("text-center")) {
+                // Adjust text alignment classes based on language
                 if (lang === "ar") {
                     el.classList.remove("text-left");
                     el.classList.add("text-right");
@@ -85,26 +86,18 @@ function updateText(lang) {
         }
     });
 
-    // Update the arrow direction
-    const arrowSvg = document.getElementById("arrowSvg");
-    const arrowPath = document.getElementById("arrowPath");
-    if (lang === "en") {
-        arrowPath.setAttribute("transform", "rotate(180, 12.5, 12.5)"); // Rotate for right arrow if RTL
+    // Update arrow direction based on language
+    const arrow = document.getElementById("arrow");
+    const arrow2 = document.getElementById("arrow2");
+    if (lang === "ar") {
+        arrow.innerHTML = "&#8594;"; // Unicode for right arrow
+        arrow2.innerHTML = "&#8594;"; // Unicode for right arrow
     } else {
-        arrowPath.setAttribute("transform", "rotate(0, 12.5, 12.5)"); // Default left arrow for LTR
+        arrow.innerHTML = "&#8592;"; // Unicode for left arrow
+        arrow2.innerHTML = "&#8592;"; // Unicode for left arrow
     }
 }
 
-// You would keep the load event listener as is
-window.addEventListener("load", function () {
-    const dir = localStorage.getItem("dir") || "ltr"; // Default to LTR
-    document.documentElement.setAttribute("dir", dir);
-    document.body.setAttribute("dir", dir);
-    document.getElementById("language-toggle").checked = dir === "rtl";
-
-    // Set the initial text based on direction
-    updateText(dir === "rtl" ? "ar" : "en");
-});
 // On page load, set the direction and language based on localStorage
 window.addEventListener("load", function () {
     const dir = localStorage.getItem("dir") || "ltr"; // Default to LTR
