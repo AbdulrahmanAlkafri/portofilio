@@ -1,10 +1,10 @@
 <div class="py-16 bg-white">
     <div class="text-center mb-6 tracking-wide leading-loose">
-        <h2 class="text-5xl text-gray-600 font-bold my-5" data-en="Guaranteed Successful Investments"
+        <h2 class="text-5xl text-gray-600 font-bold my-5 text-center" data-en="Guaranteed Successful Investments"
             data-ar="استثمارات مضمونة النجاح">
             استثمارات مضمونة النجاح
         </h2>
-        <p class="text-4xl leading-loose tracking-wide font-semibold w-3/4 mx-auto"
+        <p class="text-4xl leading-loose tracking-wide font-semibold w-3/4 mx-auto text-center"
             data-en="Achieve your investment goals with our expert solutions."
             data-ar="اكتشف كيف يمكننا مساعدتك في تحقيق أهدافك الاستثمارية بنجاح من خلال خياراتنا الفعالة.">
             اكتشف كيف يمكننا مساعدتك في تحقيق أهدافك الاستثمارية بنجاح من خلال خياراتنا الفعالة.
@@ -31,11 +31,12 @@
             </p>
             <img loading="lazy" src="{{ asset('images/invest-home/invest-home2.png') }}" alt="Investment Success 3"
                 class="w-full mt-4 rounded-lg" />
-            <h4 class="text-center text-gray-600 font-semibold text-2xl" data-ar="نمو الاستثمار"
+            <h4 class="text-gray-600 font-semibold text-2xl text-center" data-ar="نمو الاستثمار"
                 data-en="Investment Growth">
                 نمو الاستثمار
             </h4>
-            <p class="text-gray-600 mt-4" data-ar="استفد من خبرتنا في تعزيز نمو مشاريعك بأسرع وتيرة ممكنة وبأقل مجهود."
+            <p class="text-gray-600 mt-4 text-center"
+                data-ar="استفد من خبرتنا في تعزيز نمو مشاريعك بأسرع وتيرة ممكنة وبأقل مجهود."
                 data-en="Leverage our expertise to enhance the growth of your projects at the fastest possible pace with minimal effort.">
                 استفد من خبرتنا في تعزيز نمو مشاريعك بأسرع وتيرة ممكنة وبأقل مجهود.
             </p>
@@ -59,11 +60,12 @@
             </p>
             <img loading="lazy" src="{{ asset('images/invest-home/invest-home1.png') }}" alt="Investment Success 2"
                 class="w-full mt-4 rounded-lg" />
-            <h4 class="text-center text-gray-600 font-semibold text-2xl" data-ar="دعم استثماري مخصص"
+            <h4 class="text-gray-600 font-semibold text-2xl text-center" data-ar="دعم استثماري مخصص"
                 data-en="Dedicated Investment Support">
                 دعم استثماري مخصص
             </h4>
-            <p class="text-gray-600 mt-4" data-ar="نحن نقدم حلول استثمارية تتناسب مع احتياجاتك الخاصة لضمان أعلى عوائد."
+            <p class="text-gray-600 mt-4 text-center"
+                data-ar="نحن نقدم حلول استثمارية تتناسب مع احتياجاتك الخاصة لضمان أعلى عوائد."
                 data-en="We provide investment solutions tailored to your specific needs for guaranteed returns.">
                 نحن نقدم حلول استثمارية تتناسب مع احتياجاتك الخاصة لضمان أعلى عوائد.
             </p>
@@ -98,7 +100,8 @@
                 data-en="Achieve goals easily">
                 تحقيق الأهداف بسهولة
             </h4>
-            <p class="text-gray-600 mt-4" data-ar="معنا، تحقق أهدافك الاستثمارية بسرعة بفضل استراتيجياتنا الذكية."
+            <p class="text-gray-600 mt-4 text-center"
+                data-ar="معنا، تحقق أهدافك الاستثمارية بسرعة بفضل استراتيجياتنا الذكية."
                 data-en="With us, achieve your investment goals quickly through our smart strategies.">
                 معانا، تحقق أهدافك الاستثمارية بسرعة بفضل استراتيجياتنا الذكية.
             </p>

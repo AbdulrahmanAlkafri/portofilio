@@ -56,6 +56,7 @@ document
         }
         location.reload();
     });
+
 // Function to update text and images based on language
 function updateText(lang) {
     const elements = document.querySelectorAll("[data-en], [data-ar]");
@@ -70,6 +71,18 @@ function updateText(lang) {
             el.textContent = el.dataset[lang]; // Update text for headings, button text, etc.
             if (el.placeholder) {
                 el.placeholder = el.dataset[lang];
+            }
+
+            // Check if the element has `text-center` class
+            if (!el.classList.contains("text-center")) {
+                // Adjust text alignment classes based on language
+                if (lang === "ar") {
+                    el.classList.remove("text-left");
+                    el.classList.add("text-right");
+                } else {
+                    el.classList.remove("text-right");
+                    el.classList.add("text-left");
+                }
             }
         }
     });

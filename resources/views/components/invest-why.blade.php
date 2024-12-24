@@ -2,11 +2,11 @@
     <div class="mb-16">
         <div class="w-4/5 mx-auto text-center">
             <!-- Header -->
-            <h2 class="text-5xl text-gray-600 font-bold mb-10" data-en="Why invest with us ?"
+            <h2 class="text-5xl text-gray-600 font-bold mb-10 text-center" data-en="Why invest with us ?"
                 data-ar=" لماذا تستثمر معنا؟">
             </h2>
             <!-- Paragraph -->
-            <p class="text-3xl leading-loose text-gray-500 mb-8 font-semibold" data-ar="تقدم لك هذه العوامل الثلاثة دعمًا متكاملاً لضمان نجاح مشروعك ونموه، مما يمكنّك من مواجهة التحديات بثقة
+            <p class="text-3xl leading-loose text-gray-500 mb-8 font-semibold text-center" data-ar="تقدم لك هذه العوامل الثلاثة دعمًا متكاملاً لضمان نجاح مشروعك ونموه، مما يمكنّك من مواجهة التحديات بثقة
             وتحقيق أهدافك الاستثمارية" data-en="These three factors provide you with integrated support to ensure the success and growth of your project, enabling you to face challenges with confidence
             And achieve your investment goals">
             </p>
@@ -33,9 +33,10 @@
                         </g>
                     </svg>
                 </div>
-                <h3 class="text-3xl font-semibold mb-2" data-ar="قيادة الابتكار" data-en="Driving innovation">
+                <h3 class="text-3xl font-semibold mb-2 text-center" data-ar="قيادة الابتكار"
+                    data-en="Driving innovation">
                 </h3>
-                <p class="text-gray-600 text-2xl"
+                <p class="text-gray-600 text-2xl text-center"
                     data-en="We are working to change the rules of the sector through smart solutions that transform the traditional restaurant sector into a modern sector with an integrated system."
                     data-ar="نعمل على تغيير قواعد القطاع عبر حلول ذكية تحول قطاع المطاعم التقليدي إلى قطاع حديث بنظام متكامل.">
                 </p>
@@ -69,8 +70,9 @@
                         </defs>
                     </svg>
                 </div>
-                <h3 class="text-3xl font-semibold mb-2" data-en="Sustainable impact" data-ar="التأثير المستدام"></h3>
-                <p class="text-gray-600 text-2xl" data-ar="نموذجنا الاستثماري المستدام يتيح تقليل الفائدة وتقديم الخدمات بكفاءة وبأقل تكلفة
+                <h3 class="text-3xl font-semibold mb-2 text-center" data-en="Sustainable impact"
+                    data-ar="التأثير المستدام"></h3>
+                <p class="text-gray-600 text-2xl text-center" data-ar="نموذجنا الاستثماري المستدام يتيح تقليل الفائدة وتقديم الخدمات بكفاءة وبأقل تكلفة
                 تشغيلية."
                     data-en="Our sustainable investment model allows for reducing interest and providing services efficiently and at the lowest cost Operational.">
                 </p>
@@ -109,10 +111,10 @@
                         </defs>
                     </svg>
                 </div>
-                <h3 class="text-3xl font-semibold text-gray-800 mb-2" data-ar="توسعات ذكية وفعالة"
+                <h3 class="text-3xl font-semibold text-gray-800 mb-2 text-center" data-ar="توسعات ذكية وفعالة"
                     data-en="Smart and efficient expansions">
                 </h3>
-                <p class="text-gray-600 text-2xl" data-ar="قدّم نموًّا استثماريًا عالي العائد مع ضمان مرونة تشغيلية تلبي احتياجات السوق
+                <p class="text-gray-600 text-2xl text-center" data-ar="قدّم نموًّا استثماريًا عالي العائد مع ضمان مرونة تشغيلية تلبي احتياجات السوق
                 المتغير."
                     data-en="Deliver high-return investment growth while ensuring operational flexibility that meets market needs">
                 </p>
