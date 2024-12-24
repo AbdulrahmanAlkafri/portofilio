@@ -32,7 +32,6 @@
                                 </svg>
                                 @endfor
                         </div>
-
                         <p class="text-gray-600 mb-4 text-right flex-grow">{{ $review->desc_en }}</p>
                     </div>
                     <div class="flex justify-start items-center text-right">
