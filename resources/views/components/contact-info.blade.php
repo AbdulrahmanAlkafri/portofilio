@@ -4,7 +4,7 @@
         <!-- Email Card -->
         <div class="flex flex-col items-center w-[255px] h-[366px] gap-y-8">
             <div
-                class="p-5 w-[178px] h-[197px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
+                class="p-5 w-[178px] h-[205px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
                 <div class="text-orange-500 mb-2">
                     <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -13,10 +13,12 @@
                     </svg>
 
                 </div>
-                <h3 class="text-lg font-bold text-gray-800" data-ar="تواصل عبر البريد" data-en="Contact via Email">تواصل
+                <h3 class="text-lg font-bold text-gray-800 text-center" data-ar="تواصل عبر البريد"
+                    data-en="Contact via Email">تواصل
                     عبر
                     البريد</h3>
-                <p class="font-semibold mb-4" data-ar="@Kitchplus04" data-en="@Kitchplus04">@Kitchplus04</p>
+                <p class="font-semibold mb-4 text-center" data-ar="@Kitchplus04" data-en="@Kitchplus04">
+                    @Kitchplus04</p>
             </div>
             <a href="mailto:info@kitchplus.co"
                 class="flex items-center justify-center w-fit px-10 py-2 font-semibold hover:bg-orange-500 hover:text-orange-50 hover:border-transparent transition-colors duration-100 text-black border border-black rounded-lg gap-2">
@@ -26,7 +28,7 @@
         <!-- Phone Card -->
         <div class="flex flex-col items-center w-[255px] h-[366px] gap-y-8">
             <div
-                class="p-5 w-[178px] h-[197px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
+                class="p-5 w-[178px] h-[205px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
                 <div class="text-orange-500 mb-2">
                     <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -35,10 +37,12 @@
                     </svg>
 
                 </div>
-                <h3 class="text-lg font-bold text-gray-800" data-ar="تواصل عبر الهاتف" data-en="Contact via Phone">تواصل
+                <h3 class="text-lg font-bold text-gray-800 text-center" data-ar="تواصل عبر الهاتف"
+                    data-en="Contact via Phone">تواصل
                     عبر
                     الهاتف</h3>
-                <p class="font-semibold mb-4" data-ar="+02 1478 08173" data-en="+02 1478 08173">+02 1478 08173</p>
+                <p class="font-semibold mb-4 text-center" data-ar="+02 1478 08173" data-en="+02 1478 08173">+02 1478
+                    08173</p>
             </div>
             <a href="tel:0097433884773"
                 class="flex items-center justify-center px-10 py-2 font-semibold hover:bg-orange-500 hover:text-orange-50 hover:border-transparent transition-colors duration-100 text-black border border-black rounded-lg gap-2">
@@ -48,7 +52,7 @@
         <!-- Location Card -->
         <div class="flex flex-col items-center w-[255px] h-[366px] gap-y-8">
             <div
-                class="p-5 w-[178px] h-[197px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
+                class="p-5 w-[178px] h-[205px] text-center flex flex-col items-center gap-y-4 bg-white rounded-3xl shadow-xl m-2 max-w-xs">
                 <div class="text-orange-500 mb-2">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -57,8 +61,8 @@
                     </svg>
 
                 </div>
-                <h3 class="text-lg font-bold text-gray-800" data-ar="الموقع" data-en="Location">الموقع</h3>
-                <p class="font-semibold mb-4" data-ar="شارع الملك عبد الله الثاني، عمان، الأردن"
+                <h3 class="text-lg font-bold text-gray-800 text-center" data-ar="الموقع" data-en="Location">الموقع</h3>
+                <p class="font-semibold mb-4 text-center w-fit" data-ar="شارع الملك عبد الله الثاني، عمان، الأردن"
                     data-en="King Abdullah II Street, Amman, Jordan">شارع الملك عبد الله الثاني، عمان، الأردن</p>
             </div>
             <a href="https://www.google.com/maps" target="_blank"
