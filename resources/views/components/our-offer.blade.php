@@ -19,14 +19,14 @@
             <img src="{{ asset('images/our-offer/women.png') }}" alt="Woman" class="h-auto w-fit rounded-lg mx-auto" />
 
             <!-- Replace images with TextFrame components -->
-            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-1/2 left-[15%]"
+            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-[45%] left-[13%]"
                 data-en="Need to expand your restaurant?" data-ar="تحتاج توسع مطعمك؟"></x-text-frame>
-            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-3/4 left-[20%] text-xs"
+            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-[70%] left-[22%] text-xs"
                 data-en="Want to make your work easier?" data-ar="تحتاج تسهل شغلك؟"></x-text-frame>
 
-            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-[55%] right-[15%]"
+            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-[58%] right-[15%]"
                 data-en="Thinking of opening a restaurant?" data-ar="تفكر تفتح مطعم؟"></x-text-frame>
-            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-[80%] right-[20%] text-sm"
+            <x-text-frame class="w-fit py-6 px-10 h-[60px] absolute top-[82%] right-[20%] text-sm"
                 data-en="Like to increase your profits?" data-ar="حاب تزيد أرباحك؟"></x-text-frame>
         </div>
     </div>

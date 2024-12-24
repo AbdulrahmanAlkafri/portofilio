@@ -1,5 +1,5 @@
 <div class="py-24 bg-gray-50">
-    <div class="w-4/5 mx-auto text-center">
+    <div class="w-4/5 mx-auto">
         <div class="flex justify-between items-center">
             <h2 class="text-5xl font-bold mb-6 text-gray-600 relative -top-10" data-ar="ما يقوله عملاؤنا"
                 data-en="What our customers say">
@@ -23,7 +23,7 @@
                 <div
                     class="bg-white rounded-lg shadow-md p-6 flex-shrink-0 w-80 mx-3 snap-center flex flex-col justify-between">
                     <div class="flex flex-col">
-                        <div class="flex text-right mb-2">
+                        <div class="flex mb-2">
                             @for ($i = 1; $i <= 5; $i++) <svg xmlns="http://www.w3.org/2000/svg"
                                 class="h-5 w-5 {{ $i <= $review->rate ? 'text-yellow-500' : 'text-gray-300' }}"
                                 fill="currentColor" viewBox="0 0 20 20">
@@ -32,13 +32,13 @@
                                 </svg>
                                 @endfor
                         </div>
-                        <p class="text-gray-600 mb-4 text-right flex-grow">{{ $review->desc_en }}</p>
+                        <p class="text-gray-600 mb-4 flex-grow">{{ $review->desc_en }}</p>
                     </div>
-                    <div class="flex justify-start items-center text-right">
+                    <div class="flex justify-start items-center">
                         <img loading="lazy"
                             src="{{ $review->customer_image ? asset($review->customer_image) : asset('images/default-avatar.png') }}"
                             alt="{{ $review->customer_name_en }}" class="p-1 w-12 h-12 rounded-full mr-3">
-                        <div class="block">
+                        <div class="">
                             <h3 class="font-semibold text-lg">{{ $review->customer_name_en }}</h3>
                             <h4 class="font-semibold text-gray-800">{{ $review->title_en }}</h4>
                         </div>

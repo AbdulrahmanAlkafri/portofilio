@@ -2,7 +2,8 @@
     <div class="flex justify-between items-center px-4">
         <!-- Left Section -->
         <div class="mx-36 text-right">
-            <img id="logo" loading="lazy" src="{{asset('images/logo.png')}}" alt="Logo" class="mb-4" />
+            <img id="logo" loading="lazy" data-en="{{asset("images/en-logo.png")}}"
+                data-ar="{{asset('images/logo.png')}}" src="{{asset('images/logo.png')}}" alt="Logo" class="mb-4" />
             <span class="my-3 text-sm" data-ar="مكان تقني متكامل للمطاعم"
                 data-en="A technical place for restaurants"></span>
             <h3 class="text-2xl font-semibold my-4" data-en="Subscribe to receive all the latest updates"
@@ -15,7 +16,7 @@
                     style="width: calc(100% - 14px);" data-en="Enter your email" data-ar="اكتب بريدك الإلكتروني" />
                 <a type="submit" href="mailto:info@kitchplus.co"
                     class="cursor-pointer absolute left-1.5 top-0 h-full bg-orange-600 text-orange-50 rounded-full flex items-center justify-center px-3 transition duration-150 ease-in-out hover:bg-orange-700">
-                    <span id="arrow" class="text-3xl font-bold m-auto mb-4">&#8592;</span> <!-- Left Arrow -->
+                    <span id="arrow" class="text-3xl font-bold m-auto mb-4 arrow-dir">&#8592;</span> <!-- Left Arrow -->
                 </a>
             </form>
         </div>

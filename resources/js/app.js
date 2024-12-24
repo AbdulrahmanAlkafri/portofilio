@@ -62,13 +62,12 @@ function updateText(lang) {
     const elements = document.querySelectorAll("[data-en], [data-ar]");
     elements.forEach((el) => {
         if (el.tagName.toLowerCase() === "img") {
-            el.src = el.dataset[lang]; // Update image src if applicable
-            // Control visibility based on language
+            el.src = el.dataset[lang];
             if (el.dataset.lang) {
-                el.style.display = el.dataset.lang === lang ? "block" : "none"; // Show or hide based on lang
+                el.style.display = el.dataset.lang === lang ? "block" : "none";
             }
         } else {
-            el.textContent = el.dataset[lang]; // Update text for headings, button text, etc.
+            el.textContent = el.dataset[lang];
             if (el.placeholder) {
                 el.placeholder = el.dataset[lang];
             }
@@ -86,7 +85,26 @@ function updateText(lang) {
             }
         }
     });
+
+    // Update arrow direction based on language
+    const arrow = document.getElementById("arrow");
+    if (lang === "en") {
+        arrow.innerHTML = "&#8594;"; // Unicode for right arrow
+    } else {
+        arrow.innerHTML = "&#8592;"; // Unicode for left arrow
+    }
 }
+
+// On page load, set the direction and language based on localStorage
+window.addEventListener("load", function () {
+    const dir = localStorage.getItem("dir") || "ltr"; // Default to LTR
+    document.documentElement.setAttribute("dir", dir);
+    document.body.setAttribute("dir", dir);
+    document.getElementById("language-toggle").checked = dir === "rtl";
+
+    // Set the initial text based on direction
+    updateText(dir === "rtl" ? "ar" : "en");
+});
 
 // On page load, set the direction and language based on localStorage
 window.addEventListener("load", function () {
