@@ -13,7 +13,7 @@
 
     <div class="w-4/5 flex justify-center items-center mx-auto gap-6">
         <!-- Card 1 -->
-        <div class="bg-white p-3 w-3/5 rounded-xl shadow-lg flex flex-col items-center justify-between">
+        <div class="bg-white h-[350px] p-3 w-3/5 rounded-xl shadow-lg flex flex-col items-center justify-between">
             <h3 class="text-xl font-bold text-gray-800 mb-2" data-en="Investment Value" data-ar="قيمة الاستثمار">
                 قيمة الاستثمار
             </h3>
@@ -42,7 +42,8 @@
             </p>
         </div>
         <!-- Card 2 -->
-        <div class="bg-white p-3 w-3/5 mx-auto rounded-xl shadow-lg flex flex-col items-center justify-evenly">
+        <div
+            class="bg-white h-[350px] p-3 w-3/5 mx-auto rounded-xl shadow-lg flex flex-col items-center justify-evenly">
             <h3 class="text-xl font-bold text-gray-800 mb-2" data-en="Number of Investors" data-ar="عدد المستثمرين">
                 عدد المستثمرين
             </h3>
@@ -72,7 +73,8 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white p-3 w-3/5 mx-auto rounded-xl shadow-lg flex flex-col items-center justify-evenly">
+        <div
+            class="bg-white h-[350px] p-3 w-3/5 mx-auto rounded-xl shadow-lg flex flex-col items-center justify-evenly">
             <h3 class="text-xl font-bold text-gray-800 mb-2 flex justify-start" data-en="Investment Returns"
                 data-ar="عائد الاستثمار">
                 عائد الاستثمار

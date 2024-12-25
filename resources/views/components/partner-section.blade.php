@@ -6,45 +6,37 @@
         <div class="overflow-hidden relative">
             <div class="flex animate-scroll">
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset("images/success-partner/success-partner1.jpg") }}" alt="Partner 1"
+                    <img src="{{ asset('images/success-partner/partner3.jpg') }}" alt="Partner 3"
                         class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset("images/success-partner/success-partner2.jpg") }}" alt="Partner 2"
+                    <img src="{{ asset('images/success-partner/partner4.jpg') }}" alt="Partner 4"
                         class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner3.png') }}" alt="Partner 3" class="h-24 object-contain" />
+                    <img src="{{ asset('images/success-partner/partner2.jpg') }}" alt="Partner 5"
+                        class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner4.png') }}" alt="Partner 4" class="h-24 object-contain" />
-                </div>
-                <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner5.png') }}" alt="Partner 5" class="h-24 object-contain" />
-                </div>
-                <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner6.png') }}" alt="Partner 6" class="h-24 object-contain" />
+                    <img src="{{ asset('images/success-partner/partner1.jpg') }}" alt="Partner 6"
+                        class="h-24 object-contain" />
                 </div>
                 <!-- Repeat for continuous effect -->
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset("images/success-partner/success-partner1.jpg") }}" alt="Partner 1"
+                    <img src="{{ asset('images/success-partner/partner3.jpg') }}" alt="Partner 3"
                         class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset("images/success-partner/success-partner2.jpg") }}" alt="Partner 2"
+                    <img src="{{ asset('images/success-partner/partner4.jpg') }}" alt="Partner 4"
                         class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner3.png') }}" alt="Partner 3" class="h-24 object-contain" />
+                    <img src="{{ asset('images/success-partner/partner2.jpg') }}" alt="Partner 5"
+                        class="h-24 object-contain" />
                 </div>
                 <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner4.png') }}" alt="Partner 4" class="h-24 object-contain" />
-                </div>
-                <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner5.png') }}" alt="Partner 5" class="h-24 object-contain" />
-                </div>
-                <div class="flex-shrink-0 mx-4">
-                    <img src="{{ asset('images/partner6.png') }}" alt="Partner 6" class="h-24 object-contain" />
+                    <img src="{{ asset('images/success-partner/partner1.jpg') }}" alt="Partner 6"
+                        class="h-24 object-contain" />
                 </div>
             </div>
         </div>
