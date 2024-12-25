@@ -15,7 +15,7 @@
                     class="border outline-none ring-1 focus:ring-orange-600 border-gray-300 rounded-full pl-4 pr-14 py-2"
                     style="width: calc(100% - 14px);" data-en="Enter your email" data-ar="اكتب بريدك الإلكتروني" />
                 <a type="submit" href="mailto:info@kitchplus.co"
-                    class="cursor-pointer absolute left-1.5 top-0 h-full bg-orange-600 text-orange-50 rounded-full flex items-center justify-center px-3 transition duration-150 ease-in-out hover:bg-orange-700">
+                    class="cursor-pointer absolute left-1.5 top-0 h-full bg-orange-600 text-orange-50 rounded-full flex items-center justify-center px-4 transition duration-150 ease-in-out hover:bg-orange-700">
                     <span id="arrow" class="text-3xl font-bold m-auto mb-4 arrow-dir">&#8592;</span> <!-- Left Arrow -->
                 </a>
             </form>

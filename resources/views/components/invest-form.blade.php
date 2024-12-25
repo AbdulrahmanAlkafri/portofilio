@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="flex justify-center">
                     <button type="submit"
-                        class="py-2 w-1/2 mx-auto rounded-2xl bg-orange-500 text-orange-50 text-xl hover:bg-orange-600 transition font-semibold"
+                        class="py-2 text-center w-1/2 mx-auto rounded-2xl bg-orange-500 text-orange-50 text-xl hover:bg-orange-600 transition font-semibold"
                         data-ar="تسجيل" data-en="Register">
                         تسجيل
                     </button>
